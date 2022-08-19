@@ -16,3 +16,23 @@ body { padding-top: 56px; }
 /* footer */
 footer a { color: white; font-weight: bold; text-decoration: none; }
 footer a:hover { color: white; text-decoration: underline; }
+
+header {
+    background: linear-gradient(-45deg, #1B2A49, #465881, #00909E, #C9D1D3);
+    animation: gradient 30s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
