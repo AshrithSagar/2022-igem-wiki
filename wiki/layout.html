@@ -13,6 +13,8 @@
     <!-- Custom CSS -->
     <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
 
+    <link href="{{ url_for('static', filename = 'textmorph.css') }}" rel="stylesheet">
+
     <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2022</title>
 
 </head>
@@ -45,5 +47,7 @@
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+
+  <script src="{{ url_for('static', filename = 'textmorph.js') }}"></script>
 </body>
 </html>
