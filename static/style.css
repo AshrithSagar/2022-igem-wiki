@@ -164,3 +164,11 @@ header {
 }
 
 /* --------------------------------------------------------------------------- */
+@font-face {
+  font-family: "fonts_Montserrat-Regular";
+  src: url("https://uploads.igem.org/teams/4200/wiki/fonts_Montserrat-Regular.ttf") format('truetype');
+}
+
+body {
+  font-family: "fonts_Montserrat-Regular";
+}
