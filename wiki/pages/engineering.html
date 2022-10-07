@@ -10,8 +10,11 @@ engineering design cycle.{% endblock %}
   <h1>Designing the peptide</h1>
   <p>The Design–Build–Test–Learn (DBTL) cycle is integral to any synthetic biology-based engineered solution for biological problems. As a result, to arrive at the best possible peptide, we performed multiple iterations of the engineering cycle. Each iteration involved designing our peptide, building it and finally testing it in-silico. The changes involved in each iteration and the information learnt have been extensively documented.</p>
   <img src="https://static.igem.wiki/teams/4200/wiki/engsuccess-dbtlcycle.png" alt="*The design, build test learn cycle graphic">
-  <h2>The DBTL cycle</h2>
-  <p>Design, Build, Test and Learn cycle</p>
+  <h2>
+    The DBTL cycle
+    <br>
+    <small class="text-muted"><em>Design, Build, Test and Learn</em></small>
+  </h2>
   <p>The predicted structures of MAM7 and HPD of Fibronectin were docked with each other on ClusPro [1.https://cluspro.bu.edu/publications.php], followed by visualisation and observation of these interacting residues on Pymol [2.https://pymol.org/2/]. The sequence signature of the structural repeats in the proteins of Fibronectin and MAM7 were detected using HHrepID(3.)—a tool for de novo identification of repeats in protein sequences. This confirmed the existence of 5 continuous repeats of type 1 modules, forming the heparin-binding domains of Fibronectin and the presence of seven mammalian cell entry domains (MCEs) in MAM7. Fibronectin is known to require five continuous repeats to dock with MAM7; as a result, designing a peptide that would bind to only one of these domains was deemed sufficient4.https://pubmed.ncbi.nlm.nih.gov/21937438/]
   </p>
   <p>Each of the five repeats of the type I module present in Fibronectin was considered a particular peptide, and each of these peptides was separately docked with MAM7 to test its binding energies using ClusPro [1.https://cluspro.bu.edu/login.php]. Amber, an energy minimisation tool, was employed for each of these interactions. It was concluded that peptides numbered three and five derived from modules three and five of fibronectin, respectively, docked with the MCE3 of MAM7, giving the highest docking scores. 
@@ -26,7 +29,7 @@ engineering design cycle.{% endblock %}
   <h3>The software</h3>
   <p>Two rounds of running the peptide through the software gave us the final one. The structure of the peptide was then predicted and docked with MAM7, and run through Prodigy [10] to compare their respective binding affinities and Kd values. These values are tabulated below:
   </p>
-  
+
   *table*
 
   <h1>References:</h1>
