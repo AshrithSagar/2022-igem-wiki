@@ -8,69 +8,25 @@ engineering design cycle.{% endblock %}
 
 <div class="row mt-4">
   <h1>Designing the peptide</h1>
-  <p>The design, build, and test cycle is integral to any synthetic biology-based engineered solution for biological
-    problems. As a result, to arrive at the best possible peptide, we performed multiple iterations of the engineering
-    cycle. Each iteration involved designing our peptide, building it and finally testing it in-silico. The changes
-    involved in each iteration and the information learnt has been extensively documented.</p>
-  <img src="https://static.igem.wiki/teams/4200/wiki/engsuccess-dbtlcycle.png" alt="*The design, build test learn cycle graphic*">
+  <p>The Design–Build–Test–Learn (DBTL) cycle is integral to any synthetic biology-based engineered solution for biological problems. As a result, to arrive at the best possible peptide, we performed multiple iterations of the engineering cycle. Each iteration involved designing our peptide, building it and finally testing it in-silico. The changes involved in each iteration and the information learnt have been extensively documented.</p>
+  <img src="https://static.igem.wiki/teams/4200/wiki/engsuccess-dbtlcycle.png" alt="*The design, build test learn cycle graphic">
   <h2>The DBTL cycle</h2>
   <p>Design, Build, Test and Learn cycle</p>
-  <p>The predicted structures of MAM7 and HPD of fibronectin were docked with each other on
-    ClusPro.(1.https://cluspro.bu.edu/publications.php), followed by visualisation and observation of these interacting
-    residues on Pymol(2.https://pymol.org/2/) .The sequence signature of the structural repeats in the proteins of
-    fibronectin and MAM7 were detected using HHrepID(3.) —a tool for de novo identification of repeats in
-    protein sequences.
+  <p>The predicted structures of MAM7 and HPD of Fibronectin were docked with each other on ClusPro [1.https://cluspro.bu.edu/publications.php], followed by visualisation and observation of these interacting residues on Pymol [2.https://pymol.org/2/]. The sequence signature of the structural repeats in the proteins of Fibronectin and MAM7 were detected using HHrepID(3.)—a tool for de novo identification of repeats in protein sequences. This confirmed the existence of 5 continuous repeats of type 1 modules, forming the heparin-binding domains of Fibronectin and the presence of seven mammalian cell entry domains (MCEs) in MAM7. Fibronectin is known to require five continuous repeats to dock with MAM7; as a result, designing a peptide that would bind to only one of these domains was deemed sufficient4.https://pubmed.ncbi.nlm.nih.gov/21937438/]
   </p>
-  <p>This confirmed the existence of 5 continuous repeats of type 1 modules, forming the heparin-binding domains of
-    fibronectin and the presence of seven mammalian cell entry domains (MCEs) in MAM7. Fibronectin is known to require
-    five continuous repeats to dock with MAM7; as a result, designing a peptide that would bind to only one of these
-    domains was deemed sufficient.(4.https://pubmed.ncbi.nlm.nih.gov/21937438/ )
-  </p>
-  <p>Each of the five repeats of the type I module present in fibronectin was considered a particular peptide, and
-    each of these peptides was separately docked with MAM7 to test its binding energies using
-    ClusPro(1.https://cluspro.bu.edu/login.php). Amber, an energy minimisation tool was employed for each of these
-    interactions, and it was concluded that peptides number three and five derived from modules three and five of
-    fibronectin, respectively, docked with the MCE3 of MAM7, giving the highest docking scores. </p>
-  <p>It was seen that peptide five (wild type ) had the highest docking score with MCE3, this peptide was thus taken
-    as the basis for the next set of modifications. Schrodinger Maestro
-    (5.https://www.schrodinger.com/products/maestro) was used to visualise and study specific amino acids involved in
-    the interaction between the peptide and MAM7. The residues within 5 A° were assumed to be close enough for the
-    interaction and thus were considered during the evaluation.
-  </p>
-  <p>Further, this was verified by subjecting the peptide to an alanine scan on BUDE. An alanine scan replaces all the
-    amino acid residues in a peptide with alanine and compares the values of the respective Gibbs free energies in
-    order to determine the extent of contribution of every amino acid in the docking
-    process.(6.https://pubs.acs.org/doi/10.1021/acschembio.9b00560).
-  </p>
-  <p>Five such amino acids were recognised in the wild type, for the mutations.
-    This was followed by improving the interactions by substituting corresponding amino acids. These replacements were
-    made based on the study.
-    (7.https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4560430/), but each of them had a plethora of possibilities. For
-    example, methionine (present on the 29th position) could be replaced by Glutamic acid, Aspartic acid,
-    Phenylalanine, Tyrosine, Tryptophan, Histidine or Leucine. Therefore, the docked structure was subjected to mCSM
-    (8.https://academic.oup.com/bioinformatics/article/30/3/335/228906), which helped us analyse which mutations were
-    truly beneficial. However, mCSM does not account for conformational changes that these mutations may induce, so
-    each modified structure was subjected to an alanine scan to verify the substitutions.
-  </p>
-  <p>With newly learnt information, the peptide was being subjected to new changes, hence it was necessary to predict
-    the structure of the peptide and dock it with MAM7 at every stage. This gave us twelve variants of the peptide
-    with different combinations of the various substitutions that could be made. These were then visualised on
-    Schrodinger Maestro and further analysed using Prodigy to identify the strongly interacting peptides. </p>
-  <p>Four of the twelve variants were observed, and the best among these was selected for the next round. The
-    mutations performed in the previous iteration introduced new amino acids in the docked structure, opening up an
-    avenue for a new set of substitutions and hence the process was repeated. Subsequently, a new set of variants was
-    obtained ( 16 variants). This was further subjected to docking and analysis to select the next best peptide. </p>
-  <p>At this stage, to prevent the peptides from mutually interacting and consequently decreasing their efficiency, we
-    performed AGGRESCAN (9.http://bioinf.uab.es/aggrescan/) on the four peptides obtained from the last iteration, to
-    highlight the hotspots of aggregation. One such hotspot involving eight amino acids was observed and was rectified
-    by substituting amino acid (C34) with Aspargine in every peptide.
-    After this process, our very own software, PEP_MOD, helped us increase the scope of possible mutations.
-  </p>
+  <p>Each of the five repeats of the type I module present in Fibronectin was considered a particular peptide, and each of these peptides was separately docked with MAM7 to test its binding energies using ClusPro [1.https://cluspro.bu.edu/login.php]. Amber, an energy minimisation tool, was employed for each of these interactions. It was concluded that peptides numbered three and five derived from modules three and five of fibronectin, respectively, docked with the MCE3 of MAM7, giving the highest docking scores. 
+    It was seen that peptide five (wild type) had the highest docking score with MCE3. Thus, this peptide was taken as the basis for the next set of modifications.</p>
+    <img src="" alt="*Image of peptide 5 docked to MAM7">
+    <p>Schrodinger Maestro [5.https://www.schrodinger.com/products/maestro] was used to visualise and study the specific amino acids involved in the interaction between the peptide and MAM7. The residues within 5 A° were assumed to be close enough for the interaction and thus were considered during the evaluation. Further, this was verified by subjecting the peptide to an alanine scan on BUDE. An alanine scan replaces all the amino acid residues in a peptide with alanine. It compares the values of the respective Gibbs free energies to determine the extent of contribution of every amino acid in the docking process. [6.https://pubs.acs.org/doi/10.1021/acschembio.9b00560]. Five such mutations were recognised in the wild type. This was followed by improving the interactions by substituting corresponding amino acids. These replacements were made based on the study 
+      [7.https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4560430/], but each of them had a plethora of possibilities. For example, methionine (present at the 29th position) could be replaced by Glutamic acid, Aspartic acid,  Phenylalanine, Tyrosine, Tryptophan, Histidine or Leucine. </p>
+      <p>Therefore, the docked structure was subjected to mutation Cutoff Scanning Matrix (mCSM) [8.https://academic.oup.com/bioinformatics/article/30/3/335/228906], which helped us analyse which mutations were truly beneficial. However, mCSM does not account for conformational changes that these mutations may induce, so each modified structure was subjected to an alanine scan to verify the substitutions. </p>
+      <p>With newly learnt information, the peptide was being subjected to new changes. Hence, it was necessary to predict the structure of the peptide and dock it with MAM7 at every stage. This gave us twelve variants of the peptide with different combinations of the various substitutions that could be made. These were then visualised on Schrodinger Maestro and further analysed using Prodigy to identify the strongly interacting peptides. </p>
+      <p>Four of the twelve variants were observed, and the best among these was selected for the next round. The mutations performed in the previous iteration introduced new amino acids in the docked structure, opening up an avenue for a new set of substitutions and hence the process was repeated. Subsequently, a  new set of variants was obtained (16 variants). This was further subjected to docking and analysis to select the next best peptide.  At this stage, to prevent the peptides from mutually interacting and consequently decreasing their efficiency, we performed AGGRESCAN [9.http://bioinf.uab.es/aggrescan/] on the four peptides obtained from the last iteration, to highlight the hotspots of aggregation. One such hotspot involving eight amino acids was observed and was rectified by substituting amino acid (C34) with Asparagine in every peptide. After this process, our very own software—PEP_MOD, helped us increase the scope of possible mutations.
+      </p>
   <h3>The software</h3>
-  <p>Two rounds of running the peptide through the software gave us the final one.
-    The structure of the of the peptide was then predicted and docked with MAM7, and run through Prodigy(10) to
-    compare their respective binding affinities and Kd values. These values are tabulated below:</p>
-
+  <p>Two rounds of running the peptide through the software gave us the final one. The structure of the peptide was then predicted and docked with MAM7, and run through Prodigy [10] to compare their respective binding affinities and Kd values. These values are tabulated below:
+  </p>
+  
   *table*
 
   <h1>References:</h1>
