@@ -21,99 +21,67 @@
 <img src="https://static.igem.wiki/teams/4200/wiki/multiplepeptide5.png">
 //add captions
     
-    <p>The final peptide obtained from the extensive modification cycle was to be synthesised. Thus, we decided to design the following system for this purpose.</p>
+    <p>The final peptide obtained from the extensive modification cycle was to be synthesised. Thus, we decided to design the   following system for this purpose.</p>
     <h2>In vitro Vector Systems</h2>
     <p>For our experimentation, expression of MAM7 was done by using our chassis- <em>E.coli</em> BL21 and the vector pET-22b(+).</p>
-    <p>For the peptide production, our planned chassis was again <i>E.coli</i> BL21, and the vector is pET-22b(+).
+    <p>For the peptide production, our planned chassis was again <em>E.coli</em> BL21, and the vector is pET-22b(+).
         Unfortunately, we have not been able to reach that point in our project. Below is the plasmid design: </p>
-    <img src="" alt="Plasmid 1">
+    <img src="https://static.igem.wiki/teams/4200/wiki/design/peptide-production-plasmid.png" alt="Plasmid 1">
+    //add caption
     On expanding the above picture, the plasmid gene circuit looks like this:
     <img src="" alt="*insert plasmid gene circuit image*">
-    <p>Gibson Assembly will be used to combine our peptide sequence along with the intein sequence, which forms an
-        integral part of our plasmid design. </p>
+    <p>Gibson Assembly will be used to combine our peptide sequence along with the intein sequence, which forms an integral part of our plasmid design. </p>
     <h3>What is an intein, and why are we using it?</h3>
-    <p>Inteins, short for INTervening protEINS, are in-frame interceding polypeptides that are capable of
-        post-translationally excising themselves from the precursor protein through a protein splicing mechanism that is
-        similar to the mechanism of mRNA splicing (https://www.labome.com/method/Inteins.html)(3). Protein splicing
-        using inteins is a biochemical reaction involving multiple steps that include cleavage and formation of the
-        peptide bonds from the exteins
-        (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3949740/#:~:text=Inteins%20are%20auto%2Dprocessing%20domains,and%20formation%20of%20peptide%20bonds).(4)
-        After the intein excision, its two flanking regions join together to form the functional protein or peptide
-        sequence. Inteins undergo conditional protein splicing; that is, the splicing reaction is induced either by
-        introducing small molecules like thiols, proteases, ligands, or by altering reaction conditions like temperature
-        and pH (https://www.labome.com/method/Inteins.html ).(3) They can be utilised to chemically alter almost any
-        polypeptide backbone
-        (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3949740/#:~:text=Inteins%20are%20auto%2Dprocessing%20domains,and%20formation%20of%20peptide%20bond).
-        (4)
-
-        Inteins can be classified into four main categories, full-length inteins, mini-inteins, split inteins, and
-        alanine inteins(https://www.labome.com/method/Inteins.html ).(3)</p>
-    <p>For the synthesis of our peptide, we will be using split inteins.
-        Split intein consists of either the N-extein attached to the part of the intein that is responsible for splicing
-        at the N-terminal or the C-extein attached to the part of the intein that will cleave only at the C-terminal.
-        Hence, split inteins help in the splicing of proteins at that specific terminal.
+    <p>Inteins, short for INTervening protEINS, are in-frame interceding polypeptides that are capable of post-translationally excising themselves from the precursor protein through a protein splicing mechanism that is similar to the mechanism of mRNA splicing [5]. Protein splicing using inteins is a biochemical reaction involving multiple steps that include cleavage and formation of the peptide bonds from the exteins [6]. After the intein excision, its two flanking regions join together to form the functional protein or peptide sequence. Inteins undergo conditional protein splicing; that is, the splicing reaction is induced either by introducing small molecules like thiols, proteases, ligands, or by altering reaction conditions like temperature and pH [5]. They can be utilised to chemically alter almost any polypeptide backbone [6].</p>
+<p> Inteins can be classified into four main categories, full-length inteins, mini-inteins, split inteins, and alanine inteins [5].
+</p>
+    <p>For the synthesis of our peptide, we will be using split inteins. 
+Split intein consists of either the N-extein attached to the part of the intein that is responsible for splicing at the N-terminal or the C-extein attached to the part of the intein that will cleave only at the C-terminal. Hence, split inteins help in the splicing of proteins at that specific terminal. 
     </p>
-    <p>Split inteins consist of two short intein segments - the N-terminal intein (IN) and the C-terminal intein (IC),
-        each responsible for the cleaving of that respective terminal. The two fragments reassemble into a complete
-        intein structure similar to full-length inteins through a trans-splicing mechanism. </p>
+    <p>Split inteins consist of two short intein segments - the N-terminal intein (IN) and the C-terminal intein (IC), each responsible for the cleaving of that respective terminal. The two fragments reassemble into a complete intein structure similar to full-length inteins through a trans-splicing mechanism. </p>
     <img src="" alt="Split intein">
-    <p>The above figure shows a split intein. [Source://dx.doi.org/10.13070/mm.en.10.2868]</p>
-    <p>Inteins use the same strategies as classical enzymes to perform catalysis. They are single-turnover enzymes that
-        splice out during the maturation of their host proteins. Splicing occurs when nucleophilic residues and residues
-        that assist catalysis belonging to the host-intein polypeptide chain are properly aligned as a result of
-        intrachain protein folding. Splicing occurs spontaneously, without the help of any known cofactor, chaperone, or
-        energy source.
+    // add caption
+    <p>Inteins use the same strategies as classical enzymes to perform catalysis. They are single-turnover enzymes that splice out during the maturation of their host proteins. Splicing occurs when nucleophilic residues and residues that assist catalysis belonging to the host-intein polypeptide chain are properly aligned as a result of intrachain protein folding. Splicing occurs spontaneously, without the help of any known cofactor, chaperone, or energy source.
     </p>
-    <p>Here, our intein, given the gene circuit, will be performing post-translational self-cleaving of our
-        antimicrobial peptide. </p>
-    <h3>Why are we using Gibson Assembly ?</h3>
+    <p>Here, our intein, given the gene circuit, will be performing post-translational self-cleaving of our antimicrobial peptide. </p>
+    <h3> Why are we using Gibson Assembly ? [7]</h3>
     <li>Gibson assembly allows for seamless cloning.</li>
-    <li>
-        Assemblies are independent of sequence, and you are not restricted to the use of restriction enzyme cut sites.
-    </li>
-    <li>
-        Assemblies are scarless.
-    </li>
+    <li>Assemblies are independent of sequence, and you are not restricted to the use of restriction enzyme cut sites.</li>
+    <li>Assemblies are scarless.</li>
     <li> Multiple pieces from multiple DNA sources (plasmids, genomes, etc.) can be assembled.</li>
-    <li>
-        It can be used for site-directed mutagenesis.</li>
-    <li>The efficiency drops as the assembly size increases and as the number of pieces increases. It is also lower when
-        cloning toxic genes.</li>
-    <p>[https://www.molecularcloud.org/what-is-Gibson-assembly.html]( not getting added)(4)</p>
-    <h2>Delivery System</h2>
-    <p>Given the susceptibility of our peptide to degradation and other factors, it was necessary to develop a sturdy
-        delivery mechanism for the pisciculture set-up. From our literature review and human practices visits, we
-        conferred on the encapsulation of our antimicrobial peptide using chitosan nanoparticles due to its promising
-        properties. </p>
-    <p>Once produced in-vitro, our peptide would be subjected to encapsulation for delivery. We would be checking the
-        Zeta potential of our produced nanoparticles. Zeta potential is essential for checking the stability of a
-        nanoparticle in a given suspension. The final plan for in-field testing is to subject the inlet tank with a
-        nanoparticle (containing peptide) loaded mesh such that as the water flows, the peptide is subsequently
-        released.</p>
-    <p>This setup would help maintain a controlled release of our peptide into the water. Here, the bacteria in the
-        water would interact with our peptide by binding to MAM7 present on the surface of the bacteria, thus rendering
-        it harmless. Consequently, the microbiota of the aquaculture system is also maintained. </p>
-    <p>This mesh would serve as a one-time application, such that when the peptide is fully released out of the
-        nanoparticle, it would have to be replaced with a new one. </p>
+    <li>It can be used for site-directed mutagenesis.</li>
+    <li>The efficiency drops as the assembly size increases and as the number of pieces increases. It is also lower when cloning toxic genes.</li>
+    <p>Given our literature survey backed up by the numerous experts we spoke to, our Wet Lab components were found to be unique to the registry. Hence we registered our target molecule—MAM7(Parts ID: BBa_K4200000), our novel antimicrobial peptide(Parts ID: BBa_K4200313) and the split intein(Parts ID: BBa K4200780). //hyperlink the parts
+</p>
+    <h2>The Delivery System</h2>
+    <p>Given the susceptibility of our peptide to degradation and other factors, it was necessary to develop a sturdy delivery mechanism for the pisciculture set-up. From our literature review and human practices visits, we conferred on the encapsulation of our antimicrobial peptide using chitosan nanoparticles due to its promising properties.  
+ </p>
+    <p>Once produced in-vitro, our peptide would be subjected to encapsulation for delivery. We would be checking the Zeta potential of our produced nanoparticles. Zeta potential is essential for checking the stability of a nanoparticle in a given suspension. The final plan for in-field testing is to subject the inlet tank with a nanoparticle (containing peptide) loaded mesh such that as the water flows, the peptide is subsequently released.
+</p>
+    <p>This setup would help maintain a controlled release of our peptide into the water. Here, the bacteria in the water would interact with our peptide by binding to MAM7 present on the surface of the bacteria, thus rendering it harmless. Consequently, the microbiota of the aquaculture system is also maintained. 
+ </p>
+ <p>This mesh would serve as a one-time application, such that when the peptide is fully released out of the nanoparticle, it would have to be replaced with a new one. 
+</p>
     <h2>But what would happen to the chitosan during the peptide release?</h2>
-    <p>Given the properties of chitosan, being a biodegradable polymer, it would not harm the marine life present in the
-        water. Prior to degradation, the chitosan, if and when ingested by the fish, would enhance their gut microbiota
-        and induce positive immunomodulatory effects, too!
-        https://www.sciencedirect.com/science/article/abs/pii/S105046481830127X ([5]</p>
+    <p>Given the properties of chitosan, being a biodegradable polymer, it would not harm the marine life present in the water.  Prior to degradation, the chitosan, if and when ingested by the fish, would enhance their gut microbiota and induce positive immunomodulatory effects, too [8]</p>
 
     <h2>References</h2>
     <ol>
-        <li>A. M. Krachler and K. Orth, ‘Functional characterization of the interaction between bacterial adhesin
-            multivalent adhesion molecule 7 (MAM7) protein and its host cell ligands', J Biol Chem, vol. 286, no. 45,
-            pp. 38939–38947, Nov. 2011, doi: 10.1074/JBC.M111.291377.</li>
-        <li>J. Jumper et al., ‘Highly accurate protein structure prediction with AlphaFold', Nature 2021 596:7873, vol.
-            596, no. 7873, pp. 583–589, Jul. 2021, doi: 10.1038/s41586-021-03819-2.</li>
-        <li>G. N. Basturea, ‘Inteins', Materials and Methods, vol. 10, Jan. 2020, doi: 10.13070/MM.EN.10.2868.</li>
-        <li>N. H. Shah and T. W. Muir, ‘Inteins: Nature's Gift to Protein Chemists', Chemical science (Royal Society of
-            Chemistry : 2010), vol. 5, no. 1, p. 446, Feb. 2014, doi: 10.1039/C3SC52951G.</li>
-        <li>C. Nikapitiya et al., ‘Chitosan nanoparticles: A positive immune response modulator as display in zebrafish
-            larvae against Aeromonas hydrophila infection', Fish Shellfish Immunol, vol. 76, pp. 240–246, May 2018, doi:
-            10.1016/J.FSI.2018.03.010.</li>
+        <li>A. M. Krachler and K. Orth, ‘Functional characterization of the interaction between bacterial adhesin multivalent adhesion molecule 7 (MAM7) protein and its host cell ligands’, J Biol Chem, vol. 286, no. 45, pp. 38939–38947, Nov. 2011, doi: 10.1074/JBC.M111.291377.</li>
+        <li>J. Jumper et al., ‘Highly accurate protein structure prediction with AlphaFold’, Nature 2021 596:7873, vol. 596, no. 7873, pp. 583–589, Jul. 2021, doi: 10.1038/s41586-021-03819-2.
+</li>
+<li>  PyMOL
+           The PyMOL Molecular Graphics System, Version 2.5.2 Schrödinger, LLC.
+</li>
+<li>Benchling [Biology Software]. (2022). Retrieved from https://benchling.com.
+</li>
+<li>G. N. Basturea, ‘Inteins’, Materials and Methods, vol. 10, Jan. 2020, doi: 10.13070/MM.EN.10.2868.
+</li>
+<li>N. H. Shah and T. W. Muir, ‘Inteins: Nature’s Gift to Protein Chemists’, Chemical science (Royal Society of Chemistry : 2010), vol. 5, no. 1, p. 446, Feb. 2014, doi: 10.1039/C3SC52951G.
+</li>
+<li>“https://www.molecularcloud.org/what-is-Gibson-assembly.html.” </li>
+<li>C. Nikapitiya et al., ‘Chitosan nanoparticles: A positive immune response modulator as display in zebrafish larvae against Aeromonas hydrophila infection’, Fish Shellfish Immunol, vol. 76, pp. 240–246, May 2018, doi: 10.1016/J.FSI.2018.03.010.
+</li>
     </ol>
 </div>
 
