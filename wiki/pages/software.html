@@ -1,35 +1,103 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Software{% endblock %}
-{% block lead %}Software in iGEM should make synthetic biology based on standard parts easier, faster, better or more accessible to our community.{% endblock %}
+{% block lead %}Software in iGEM should make synthetic biology based on standard parts easier, faster, better or more
+accessible to our community.{% endblock %}
 
 {% block page_content %}
 
 <div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Software Tool Special Prize</h4>
-      <p>Regardless what's the topic, iGEM projects often create or adapt computational tools to move the bigger project forward. Because they are born out of a direct practical need, these software tools (or new computational methods) can even prove surprisingly useful for others. Without necessarily being big or complex, they can make the crucial difference to a project's success. This award tries to find and honor such "nuggets" of computational work. To be eligible, your software has to be documented and made available under an OSI-approved open source license. Teams nominating themselves for this prize must submit their code to the iGEM Github.</p>
-      <p>To compete for the Best Software Tool prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2022 Awards Page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+  <p>Random Peptide Generator—RPG—is a peptide mutator that performs conserved substitutions based on inputs from an
+    alanine scan. This was a crucial step in significantly increasing the scope of possible mutations. Existing
+    softwares in the domain only considers surface-level information, ignoring any conformational changes that may
+    occur. RPG creates combinations of conserved substitutions on selected amino acids that fall within the specified
+    range. Then, five random sequences are chosen from the sample set created. These are then tested and subjected to
+    further analysis. Thus, our software is a one-of-a-kind approach to automating and exponentially simplifying the
+    process of random conserved mutations.</p>
 
-<div class="row mt-4">
-  <div class="col">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Sydney_Australia/Software">2019 Sydney Australia</a></li>
-      <li><a href="https://2019.igem.org/Team:SMMU-China/Software">2019 SMMU China</a></li>
-      <li><a href="https://2019.igem.org/Team:Grenoble-Alpes/Software">2019 Grenoble Alpes</a></li>
-      <li><a href="https://2020.igem.org/Team:DTU-Denmark/Software">2020 DTU Denmark</a></li>
-      <li><a href="https://2020.igem.org/Team:GunnVistaPingry_US/Software">2020 GunnVistaPingry US</a></li>
-      <li><a href="https://2020.igem.org/Team:Rochester/Software">2020 Rochester</a></li>
-    </ul>
-  </div>
+  <h1>RPG</h1>
+  <blockquote>
+    <p><em><strong><span>Peptide sequence mutator through Alanine Scanning</span></strong></em></p>
+  </blockquote>
+
+  <img src="" alt="[PEP_MOD Image]">
+
+  <h2>About</h2>
+  <blockquote>
+    <p><em><span>For more information, refer to this page on our wiki: </span><strong><a
+            href='https://2022.igem.wiki/mit-mahe/software' target='_blank'
+            class='url'>https://2022.igem.wiki/mit-mahe/software</a></strong></em></p>
+  </blockquote>
+
+  <p><img src="https://static.igem.wiki/teams/4200/wiki/software/cartesianproduct-manimce-v0-16-0-post0.gif"
+      referrerpolicy="no-referrer" alt="GIF animation" style="margin-left: -10%;scale:0.8;">
+    <em><span>Peptide sequence mutations on a sample sequence. Right: The list of all the outputted
+        sequences.</span></em>
+  </p>
+
+  </h2>Description</h2>
+  <p><span>The software mainly comprises of the following modules:</span></p>
+  <ol>
+    <li>
+      <p><strong><span>Alanine Scan ddG values</span></strong>
+        <span>BUDE Alanine scan is employed to obtain ddG values of each residue present in the input.</span>
+      </p>
+    </li>
+    <li>
+      <p><strong><span>Conservative mutations</span></strong></p>
+      <p><span>Conserved mutation is a process in which mutations are made within the same type of residues.</span>
+      </p>
+      <p><em><span>For example</span></em><span>: Hydrophobic residues are replaced by hydrophobic residues. In our
+          case we delved deeper into this by replacing it w.r.t to charge as well.</span></p>
+    </li>
+    <li>
+      <p><strong><span>Random sampler</span></strong>
+        <span>We select certain samples from the huge sequence list recieved as the output to reduce users work
+          load. The selection happening is completely random.</span>
+      </p>
+    </li>
+  </ol>
+
+  <h2><span>Features</span></h2>
+  <ol>
+    <li>
+      <p><strong><span>Command Line Interface (CLI)</span></strong>
+        <span>We can use the software locally on command prompt.</span>
+      </p>
+    </li>
+    <li>
+      <p><strong><span>Integrable modules</span></strong></p>
+      <p><span>While running the software we can include different functions and libraries of python and basically
+          run the software on different python environments.</span></p>
+    </li>
+    <li>
+      <p><strong><span>Mutation lock</span></strong>
+        <span>To prevent the remutation of an already modified residue we put that part of the sequence into a
+          mutation lock.</span>
+      </p>
+    </li>
+    <li>
+      <p><strong><span>Aggrescan</span></strong></p>
+      <p><span>A BASH scipt is been included which takes the output and prepends FASTA headers to each sequence in
+          the text file.</span></p>
+    </li>
+  </ol>
+  <h2><span>Background</span></h2>
+  <p><span>Protein engineering is the process of modifying a protein through substitution, Insertion, or deletion so
+      that it can exhibit certain characteristics and properties that we desire. During the process of designing our
+      peptide, we came across the problem of having a very large sample set of substitutions through trial and
+      error. However, even after this we could not guarantee an increase in affinity as compared to the original
+      peptide as needed in our case. To overcome this problem, we designed this software which will provide all the
+      most probable mutations that increase the binding affinity.</span></p>
+  <p><span>Furthermore, we explored other point mutation softwares for our problem; however, they only took surface
+      information into consideration. We decided to take ddG value of a residue as the parameter for mutation which
+      give an increase in the accuracy of the mutation.</span></p>
+  <h2><span>Available current alternatives</span></h2>
+  <p><span>l=l PhageModifier</span></p>
+  <p><a href='https://2018.igem.org/Team:IISc-Bangalore/Software' target='_blank'
+      class='url'>https://2018.igem.org/Team:IISc-Bangalore/Software</a></p>
+  <h1><span>Installation</span></h1>
+  <h2><span>Linux/Unix</span></h2>
 </div>
 
 {% endblock %}
