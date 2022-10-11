@@ -5,34 +5,58 @@
 
 {% block page_content %}
 
-<div class="row">
-  <div class="col">
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-overview-tab" data-bs-toggle="pill" data-bs-target="#pills-overview"
+      type="button" role="tab" aria-controls="pills-overview" aria-selected="true">Overview</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-engagement-tab" data-bs-toggle="pill" data-bs-target="#pills-engagement"
+      type="button" role="tab" aria-controls="pills-engagement" aria-selected="false">Community Engagement</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-IHP-tab" data-bs-toggle="pill" data-bs-target="#pills-IHP"
+      type="button" role="tab" aria-controls="pills-IHP" aria-selected="false">Integrated Human Practices</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab">
+    [Overview tab here]
+  </div>
+  <div class="tab-pane fade" id="pills-engagement" role="tabpanel" aria-labelledby="pills-engagement-tab">
+    [Engagement tab here]
+  </div>
+  <div class="tab-pane fade" id="pills-IHP" role="tabpanel" aria-labelledby="pills-IHP-tab">
     <div class="row">
       <div class="col">
-        <span class="ihp-circle" style="background: #D8C200;"></span>
-        <p>Academia</p>
-      </div>
-      <div class="col">
-        <span class="ihp-circle" style="background: #FF0000;"></span>
-        <p>Companies</p>
-      </div>
-      <div class="col">
-        <span class="ihp-circle" style="background: #2020F1;"></span>
-        <p>Outreach</p>
-      </div>
-      <div class="col">
-        <span class="ihp-circle" style="background: #429F89;"></span>
-        <p>Doctors</p>
-      </div>
-      <div class="col-3">
-        <span class="ihp-circle" style="background: #002F40;"></span>
-        <p>Entrepreneurs</p>
+        <div class="row">
+          <div class="col">
+            <span class="ihp-circle" style="background: #D8C200;"></span>
+            <p>Academia</p>
+          </div>
+          <div class="col">
+            <span class="ihp-circle" style="background: #FF0000;"></span>
+            <p>Companies</p>
+          </div>
+          <div class="col">
+            <span class="ihp-circle" style="background: #2020F1;"></span>
+            <p>Outreach</p>
+          </div>
+          <div class="col">
+            <span class="ihp-circle" style="background: #429F89;"></span>
+            <p>Doctors</p>
+          </div>
+          <div class="col-3">
+            <span class="ihp-circle" style="background: #002F40;"></span>
+            <p>Entrepreneurs</p>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="row">
+      <img src="https://static.igem.wiki/teams/4200/wiki/human-practices/ihp-timeline.png" alt="IHP Timeline">
+    </div>
   </div>
-</div>
-<div class="row">
-  <img src="https://static.igem.wiki/teams/4200/wiki/human-practices/ihp-timeline.png" alt="IHP Timeline">
 </div>
 
 {% endblock %}
