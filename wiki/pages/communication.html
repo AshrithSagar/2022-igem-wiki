@@ -1,19 +1,30 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Communication{% endblock %}
-{% block lead %}Develop and implement education, science communication, and/or outreach materials related to synthetic biology.{% endblock %}
+{% block lead %}Develop and implement education, science communication, and/or outreach materials related to synthetic
+biology.{% endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Gold Medal Criterion #6: Education & Communication</h4>
-      <p>Develop and implement education, science communication, and/or outreach materials related to synthetic biology.<p>
-      <p>All activities must follow Safety policies for <a href="https://responsibility.igem.org/safety-policies/human-subjects">Human Subjects Research</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
+<ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+  <li class="nav-item col" role="presentation">
+    <button class="nav-link active" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education"
+      type="button" role="tab" aria-controls="pills-education" aria-selected="true">Education</button>
+  </li>
+  <li class="nav-item col" role="presentation">
+    <button class="nav-link" id="pills-communication-tab" data-bs-toggle="pill" data-bs-target="#pills-communication"
+      type="button" role="tab" aria-controls="pills-communication" aria-selected="false">Communication</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">
+    <div class="row mt-4">
+      <img src="https://static.igem.wiki/teams/4200/wiki/communication/interactions-flowchart.png"
+        alt="Our Interactions flowchart">
     </div>
+  </div>
+  <div class="tab-pane fade" id="pills-communication" role="tabpanel" aria-labelledby="pills-communication-tab">
+    [Communication page here]
   </div>
 </div>
 
