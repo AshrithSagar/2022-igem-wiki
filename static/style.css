@@ -178,14 +178,13 @@ body {
 /* --------------------------------------------------------------------------- */
 
 .ihp-circle {
-  width: 250px;
-  height: 250px;
-  border-radius: 500px;
-  font-size: 30px;
-  line-height: 250px;
-  text-align: center;
-  color: #fff;
-  background: #000
+  height: 20px;
+  width: 20px;
+  display: table-cell;
+  border-radius: 50%;
+  background: black;
+  float: left;
+  margin-right: 5px;
 }
 
 /* --------------------------------------------------------------------------- */
