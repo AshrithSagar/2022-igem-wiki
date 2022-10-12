@@ -295,10 +295,14 @@ body {
 
 /* --------------------------------------------------------------------------- */
 
-#exampleModal {
-  width: 80%;
-  margin-left: 100px;
-  margin-right: 100px;
+.modal-dialog {
+  max-width: 75%;
+  align-self: center;
+}
+
+.modal.show {
+  display: flex !important;
+  justify-content: center;
 }
 
 /* --------------------------------------------------------------------------- */
