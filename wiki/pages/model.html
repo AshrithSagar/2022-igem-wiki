@@ -94,32 +94,31 @@ endblock %}
           The reaction mechanism can be considered to be a parallel reaction scheme where MAM7 gets partitioned between
           Fibronectin and our peptide.
           \[
-          \ce{M + F <=>[\ce {K_F}][\ce{K_f}] MF}
+          \<img src="https://static.igem.wiki/teams/4200/wiki/model/model-1.png">
             \]
 
             \[
-            \ce{M + P <=>[\ce {K_P}][\ce{K_p}] MP}
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-2.png">
               \]
         </p>
         <p>
           Equations for the Association and Dissociation constant can be written as follows:
           \[
-          K_F = \frac{[FM]}{[F][M]} = \frac{1}{K_f}
+          <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png">
           \]
           \[
-          K_P = \frac{[PM]}{[P][M]} = \frac{1}{K_p}
+          
           \]
         </p>
         <p>
-          \(K_F,K_P\rightarrow \) Association Constants <br>
-          \(K_f,K_p \rightarrow \) Dissociation Constants
+          \<img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png">
         </p>
       </li>
       <li>
         <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the MAM7-Fibronectin
           complex, MAM7-peptide complex and free MAM7.
           \[
-          \ce{[M_t] = [M] + [MF] + [MP]}
+          <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png">
           \]
         </p>
       </li>
@@ -128,36 +127,28 @@ endblock %}
           We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
           concentration.
           \[
-          \ce{ \rho = \frac{[MF]}{[M_t]}= \frac {K_F [F][M]}{[M]+K_F[F][M]+K_P[P][M]} = \frac {K_F
-          [F]}{1+K_F[F]+K_P[P]}}
-          \]
-          \[
-          \Rightarrow \rho = \ce{\frac {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[P]}{K_p}}}
-          \]
+          <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png">
         </p>
       </li>
       <li>
         <p>
           We defined \(\rho_{in}\) as the interaction ratio in the absence of our peptide.
           \[
-          \rho_{in} = \ce{\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}}
+          <img src="https://static.igem.wiki/teams/4200/wiki/model/model-9.png">
           \]
         </p>
       </li>
       <li>
         <p>
           The below relation was arrived at from the definition of IC50.
-          \[
-          \ce{0.5*\left(\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}\right)=\frac
-          {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[IC_{50}]}{K_p}}}
-          \]
+          <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png">
         </p>
       </li>
       <li>
         <p>
           On simplification, the final equation for IC50 value of our peptide was found.
           \[
-          \ce{[IC_{50}] = K_p * \left( \frac{[F]}{K_f} + 1 \right)}
+          <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png">
           \]
         </p>
       </li>
@@ -169,14 +160,7 @@ endblock %}
       the IC50 concentration. The actual values of the dissociation constants would be found using Isothermal
       Calorimetric analysis.
     </p>
-    <ul>
-      <li>
-        \(K_f = 1.5e^{-15}\)
-      </li>
-      <li>
-        \(K_p = 1.6e^{-11}\)
-      </li>
-    </ul>
+    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png">
   </li>
   <img src= "https://static.igem.wiki/teams/4200/wiki/model/model-ic50-2.png" alt="fn vs IC">
   <i>Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations</i>
