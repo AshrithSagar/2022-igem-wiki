@@ -1,50 +1,189 @@
 {% extends "layout.html" %}
-  
+
 {% block title %}Model{% endblock %}
-{% block lead %}Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.{% endblock %}
+{% block lead %}Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.{%
+endblock %}
 
 {% block page_content %}
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Gold Medal Criterion #3</h4>
-      <p>Use modeling to gain insight into how your project works or should be implemented. Explain your model's assumptions, data, parameters, and results in a way that anyone could understand.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
-    </div>
-    <div class="bd-callout bd-callout-info">
-      <h4>Best Model Special Prize</h4>
-      <p>Models and computer simulations provide a great way to describe the functioning and operation of BioBrick Parts and Devices. Synthetic biology is an engineering discipline and part of engineering is simulation and modeling to determine system behavior before building your design. Designing and simulating can be iterated many times in a computer before moving to the lab. This award is for teams who build a model of their system and use it to inform system design or simulate expected behavior before or in conjunction with experiments in the wetlab.</p>
-      <p>To compete for the Best Model prize, please describe your work on this page and also fill out the description on the <a href="https://competition.igem.org/deliverables/judging-form">judging form</a>.</p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/awards">2022 Awards Page</a> for more information.</p>
-    </div>
-  </div>
-</div>
+<div class="row">
+  <h1>Introduction</h1>
+  [Add content here]
+  <h1>Molecular Dynamic Simulations</h1>
+  <p>
+  <ul>
+    <li>Determining the behaviour of a protein or peptide in response to environmental stresses is eminent in
+      establishing
+      the efficacy of the peptide in a system. Thus, molecular dynamic simulation can help us subject the peptide to
+      different conditions that mimic the natural environment that it may exist in, in silico.
+    </li>
+    <li>
+      Multiple tools can be used to perform MDS, such as GROMACS, CHARMM, AMBER and Desmond. However, MDS requires high
+      computational power. Given our limited resources, we partnered with IISER Pune II, to run molecular dynamic
+      simulations on their supercomputer PARAM. The results were then analysed by us to check for the stability of the
+      peptide in the given environment.</li>
+  </ul>
+  </p>
 
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Overview</h2>
-    <hr>
-    <p>Mathematical models and computer simulations provide a great way to describe the function and operation of Parts and Devices. Synthetic Biology is an engineering discipline, and part of engineering is simulation and modeling to determine the behavior of your design before you build it. Designing and simulating can be iterated many times in a computer before moving to the lab.</p>
-    <p>Please note you can compete for both the Gold Medal criterion #3 and the Best Model prize with this page.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
+  <h3>RMSD</h3>
+  <p>*Fig 1: Root Mean Square Distance (nm) versus Time (ps) from GROMACS*</p>
+  <p>RMSD or root mean squared distance is the numerical representation of the difference between the peptide's initial
+    structure and the structure at a given moment in time. Generally, an RMSD variation of less than \(2\textup{\AA}\)
+    is supposed to be very close and stable.
+    \[ \text{RMSD} = \sqrt{\frac{\sum [m_i(x_i-y_i)^2]}{M}} \]
+  </p>
+
+
+  <p>The RMSD value was seen to increase for the first 50ns, which is a given due to the peptide stabilizing to the
+    given conditions in the system. It was observed that the RMSD values decreased briefly and then stabilized with a
+    fluctuation of approximately \(1\textup{\AA}\), which falls comfortably below the accepted threshold of
+    \(2\textup{\AA}\), indicating that our peptide is very stable in the given environment. It also shows that no
+    conformational changes occur within the first 100 ns of the simulation, which could otherwise hamper its target
+    interaction.</p>
+
+  <h3>RMSF</h3>
+  <p>Fig 2: Root Mean Square Fluctuation (nm) versus Residue from GROMACS</p>
+  <p>RMSF or root mean squared fluctuations is a calculation of individual residue flexibility, or how much a particular
+    residue moves (fluctuates) during a simulation.
+    \[
+    \text{RMSF} = \sqrt{\frac{\sum [m_i(x_i(t_j)-x_{ref})^2]}{T}}
+    \]
+  </p>
+  <p>The residues at the very beginning and end of our peptide show the highest fluctuations and this indicates that
+    they are less stable than the residues with fewer fluctuations. For example, the amino acid residues between 14 to
+    24 are much more stable than the residues from 36 to 40, which correspond to loops in the structure of the peptide.
+  </p>
+  <h3>Radius of Gyration</h3>
+  <p>*Fig 3: Radius of Gyration (nm) versus Time (ps) from GROMACS*</p>
+  <p>The radius of gyration for a given molecule is a measure of the compactness of the molecule or how far apart the
+    mass of the object is distributed around its centre of mass.
+    \[
+    R_g = \sqrt{\frac{\sum [m_i(x_i-x_c)^2]}{M}}
+    \]</p>
+
+  <p>From the resulting plot of the radius of gyration versus time, we can see that the net radius of gyration remains
+    fairly constant and is within the range of \(1\textup{\AA}\). This indicates that the peptide does not fold or
+    unfold
+    over time, thereby contributing to no change in the compactness of the peptide. We can also conclude that the
+    peptide does not undergo any major conformational changes which can result in changes in the folded volume of the
+    protein, and thereby talks about the stability of the peptide.</p>
+  <p>MD Simulations on the MAM7-peptide dock would give a lot more information about the interactions present, the
+    stability of the complex, interaction energies, compactness and the effect of conformational changes on the
+    interaction. Parameters such as RMSF would give crucial information regarding the interacting residues present in
+    the complex. Induced conformational changes upon docking could be analyzed using graphs for RMSD as well as
+    observing the trajectory file. We planned on performing these simulations to analyze the MAM7-peptide interaction
+    but were limited by time and resources.</p>
+
+  <h1>IC50</h1>
+  <p>The optimum dosage values of the peptide is essential for effective prevention of the disease Since both the
+    peptide and fibronectin are in a position to interact with MAM7, we concluded that our peptide would act as a
+    competitive inhibitor against fibronectin. Therefore, our mathematical model describes the relationship between the
+    concentration of peptide required for a given concentration of fibronectin present in the system.</p>
+  <ul>
+    <li>IC50 is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that reduces or
+      inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
+    <li>IC50 values are typically calculated via an IC50 assay using a serial dilution of the drug. Based on the
+      definition of IC50, we arrived at an equation for the IC50 concentration for our antimicrobial peptide</li>
+  </ul>
+  <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
+    reaction mechanism. We derived an equation for the IC50 value of our peptide with the following steps:
+    <ol>
+      <li>
+        <p>
+          The reaction mechanism can be considered to be a parallel reaction scheme where MAM7 gets partitioned between
+          Fibronectin and our peptide.
+          \[
+          \ce{M + F <=>[\ce {K_F}][\ce{K_f}] MF}
+            \]
+
+            \[
+            \ce{M + P <=>[\ce {K_P}][\ce{K_p}] MP}
+              \]
+        </p>
+        <p>
+          Equations for the Association and Dissociation constant can be written as follows:
+          \[
+          K_F = \frac{[FM]}{[F][M]} = \frac{1}{K_f}
+          \]
+          \[
+          K_P = \frac{[PM]}{[P][M]} = \frac{1}{K_p}
+          \]
+        </p>
+        <p>
+          \(K_F,K_P\rightarrow \) Association Constants <br>
+          \(K_f,K_p \rightarrow \) Dissociation Constants
+        </p>
+      </li>
+      <li>
+        <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the MAM7-Fibronectin
+          complex, MAM7-peptide complex and free MAM7.
+          \[
+          \ce{[M_t] = [M] + [MF] + [MP]}
+          \]
+        </p>
+      </li>
+      <li>
+        <p>
+          We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
+          concentration.
+          \[
+          \ce{ \rho = \frac{[MF]}{[M_t]}= \frac {K_F [F][M]}{[M]+K_F[F][M]+K_P[P][M]} = \frac {K_F
+          [F]}{1+K_F[F]+K_P[P]}}
+          \]
+          \[
+          \Rightarrow \rho = \ce{\frac {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[P]}{K_p}}}
+          \]
+        </p>
+      </li>
+      <li>
+        <p>
+          We defined \(\rho_{in}\) as the interaction ratio in the absence of our peptide.
+          \[
+          \rho_{in} = \ce{\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}}
+          \]
+        </p>
+      </li>
+      <li>
+        <p>
+          The below relation was arrived at from the definition of IC50.
+          \[
+          \ce{0.5*\left(\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}\right)=\frac
+          {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[IC_{50}]}{K_p}}}
+          \]
+        </p>
+      </li>
+      <li>
+        <p>
+          On simplification, the final equation for IC50 value of our peptide was found.
+          \[
+          \ce{[IC_{50}] = K_p * \left( \frac{[F]}{K_f} + 1 \right)}
+          \]
+        </p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p>
+      The dissociation constant values substituted here were predicted using PRODIGY, thereby, giving us a prediction of
+      the IC50 concentration. The actual values of the dissociation constants would be found using Isothermal
+      Calorimetric analysis.
+    </p>
     <ul>
-      <li><a href="http://2018.igem.org/Team:GreatBay_China/Model">2018 GreatBay China</a></li>
-      <li><a href="http://2018.igem.org/Team:Leiden/Model">2018 Leiden</a></li>
-      <li><a href="https://2019.igem.org/Team:IISER_Kolkata/Model">2019 IISER Kolkata</a></li>
-      <li><a href="https://2019.igem.org/Team:Exeter/Model">2019 Exeter</a></li>
-      <li><a href="https://2019.igem.org/Team:Mingdao/Model">2019 Mingdao</a></li>
-      <li><a href="https://2020.igem.org/Team:Harvard/Model">2020 Harvard</a></li>
-      <li><a href="https://2020.igem.org/Team:Leiden/Model">2020 Leiden</a></li>
+      <li>
+        \(K_f = 1.5e^{-15}\)
+      </li>
+      <li>
+        \(K_p = 1.6e^{-11}\)
+      </li>
     </ul>
-  </div>
+  </li>
+  <p>Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations</p>
+  <p>As an example</p>
+  <ul>
+    <li>- MW of peptide = 4 kDa = 4 kg/mol</li>
+    <li>- Say [F] = 1 nM</li>
+    <li>- \(IC_{50}\) = 10.67 microM = 42 mg/L</li>
+  </ul>
 </div>
-
-\(\Delta \Delta G = 4\)
 
 {% endblock %}
