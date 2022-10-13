@@ -7,26 +7,20 @@ accessible to our community.{% endblock %}
 {% block page_content %}
 
 <div class="row mt-4">
-  <p>GRASP is a peptide mutator that performs conserved substitutions based on inputs from an alanine scan. This was a
-    crucial step in significantly increasing the scope of possible mutations. Existing softwares in the domain only
-    considers surface-level information, ignoring any conformational changes that may occur. GRASP creates combinations
-    of conserved substitutions on selected amino acids that fall within the specified range. Then, five random sequences
-    are chosen from the sample set created. These are then tested and subjected to further analysis. Thus, our software
-    is a one-of-a-kind approach to automating and exponentially simplifying the process of random conserved mutations.
-  </p>
-
+  <h2>Introduction</h2>
+  <p><b>GRASP</b>- Generating random alanine scanned peptides is a peptide mutator that performs conserved substitutions based on inputs from an alanine scan. This was a crucial step in significantly increasing the scope of possible mutations. Existing softwares in the domain only considers surface-level information, ignoring any conformational changes that may occur. Grasp creates combinations of conserved substitutions on selected amino acids that fall within the specified range. Then, five random sequences are chosen from the sample set created. These are then tested and subjected to further analysis. Thus, our software is a one-of-a-kind approach to automating and exponentially simplifying the process of random conserved mutations. This process can be employed to potentially increase the affinity of the peptide to its interacting ligands. </p>
   <h1>GRASP</h1>
   <blockquote>
     <p><em><strong><span>Peptide sequence mutator through Alanine Scanning</span></strong></em></p>
   </blockquote>
 
-  <h2>About</h2>
+  <h3>About</h3>
   <blockquote>
-    <p><em><span>For more information, refer to this page on our wiki: </span><strong><a
-            href='https://2022.igem.wiki/mit-mahe/software' target='_blank'
+    <p><em><span>For more information, refer to this page on our wiki: </span><strong> <a
+            href="https://2022.igem.wiki/mit-mahe/engineering" target='_blank'
             class='url'>https://2022.igem.wiki/mit-mahe/software</a></strong></em></p>
   </blockquote>
-
+ 
   <p><img src="https://static.igem.wiki/teams/4200/wiki/software/cartesianproduct-manimce-v0-16-0-post0.gif"
       referrerpolicy="no-referrer" alt="GIF animation" style="width: 100%;">
     <br>
@@ -34,12 +28,12 @@ accessible to our community.{% endblock %}
         sequences.</span></em>
   </p>
 
-  <h2>Description</h2>
+  <h3>Description</h3>
   <p><span>The software mainly comprises of the following modules:</span></p>
   <ol>
     <li>
-      <p><strong><span>Alanine Scan ddG values</span></strong>
-        <span>BUDE Alanine scan is employed to obtain ddG values of each residue present in the input.</span>
+      <p><strong><span>Alanine Scan  \( \Delta \Delta G \) values</span></strong>
+        <span>BUDE Alanine scan is employed to obtain  \( \Delta \Delta G \) values of each residue present in the input.</span>
       </p>
     </li>
     <li>
@@ -57,7 +51,7 @@ accessible to our community.{% endblock %}
     </li>
   </ol>
 
-  <h2><span>Features</span></h2>
+  <h3><span>Features</span></h3>
   <ol>
     <li>
       <p><strong><span>Command Line Interface (CLI)</span></strong>
@@ -81,7 +75,7 @@ accessible to our community.{% endblock %}
           the text file.</span></p>
     </li>
   </ol>
-  <h2><span>Background</span></h2>
+  <h3><span>Background</span></h3>
   <p><span>Protein engineering is the process of modifying a protein through substitution, Insertion, or deletion so
       that it can exhibit certain characteristics and properties that we desire. During the process of designing our
       peptide, we came across the problem of having a very large sample set of substitutions through trial and
@@ -89,35 +83,35 @@ accessible to our community.{% endblock %}
       peptide as needed in our case. To overcome this problem, we designed this software which will provide all the
       most probable mutations that increase the binding affinity.</span></p>
   <p><span>Furthermore, we explored other point mutation softwares for our problem; however, they only took surface
-      information into consideration. We decided to take ddG value of a residue as the parameter for mutation which
+      information into consideration. We decided to take  \( \Delta \Delta G \) value of a residue as the parameter for mutation which
       give an increase in the accuracy of the mutation.</span></p>
 
-  <h1>Method</h1>
+  <h3>Method</h3>
 
-  <h2>ddG threshold</h2>
+  <h4> \( \Delta \Delta G \) threshold</h4>
   <p>
-    We take ddG value of each residue derived from BUDE alanine scan as a parameter to do mutations. To make these
-    mutations we set a threshold ddG range for each residue (in our case, 0 to 1). Only if the ddG value lies between
+    We take  \( \Delta \Delta G \)value of each residue derived from BUDE alanine scan as a parameter to do mutations. To make these
+    mutations we set a threshold  \( \Delta \Delta G \)range for each residue (in our case, 0 to 1). Only if the  \( \Delta \Delta G \) value lies between
     this
     range will it be mutated.
   </p>
 
-  <h2>
+  <h3>
     Significance of Cartesian product
-  </h2>
+  </h3>
   <p>
-    Cartesian Product: The Cartesian Product of sets $A$ and $B$ is defined as the set of all ordered pairs $(x, y)$
+    Cartesian Product: The Cartesian Product of sets \(A\) and \(B\) is defined as the set of all ordered pairs \((x, y)\)
     such
-    that $x$ belongs to $A$ and $y$ belongs to $B$.
-    For example, if $A = {1, 2}$ and $B = {3, 4, 5}$, then the Cartesian Product of A and B is ${(1, 3), (1, 4), (1, 5),
-    (2, 3), (2, 4), (2, 5)}$.
+    that \(x\) belongs to \(A\)and \(y\) belongs to \(B\)
+    For example, if \(A = {1, 2}\) and \(B = {3, 4, 5}\), then the Cartesian Product of A and B is \({(1, 3), (1, 4), (1, 5),
+    (2, 3), (2, 4), (2, 5)}\).
     Originally, during a test run, the computational time that the software took for making 3 mutation positions was 2
     hours 20 mins.
     After incorporating the cartesian product into the mutator, the time reduced to 11 mutation positions in 10 seconds.
   </p>
-  <h2>
+  <h3>
     Algorithm
-  </h2>
+  </h3>
   <p>
     We first create a Mutater object, which support the following three formats:
   </p>
