@@ -35,7 +35,7 @@
 
   <i></i>
   <p>RMSD or root mean squared distance is the numerical representation of the difference between the peptide's initial
-    structure and the structure at a given moment in time. Generally, an RMSD variation of less than \(2\textup{\AA}\)
+    structure and the structure at a given moment in time. Generally, an RMSD variation of less than \[2\textup{\AA}\]
     is supposed to be very close and stable.
     \[ \text{RMSD} = \sqrt{\frac{\sum [m_i(x_i-y_i)^2]}{M}} \]
   </p>
@@ -43,9 +43,9 @@
 
   <p>The RMSD value was seen to increase for the first 50ns, which is a given due to the peptide stabilizing to the
     given conditions in the system. It was observed that the RMSD values decreased briefly and then stabilized with a
-    fluctuation of approximately \(1\textup{\AA}\), which falls comfortably below the accepted threshold of
-    \(2\textup{\AA}\), indicating that our peptide is very stable in the given environment. It also shows that no
-    conformational changes occur within the first 100 ns of the simulation, which could otherwise hamper its target
+    fluctuation of approximately \[1\textup{\AA}\], which falls comfortably below the accepted threshold of
+    \(2\textup{\AA}\), indicating that our peptide is very stable in the given environment. It also shows that <b>no
+    conformational changes</b> occur within the first 100 ns of the simulation, which could otherwise hamper its target
     interaction.</p>
 
   <h3>RMSF</h3>
@@ -60,7 +60,7 @@
   <p>RMSF or root mean squared fluctuations is a calculation of individual residue flexibility, or how much a particular
     residue moves (fluctuates) during a simulation.
     \[
-    \text{RMSF} = \sqrt{\frac{\sum [m_i(x_i(t_j)-x_{ref})^2]}{T}}
+    \text{RMSF} = {\sqrt{\frac{\sum [m_i(x_i(t_j)-x_{ref})^2]}{T}}}
     \]
   </p>
   <p>The residues at the very beginning and end of our peptide show the highest fluctuations and this indicates that
@@ -81,15 +81,15 @@
   <p>The radius of gyration for a given molecule is a measure of the compactness of the molecule or how far apart the
     mass of the object is distributed around its centre of mass.
     \[
-    R_g = \sqrt{\frac{\sum [m_i(x_i-x_c)^2]}{M}}
+    R_g = \sqrt{\frac{\sum [m_i(x_i-x_c)^2]}{M}}}
     \]</p>
 
   <p>From the resulting plot of the radius of gyration versus time, we can see that the net radius of gyration remains
-    fairly constant and is within the range of \(1\textup{\AA}\). This indicates that the peptide does not fold or
+    fairly constant and is <b>within the range of \(1\textup{\AA}\)</b>. This indicates that the peptide does not fold or
     unfold
     over time, thereby contributing to no change in the compactness of the peptide. We can also conclude that the
     peptide does not undergo any major conformational changes which can result in changes in the folded volume of the
-    protein, and thereby talks about the stability of the peptide.</p>
+    protein, and thereby talks about the <b>stability of the peptide</b>.</p>
   <p>MD Simulations on the MAM7-peptide dock would give a lot more information about the interactions present, the
     stability of the complex, interaction energies, compactness and the effect of conformational changes on the
     interaction. Parameters such as RMSF would give crucial information regarding the interacting residues present in
@@ -98,18 +98,18 @@
     but were limited by time and resources.</p>
 
   <h1>IC_{50}</h1>
-  <p>The optimum dosage values of the peptide is essential for effective prevention of the disease Since both the
+  <p>The <b>optimum dosage values</b> of the peptide is essential for effective prevention of the disease Since both the
     peptide and fibronectin are in a position to interact with MAM7, we concluded that our peptide would act as a
-    competitive inhibitor against fibronectin. Therefore, our mathematical model describes the relationship between the
+    <b>competitive inhibitor</b> against fibronectin. Therefore, our mathematical model describes the relationship between the
     concentration of peptide required for a given concentration of fibronectin present in the system.</p>
   <ul>
-    <li>IC_{50} is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that reduces or
+    <li\(IC_{50}\) is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that reduces or
       inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
-    <li>IC_{50} values are typically calculated via an IC_{50} assay using a serial dilution of the drug. Based on the
-      definition of IC_{50}, we arrived at an equation for the IC_{50} concentration for our antimicrobial peptide</li>
+    <li>\(IC_{50}\) values are typically calculated via an \(IC_{50}\) assay using a serial dilution of the drug. Based on the
+      definition of \(IC_{50}\), we arrived at an equation for the \(IC_{50}\) concentration for our antimicrobial peptide</li>
   
   <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
-    reaction mechanism. We derived an equation for the IC_{50} value of our peptide with the following steps:
+    reaction mechanism. We derived an equation for the \(IC_{50}\) value of our peptide with the following steps:
   
     <ol>
       <li>
@@ -163,13 +163,13 @@
       </li>
       <li>
         <p>
-          The below relation was arrived at from the definition of IC_{50}.
+          The below relation was arrived at from the definition of \(IC_{50}\).
           <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png">
         </p>
       </li>
       <li>
         <p>
-          On simplification, the final equation for IC_{50} value of our peptide was found.
+          On simplification, the final equation for \(IC_{50}\) value of our peptide was found.
           \[
           <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png">
           \]
@@ -179,8 +179,8 @@
   </li>
   <li>
     <p>
-      The dissociation constant values substituted here were predicted using PRODIGY, thereby, giving us a prediction of
-      the IC_{50} concentration. The actual values of the dissociation constants would be found using Isothermal
+      The dissociation constant values substituted here were predicted using <b>PRODIGY</b>, thereby, giving us a prediction of
+      the \(IC_{50}\) concentration. The actual values of the dissociation constants would be found using Isothermal
       Calorimetric analysis.
     </p>
     <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png">
