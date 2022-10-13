@@ -169,6 +169,9 @@ b {
   background-color: #77caac;
   color: black;
   border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .page-tabs:active {
