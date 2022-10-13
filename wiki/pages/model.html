@@ -9,18 +9,16 @@ endblock %}
 <div class="row">
   <h1>Molecular Dynamic Simulations</h1>
   <p>
-  <ul>
-    <li>Determining the behaviour of a protein or peptide in response to environmental stresses is eminent in
+    Determining the behaviour of a protein or peptide in response to environmental stresses is eminent in
       establishing
       the efficacy of the peptide in a system. Thus, molecular dynamic simulation can help us subject the peptide to
       different conditions that mimic the natural environment that it may exist in, in silico.
-    </li>
-    <li>
+  </p>
+  <p> 
       Multiple tools can be used to perform MDS, such as GROMACS, CHARMM, AMBER and Desmond. However, MDS requires high
       computational power. Given our limited resources, we partnered with IISER Pune II, to run molecular dynamic
       simulations on their supercomputer PARAM. The results were then analysed by us to check for the stability of the
-      peptide in the given environment.</li>
-  </ul>
+      peptide in the given environment.
   </p>
 
   <h3>RMSD</h3>
@@ -75,19 +73,20 @@ endblock %}
     observing the trajectory file. We planned on performing these simulations to analyze the MAM7-peptide interaction
     but were limited by time and resources.</p>
 
-  <h1>IC50</h1>
+  <h1>IC_{50}</h1>
   <p>The optimum dosage values of the peptide is essential for effective prevention of the disease Since both the
     peptide and fibronectin are in a position to interact with MAM7, we concluded that our peptide would act as a
     competitive inhibitor against fibronectin. Therefore, our mathematical model describes the relationship between the
     concentration of peptide required for a given concentration of fibronectin present in the system.</p>
   <ul>
-    <li>IC50 is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that reduces or
+    <li>IC_{50} is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that reduces or
       inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
-    <li>IC50 values are typically calculated via an IC50 assay using a serial dilution of the drug. Based on the
-      definition of IC50, we arrived at an equation for the IC50 concentration for our antimicrobial peptide</li>
-  </ul>
+    <li>IC_{50} values are typically calculated via an IC_{50} assay using a serial dilution of the drug. Based on the
+      definition of IC_{50}, we arrived at an equation for the IC_{50} concentration for our antimicrobial peptide</li>
+  
   <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
-    reaction mechanism. We derived an equation for the IC50 value of our peptide with the following steps:
+    reaction mechanism. We derived an equation for the IC_{50} value of our peptide with the following steps:
+  
     <ol>
       <li>
         <p>
@@ -140,13 +139,13 @@ endblock %}
       </li>
       <li>
         <p>
-          The below relation was arrived at from the definition of IC50.
+          The below relation was arrived at from the definition of IC_{50}.
           <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png">
         </p>
       </li>
       <li>
         <p>
-          On simplification, the final equation for IC50 value of our peptide was found.
+          On simplification, the final equation for IC_{50} value of our peptide was found.
           \[
           <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png">
           \]
@@ -157,19 +156,20 @@ endblock %}
   <li>
     <p>
       The dissociation constant values substituted here were predicted using PRODIGY, thereby, giving us a prediction of
-      the IC50 concentration. The actual values of the dissociation constants would be found using Isothermal
+      the IC_{50} concentration. The actual values of the dissociation constants would be found using Isothermal
       Calorimetric analysis.
     </p>
     <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png">
   </li>
+    </ul>
   <img src= "https://static.igem.wiki/teams/4200/wiki/model/model-ic50-2.png" alt="fn vs IC">
   <i>Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations</i>
-  <p>As an example</p>
+  <p>As an example,
   <ul>
-    <li>- MW of peptide = 4 kDa = 4 kg/mol</li>
-    <li>- Say [F] = 1 nM</li>
-    <li>- \(IC_{50}\) = 10.67 microM = 42 mg/L</li>
-  </ul>
+    <li>MW of peptide = 4 kDa = 4 kg/mol</li>
+    <li>Say [F] = 1 nM</li>
+    <li>\(IC_{50}\) = 10.67 microM = 42 mg/L</li>
+  </ul></p>
 </div>
 
 {% endblock %}
