@@ -32,7 +32,7 @@ engineering design cycle.{% endblock %}
   <p>Each of the five repeats of the type I module present in Fibronectin was considered a particular peptide, and each
     of these peptides was separately docked with MAM7 to test its binding energies using ClusPro [1]-[4]. Amber, an
     energy minimisation tool, was employed for each of these interactions. It was concluded that peptides numbered three
-    and five derived from modules three and five of fibronectin, respectively, docked with the MCE3 of MAM7, giving the
+    and five derived from modules three and five of Fibronectin, respectively, docked with the MCE3 of MAM7, giving the
     highest docking scores.
   </p>
   <p>
@@ -50,37 +50,37 @@ engineering design cycle.{% endblock %}
     respective Gibbs free energies to determine the extent of contribution of every amino acid in the docking process
     [10]. Five such mutations were recognised in the wild type. This was followed by improving the interactions by
     substituting corresponding amino acids. These replacements were made based on the study [11], but each of them had a
-    plethora of possibilities. For example, methionine (present at the 29th position) could be replaced by Glutamic
+    plethora of possibilities. For example, Methionine (present at the 29th position) could be replaced by Glutamic
     acid, Aspartic acid, Phenylalanine, Tyrosine, Tryptophan, Histidine or Leucine.
   </p>
   <p>Therefore, the docked structure was subjected to mutation Cutoff Scanning Matrix (mCSM) [12], which helped us
     analyse which mutations were truly beneficial. However, mCSM does not account for conformational changes that these
     mutations may induce, so each modified structure was subjected to an alanine scan to verify the substitutions.
   </p>
-  <p>With newly learnt information, the peptide was being subjected to new changes. Hence, it was necessary to predict
+  <p>With newly learnt information, the peptide was subjected to new changes. Hence, it was necessary to predict
     the structure of the peptide and dock it with MAM7 at every stage. This gave us twelve variants of the peptide with
     different combinations of the various substitutions that could be made. These were then visualised on Schrodinger
     Maestro and further analysed using Prodigy to identify the strongly interacting peptides.
   </p>
   <p>Four of the twelve variants were observed, and the best among these was selected for the next round. The mutations
     performed in the previous iteration introduced new amino acids in the docked structure, opening up an avenue for a
-    new set of substitutions and hence the process was repeated. Subsequently, a new set of variants was obtained (16
-    variants). This was further subjected to docking and analysis to select the next best peptide. At this stage, to
-    prevent the peptides from mutually interacting and consequently decreasing their efficiency, we performed AGGRESCAN
+    new set of substitutions and hence the process was repeated. Subsequently, a new set of variants were obtained (16
+    variants). These were further subjected to docking and analysis to select the next best peptide. At this stage, to
+    prevent the peptides from mutually interacting and consequently decreasing their interaction efficiency with MAM7, we performed AGGRESCAN
     [13] on the four peptides obtained from the last iteration, to highlight the hotspots of aggregation. One such
-    hotspot involving eight amino acids was observed and was rectified by substituting amino acid (C34) with Asparagine
+    hotspot involving eight amino acids was observed and was rectified by substituting amino acid Cytosine(C34) with Asparagine
     in every peptide. After this process, our very own software—GRASP, helped us increase the scope of possible
     mutations.
   </p>
   <p>Two rounds of running the peptide through the software gave us the final one. The structure of the peptide was then
     predicted and docked with MAM7, and run through Prodigy [14],[15] to compare their respective binding affinities and
-    Kd values. These values are tabulated below:
+    K<sub>d</sub> values. These values are tabulated below:
   </p>
 
   <img src="https://static.igem.wiki/teams/4200/wiki/engineeringsuccess/ddg-2.png" alt="Table file with peptide variant vs energy">
 
 
-  <h1>References:</h1>
+  <b>References:</b>
   <ol>
     <li> I. T. Desta, K. A. Porter, B. Xia, D. Kozakov, and S. Vajda, “Performance and Its Limits in Rigid Body
       Protein-Protein Docking,” Structure, vol. 28, no. 9, pp. 1071-1081.e3, Sep. 2020, doi: 10.1016/j.str.2020.06.006.
