@@ -84,7 +84,7 @@ img {
 /* Gradient */
 
 header {
-  background: linear-gradient(-45deg, #1B2A49, #465881, #00909E, #C9D1D3);
+  background: linear-gradient(-45deg, #3a70c0, #465881, #135490);
   animation: gradient 30s ease infinite;
   background-size: 400% 400%;
   height: 90vh;
@@ -265,7 +265,7 @@ body {
 }
 
 .wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  background: url(https://static.igem.wiki/teams/4200/wiki/wiki/header/wave.svg) repeat-x;
   position: absolute;
   top: -198px;
   width: 6400px;
