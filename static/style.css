@@ -2,6 +2,7 @@
 
 body {
   padding-top: 56px;
+  background-color: #e7f5eb;
 }
 
 .logo-home {
@@ -88,8 +89,8 @@ img {
 /* Gradient */
 
 header {
-  background: linear-gradient(-45deg, #3a70c0, #465881, #135490);
-  animation: gradient 30s ease infinite;
+  background: radial-gradient(circle, #e7f5eb, #3f788a);
+  animation: gradient 10s ease infinite;
   background-size: 400% 400%;
   height: 90vh;
 }
