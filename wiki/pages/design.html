@@ -18,27 +18,55 @@
 
 <p>This process was iterative in nature, involving multiple cycles of design, build, test, and learn, as described on the <a href=``https://2022.igem.wiki/mit-mahe/engineering">engineering success page</a>.</p> 
 
-<img src="https://static.igem.wiki/teams/4200/wiki/mam7-fn-docked.png">
-<i>Fig 1: Fibronectin docked with MAM7 (visualised on PyMol [3]</i>
-<img src="https://static.igem.wiki/teams/4200/wiki/multiplepeptide5.png">
-<i>Fig 2: Peptide docked with MAM7((visualised on PyMol [3]</i> 
+<figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/mam7-fn-docked.png" class="figure-img img-fluid rounded" alt="Fibronectin docked with MAM7">
+    <figcaption class="figure-caption text-center">
+      Fig 1: Fibronectin docked with MAM7 (visualised on PyMol [3]  
+    </figcaption>
+</figure>
+
+
+<figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/multiplepeptide5.png" class="figure-img img-fluid rounded" alt="Peptide docked with MAM7">
+    <figcaption class="figure-caption text-center">
+      Fig 2: Peptide docked with MAM7((visualised on PyMol [3]  
+    </figcaption>
+</figure>
+    
     <h2>Plasmid design</h2>
-<p>We planned to carry out the MAM7(<a href=”https://parts.igem.org/Part:BBa_K4200000”>BBa_K4200000) expression using <i> Escherichia coli</i> as our chassis with pET-22b(+) as the vector. For peptide production, we plan on using the same vector system and chassis. However small peptides, when expressed using bacterial systems, are unstable <i>in vivo</i> due to their susceptibility to proteolytic degradation. To overcome the issue, the peptide encoding gene is fused with a gene encoding a carrier protein. For our experiments we decided to use the split intein derived from <i>Synechocystis</i>sp GyrB protein as the carrier protein.</p>
+<p>We planned to carry out the MAM7(<a href=”https://parts.igem.org/Part:BBa_K4200000”>BBa_K4200000</a>) expression using <i> Escherichia coli</i> as our chassis with pET-22b(+) as the vector. For peptide production, we plan on using the same vector system and chassis. However small peptides, when expressed using bacterial systems, are unstable <i>in vivo</i> due to their susceptibility to proteolytic degradation. To overcome the issue, the peptide encoding gene is fused with a gene encoding a carrier protein. For our experiments we decided to use the split intein derived from <i>Synechocystis</i>sp GyrB protein as the carrier protein.</p>
 <h3>What is an Intein, and why are we using it?</h3>
 <p>Inteins, short for INTervening protEINS, are in-frame interceding polypeptides that are capable of post-translationally excising themselves from the precursor protein through a protein splicing mechanism that is similar to the mechanism of mRNA splicing [5]. After the intein excision, its two flanking regions join together to form the functional protein or peptide sequence. Inteins undergo conditional protein splicing; that is, the splicing reaction is induced either by introducing small molecules like thiols, proteases, ligands, or by altering reaction conditions like temperature and pH [5]. They can be utilised to chemically alter almost any polypeptide backbone [6]. The reason we decided to choose inteins as part of the purification of our peptide is because they not only make the purification easy since they excise themselves from the peptide but they also help stabilize the peptide.</p>
  
 <p>Inteins can be classified into four main categories, full-length inteins, mini-inteins, split inteins, and alanine inteins [5]. For the synthesis of our peptide, we will be using split inteins. 
 Split inteins are composed of two brief intein segments, the N-terminal intein (I<sub>N</sub>) and the C-terminal intein (I<sub>C</sub>), which are both in charge of cleaving the respective terminals. Hence, split inteins help in the splicing of proteins at that specific terminal.</p>
-    <img src="https://static.igem.wiki/teams/4200/wiki/design/splitintein.png" alt="Split intein">
+
+ <figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/design/splitintein.png" class="figure-img img-fluid rounded" alt="Split intein">
+    <figcaption class="figure-caption text-center">
+      Fig 3: Split Intein. Source:[6]  
+    </figcaption>
+</figure>   
     
 <p>We have built our gene circuit in a way where the split intein and the 6X His-tag connected to our peptide at the N terminal. And the Ssp Gyr B split intein we choose will post-translationally self-cleave of our antimicrobial peptide at the N terminal.</p>
-<h3> Plasmid design for expressing Fusion peptide</h3>
-<p>We planned on assembling the parts encoding the peptide(<a href=”https://parts.igem.org/Part:BBa_K4200313”> BBa_K4200313</a>) and intein(< a href=”https://parts.igem.org/Part:BBa_K4200780” BBa_K4200780</a>) using scarless Gibson assembly into the vector pET-22b(+). The final plasmid design and the corresponding gene circuit for the fusion peptide is represented as belows:</p>
-    <img src="https://static.igem.wiki/teams/4200/wiki/design/peptide-production-plasmid.png" alt="Plasmid 1">
-    <i>Fig 3: Peptide production vector system Source: [4].</i>
-    <img src="https://static.igem.wiki/teams/4200/wiki/design/genecircuit.png" alt="gene circuit">
 
-    
+<h3> Plasmid design for expressing fusion peptide</h3>
+<p>We planned on assembling the parts encoding the peptide(<a href=”https://parts.igem.org/Part:BBa_K4200313”> BBa_K4200313</a>) and intein(<a href="https://parts.igem.org/Part:BBa_K4200780"> BBa_K4200780</a>) using scarless Gibson assembly into the vector pET-22b(+). The final plasmid design and the corresponding gene circuit for the fusion peptide is represented as belows:</p>
+
+ <figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/design/peptide-production-plasmid.png" class="figure-img img-fluid rounded" alt="Peptide production vector system">
+    <figcaption class="figure-caption text-center">
+      Fig 4: Peptide production vector system. Source:[4]  
+    </figcaption>
+</figure>
+
+ <figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/design/genecircuit.png" class="figure-img img-fluid rounded" alt="Plasmid gene circuit">
+    <figcaption class="figure-caption text-center">
+      Fig 5: Plasmid gene circuit.  
+    </figcaption>
+</figure>
+
     <h2>The Delivery System</h2>
     <p>Given the susceptibility of our peptide to degradation and other factors, it was necessary to develop a sturdy delivery mechanism for the pisciculture set-up. From our literature review and human practices visits, we conferred on the encapsulation of our antimicrobial peptide using chitosan nanoparticles due to its promising properties.</p>
     <p>Once produced in-vitro, our peptide would be subjected to encapsulation for delivery. We would be checking the Zeta potential of our produced nanoparticles. Zeta potential is essential for checking the stability of a nanoparticle in a given suspension. The final plan for in-field testing is to subject the inlet tank with a nanoparticle (containing peptide) loaded mesh such that as the water flows, the peptide is subsequently released.</p>
