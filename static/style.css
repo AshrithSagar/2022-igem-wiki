@@ -270,6 +270,14 @@ body {
   justify-content: center;
 }
 
+.wet-lab-result {
+  color: green;
+}
+
+.wet-lab-troubleshoot {
+  color: blue
+}
+
 /* --------------------------------------------------------------------------- */
 /* Header for all pages */
 
