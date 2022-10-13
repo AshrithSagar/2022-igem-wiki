@@ -118,8 +118,26 @@ header {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("https://static.igem.wiki/teams/4200/wiki/wiki/fonts/montserrat-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold-WebFont";
+  src: url("https://static.igem.wiki/teams/4200/wiki/wiki/fonts/montserrat-bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   font-family: "Montserrat-Regular";
+}
+
+b {
+  font-family: "Montserrat-Bold";
 }
 
 /* --------------------------------------------------------------------------- */
@@ -254,11 +272,6 @@ body {
 
 #toc {
   margin-right: 20px;
-}
-
-.page_container {
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 /* --------------------------------------------------------------------------- */
