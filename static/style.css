@@ -1,72 +1,5 @@
 /* --------------------------------------------------------------------------- */
-/* Deep blue waves */
 
-::selection {
-  background-color: salmon;
-  color: white;
-}
-
-.parallax>use {
-  animation: move-forever 12s linear infinite;
-}
-
-.parallax>use:nth-child(1) {
-  animation-delay: -2s;
-}
-
-.parallax>use:nth-child(2) {
-  animation-delay: -2s;
-  animation-duration: 5s;
-}
-
-.parallax>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 3s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-
-.editorial {
-  display: block;
-  width: 100%;
-  height: 10em;
-  max-height: 100vh;
-  margin: 0;
-}
-
-.content {
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  background-color: #2d55aa;
-  text-align: center;
-  min-height: 75vh;
-  margin: -0.1em 0 0 0;
-  padding: 1em;
-  color: #eee;
-  font-size: 2em;
-  font-weight: 300;
-}
-
-/*prevent many large-by-comparison ripples by shrinking the height*/
-@media (max-width: 50em) {
-  .content h1 {
-    font-size: 12vmax;
-  }
-
-  .editorial {
-    height: 17vw;
-  }
-}
-
-/* --------------------------------------------------------------------------- */
 body {
   padding-top: 56px;
 }
@@ -141,12 +74,20 @@ footer a:hover {
 }
 
 /* --------------------------------------------------------------------------- */
+/* General */
+
+img {
+  max-width: 90%;
+}
+
+/* --------------------------------------------------------------------------- */
 /* Gradient */
 
 header {
   background: linear-gradient(-45deg, #1B2A49, #465881, #00909E, #C9D1D3);
   animation: gradient 30s ease infinite;
   background-size: 400% 400%;
+  height: 90vh;
 }
 
 @keyframes gradient {
@@ -164,6 +105,8 @@ header {
 }
 
 /* --------------------------------------------------------------------------- */
+/* Fonts */
+
 @font-face {
   font-family: "Montserrat-Regular";
   src: url("https://static.igem.wiki/teams/4200/wiki/wiki/fonts/montserrat-regular.woff2") format("woff2");
@@ -176,6 +119,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------- */
+/* IHP Page */
 
 .ihp-circle {
   height: 20px;
@@ -192,6 +136,7 @@ body {
 .wet-lab-timeline-content {}
 
 /* --------------------------------------------------------------------------- */
+/* Teams page */
 
 .team-cards-section {
   align-items: flex-start;
@@ -283,6 +228,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------- */
+/* TOC elements */
 
 #toc {
   margin-right: 20px;
@@ -294,6 +240,7 @@ body {
 }
 
 /* --------------------------------------------------------------------------- */
+/* Modals for IHP, Experimentation */
 
 .modal-dialog {
   max-width: 75%;
@@ -306,9 +253,77 @@ body {
 }
 
 /* --------------------------------------------------------------------------- */
+/* Header for all pages */
 
-img {
-  max-width: 90%;
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@-webkit-keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
 }
 
 /* --------------------------------------------------------------------------- */
