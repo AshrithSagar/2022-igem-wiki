@@ -135,6 +135,24 @@ body {
 
 .wet-lab-timeline-content {}
 
+.page-tabs {
+  background-color: #77caac;
+  color: black;
+  border-radius: 5px;
+}
+
+.page-tabs:active {
+  background-color: #06522c;
+  color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.page-tabs:hover {
+  background-color: #67afc7;
+  color: white;
+}
+
 /* --------------------------------------------------------------------------- */
 /* Teams page */
 
