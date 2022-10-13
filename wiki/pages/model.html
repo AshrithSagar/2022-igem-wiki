@@ -20,10 +20,21 @@ endblock %}
       simulations on their supercomputer PARAM. The results were then analysed by us to check for the stability of the
       peptide in the given environment.
   </p>
+  <p> 
+      We discovered that a pH of 7.5 and a temperature of 298K are the typical characteristics of an aquaculture system for consumable fish through our human practices and research. These parameters were applied to a cubic system and an OPLS-AA/M force field was applied across the system to analyse the dynamic changes in the conformation of the peptide.
+  </p>
 
   <h3>RMSD</h3>
-  <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmds.png" alt="rmsd graph">
-  <i>Fig 1: Root Mean Square Distance (nm) versus Time (ps) from GROMACS</i>
+  
+  <figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmds.png" class="figure-img img-fluid rounded" alt="RMS v/s time">
+    <figcaption class="figure-caption text-center">
+        Fig 1: Root Mean Square Distance (nm) versus Time (ps) from GROMACS
+    </figcaption>
+</figure>
+  
+
+  <i></i>
   <p>RMSD or root mean squared distance is the numerical representation of the difference between the peptide's initial
     structure and the structure at a given moment in time. Generally, an RMSD variation of less than \(2\textup{\AA}\)
     is supposed to be very close and stable.
@@ -39,8 +50,14 @@ endblock %}
     interaction.</p>
 
   <h3>RMSF</h3>
-  <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmsf.jpg" alt="rmsf graph">
-  <i>Fig 2: Root Mean Square Fluctuation (nm) versus Residue from GROMACS</i>
+
+   <figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmsf.jpg" class="figure-img img-fluid rounded" alt="RMS v/s residue">
+    <figcaption class="figure-caption text-center">
+        Fig 2: Root Mean Square Fluctuation (nm) versus Residue from GROMACS
+    </figcaption>
+</figure>
+
   <p>RMSF or root mean squared fluctuations is a calculation of individual residue flexibility, or how much a particular
     residue moves (fluctuates) during a simulation.
     \[
@@ -52,8 +69,16 @@ endblock %}
     24 are much more stable than the residues from 36 to 40, which correspond to loops in the structure of the peptide.
   </p>
   <h3>Radius of Gyration</h3>
-  <img src= "https://static.igem.wiki/teams/4200/wiki/model/model-rg.jpg" alt= "rg graph">
-  <i>Fig 3: Radius of Gyration (nm) versus Time (ps) from GROMACS</i>
+  
+  
+<figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rg.jpg" class="figure-img img-fluid rounded" alt="Radius of gyration v/s time">
+    <figcaption class="figure-caption text-center">
+        Fig 3: Radius of Gyration (nm) versus Time (ps) from GROMACS
+    </figcaption>
+</figure>
+  
+
   <p>The radius of gyration for a given molecule is a measure of the compactness of the molecule or how far apart the
     mass of the object is distributed around its centre of mass.
     \[
@@ -162,8 +187,14 @@ endblock %}
     <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png">
   </li>
     </ul>
-  <img src= "https://static.igem.wiki/teams/4200/wiki/model/model-ic50-2.png" alt="fn vs IC">
-  <i>Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations</i>
+  
+  <figure class="figure">
+    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-ic50-2.png" class="figure-img img-fluid rounded" alt="fibronectin concentrations">
+    <figcaption class="figure-caption text-center">
+        Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations
+    </figcaption>
+</figure>
+  
   <p>As an example,
   <ul>
     <li>MW of peptide = 4 kDa = 4 kg/mol</li>
