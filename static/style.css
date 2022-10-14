@@ -100,12 +100,10 @@ body {
   display: none;
 }
 
-.page-header-text {
-  margin-left: 10vw;
-}
-
+.page-header-text,
 .page-header-text-lead {
-  margin-left: 20vw;
+  margin-left: 10vw;
+  color: black;
 }
 
 /* --------------------------------------------------------------------------- */
