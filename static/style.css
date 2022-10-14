@@ -79,6 +79,14 @@ footer a:hover {
 
 img {
   max-width: 90%;
+  margin: auto;
+  display: block;
+  text-align: center;
+  justify-content: center;
+}
+
+body {
+  font-size: 1.3rem;
 }
 
 .footer {
