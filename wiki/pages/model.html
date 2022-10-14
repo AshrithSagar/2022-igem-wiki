@@ -105,7 +105,7 @@
     observing the trajectory file. We planned on performing these simulations to analyze the MAM7-peptide interaction
     but were limited by time and resources.</p>
 
-  <h2>\(IC_{50}\)</h2>
+  <h1>IC<sub>50</sub></h1>
   <p>The <b>optimum dosage values</b> of the peptide is essential for effective prevention of the disease Since both the
     peptide and fibronectin are in a position to interact with MAM7, we concluded that our peptide would act as a
     <b>competitive inhibitor</b> against fibronectin. Therefore, our mathematical model describes the relationship
@@ -113,16 +113,16 @@
     concentration of peptide required for a given concentration of fibronectin present in the system.
   </p>
   <ul>
-    <li>\(IC_{50}\) is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that
+    <li>IC<sub>50</sub> is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that
       reduces or
       inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
-    <li>\(IC_{50}\) values are typically calculated via an \(IC_{50}\) assay using a serial dilution of the drug. Based
+    <li>IC<sub>50</sub> values are typically calculated via an IC<sub>50</sub> assay using a serial dilution of the drug. Based
       on the
-      definition of \(IC_{50}\), we arrived at an equation for the \(IC_{50}\) concentration for our antimicrobial
+      definition of IC<sub>50</sub>, we arrived at an equation for the IC<sub>50</sub> concentration for our antimicrobial
       peptide</li>
 
     <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
-      reaction mechanism. We derived an equation for the \(IC_{50}\) value of our peptide with the following steps:
+      reaction mechanism. We derived an equation for the IC<sub>50</sub> value of our peptide with the following steps:
 
       <ol>
         <li>
@@ -130,52 +130,47 @@
             The reaction mechanism can be considered to be a parallel reaction scheme where MAM7 gets partitioned
             between
             Fibronectin and our peptide.
-            \[ M + F \underset{K_f}{\stackrel{K_F}{\rightleftharpoons}} MF \qquad\qquad(1)\]
-
-            \[ M + P \underset{K_p}{\stackrel{K_P}{\rightleftharpoons}} MP \qquad\qquad(2)\]
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-1.png" alt="M+F=MF" width="30%">
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-2.png" alt="M+P=MP" width="30%">
           </p>
           <p>
             Equations for the Association and Dissociation constant can be written as follows:
-            \[K_F = \frac{[FM]}{[F][M]} = \frac{1}{K_f}\qquad\qquad(3)\]<br>
-            \[K_P = \frac{[PM]}{[P][M]} = \frac{1}{K_p}\qquad\qquad(4)\]
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png" alt="Association and Dissociation Equations" width="20%">
           </p>
           <p>
-          \[K_F,K_P\to Association~Constants\]<br>
-          \[K_f,K_p\to Dissociation~Constants\]
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png" alt="Association and Dissociation Constants" width="20%">
           </p>
         </li>
         <li>
           <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the
             MAM7-Fibronectin
             complex, MAM7-peptide complex and free MAM7.
-            \[\ce{[M_t] = [M] + [MF] + [MP]}\qquad\qquad(5)\]
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png" alt="Total M concentration" width="30%">
           </p>
         </li>
         <li>
           <p>
             We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
             concentration.
-            \[\ce{ \rho =  \frac{[MF]}{[M_t]}= \frac {K_F [F][M]}{[M]+K_F[F][M]+K_P[P][M]} = \frac {K_F [F]}{1+K_F[F]+K_P[P]}}\]<br>
-          \[\ce\Rightarrow \rho = \ce{\frac {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[P]}{K_p}}}\qquad\qquad(6)\]
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png" alt="Rho derivation", width="15%">
           </p>
         </li>
         <li>
           <p>
             We defined \(\rho_{in}\) as the interaction ratio in the absence of our peptide.
-            \[\rho_{in} = \ce{\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}}\qquad\qquad(7)\]
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-9.png" alt="Rho in derivation" width="30%">
           </p>
         </li>
         <li>
           <p>
-            The below relation was arrived at from the definition of \(IC_{50}\).
-            \[\ce{0.5*\left(\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}\right)=\frac {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[IC_{50}]}{K_p}}}\qquad\qquad(8)\]
-        
+            The below relation was arrived at from the definition of IC<sub>50</sub>.
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png" alt="IC50 relation" width="20%">
           </p>
         </li>
         <li>
           <p>
-            On simplification, the final equation for \(IC_{50}\) value of our peptide was found.
-            \[\ce{[IC_{50}] = K_p* \left( \frac{[F]}{K_f} + 1 \right)}\qquad\qquad(9)\]
+            On simplification, the final equation for IC<sub>50</sub> value of our peptide was found.
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png" alt="Final IC50 equation" width="30%">
           </p>
         </li>
       </ol>
@@ -184,10 +179,11 @@
       <p>
         The dissociation constant values substituted here were predicted using <b>PRODIGY</b>, thereby, giving us a
         prediction of
-        the \(IC_{50}\) concentration. The actual values of the dissociation constants would be found using Isothermal
+        the IC<sub>50</sub> concentration. The actual values of the dissociation constants would be found using Isothermal
         Calorimetric analysis.
       </p>
-      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png">
+      <p>The <b>PRODIGY</b> predicted values are:</p><br>
+      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png" alt="Predicted dissociation constant values" width="20%">
     </li>
   </ul>
 
@@ -203,7 +199,7 @@
   <ul>
     <li>MW of peptide = 4 kDa = 4 kg/mol</li>
     <li>Say [F] = 1 nM</li>
-    <li>\(IC_{50}\) = 10.67 microM = 42 mg/L</li>
+    <li>IC<sub>50</sub> = 10.67 microM = 42 mg/L</li>
   </ul>
   </p>
   <b>References</b>
