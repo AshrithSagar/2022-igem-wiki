@@ -130,61 +130,52 @@
             The reaction mechanism can be considered to be a parallel reaction scheme where MAM7 gets partitioned
             between
             Fibronectin and our peptide.
-            \[ M + F \underset{K_f}{\stackrel{K_F}{\rightleftharpoons}} MF \]
+            \[ M + F \underset{K_f}{\stackrel{K_F}{\rightleftharpoons}} MF \qquad\qquad(1)\]
 
-            \[ M + P \underset{K_p}{\stackrel{K_P}{\rightleftharpoons}} MP \]
+            \[ M + P \underset{K_p}{\stackrel{K_P}{\rightleftharpoons}} MP \qquad\qquad(2)\]
           </p>
           <p>
             Equations for the Association and Dissociation constant can be written as follows:
-            \[
-            K_F = \frac{FM}{[F] [M]}\]
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png">
-            \]
-            \[
-
-            \]
+            \[K_F = \frac{[FM]}{[F][M]} = \frac{1}{K_f}\qquad\qquad(3)\]<br>
+            \[K_P = \frac{[PM]}{[P][M]} = \frac{1}{K_p}\qquad\qquad(4)\]
           </p>
           <p>
-            \<img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png">
+          \[K_F,K_P\to Association~Constants\]<br>
+          \[K_f,K_p\to Dissociation~Constants\]
           </p>
         </li>
         <li>
           <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the
             MAM7-Fibronectin
             complex, MAM7-peptide complex and free MAM7.
-            \[
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png">
-            \]
+            \[\ce{[M_t] = [M] + [MF] + [MP]}\qquad\qquad(5)\]
           </p>
         </li>
         <li>
           <p>
             We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
             concentration.
-            \[
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png">
+            \[\ce{ \rho =  \frac{[MF]}{[M_t]}= \frac {K_F [F][M]}{[M]+K_F[F][M]+K_P[P][M]} = \frac {K_F [F]}{1+K_F[F]+K_P[P]}}\]<br>
+          \[\ce\Rightarrow \rho = \ce{\frac {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[P]}{K_p}}}\qquad\qquad(6)\]
           </p>
         </li>
         <li>
           <p>
             We defined \(\rho_{in}\) as the interaction ratio in the absence of our peptide.
-            \[
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-9.png">
-            \]
+            \[\rho_{in} = \ce{\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}}\qquad\qquad(7)\]
           </p>
         </li>
         <li>
           <p>
             The below relation was arrived at from the definition of \(IC_{50}\).
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png">
+            \[\ce{0.5*\left(\frac{\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}}\right)=\frac {\frac{[F]}{K_f}}{1+\frac{[F]}{K_f}+\frac{[IC_{50}]}{K_p}}}\qquad\qquad(8)\]
+        
           </p>
         </li>
         <li>
           <p>
             On simplification, the final equation for \(IC_{50}\) value of our peptide was found.
-            \[
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png">
-            \]
+            \[\ce{[IC_{50}] = K_p* \left( \frac{[F]}{K_f} + 1 \right)}\qquad\qquad(9)\]
           </p>
         </li>
       </ol>
