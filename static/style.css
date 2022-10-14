@@ -100,6 +100,14 @@ body {
   display: none;
 }
 
+.page-header-text {
+  margin-left: 100px;
+}
+
+.page-header-text-lead {
+  margin-left: 120px;
+}
+
 /* --------------------------------------------------------------------------- */
 /* Gradient */
 
