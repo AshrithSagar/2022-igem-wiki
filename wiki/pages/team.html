@@ -189,17 +189,24 @@ and listening to rock music in his free time"
 }
 ] %}
 
-<div class="row" data-masonry='{"percentPosition": true }'>
-    <!-- <div class="row"> -->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-masonry='{"percentPosition": true }'>
     {% for person in persons %}
-    <img style="width: {{person.width}}%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/{{person.src}}">
-    <h2>Temp {{ person.name }}</h2>
-    <p><b>{{ person.lead }}</b></p>
-    <p>{{ person.about }}</p>
+    <div class="col">
+        <div class="card shadow-sm">
+            <img src="https://static.igem.wiki/teams/4200/wiki/attributions/{{person.src}}" alt="{{person.name}}"
+                width="100%" height="100%">
+
+            <div class="card-body">
+                <p class="card-text h3">{{person.name}}</p>
+                <small class="text-muted">{{person.lead}}</small>
+                <div class="d-flex justify-content-between">
+                    <p>{{person.about}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
     {% endfor %}
 </div>
+
 {% endwith %}
-
-</div>
-
 {% endblock %}
