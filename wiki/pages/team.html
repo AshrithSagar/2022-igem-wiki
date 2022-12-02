@@ -5,26 +5,34 @@
 {% block page_content %}
 
 <div class="row">
-    <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/ritu-ma-am-picture.jpg">
-    <h2>Dr. Ritu Raval</h2>
-    <p><b>Associate Professor,
-            Department of Biotechnology,
-            Manipal Institute of Technology,
-            Manipal, India.</b></p>
+    {% with
+    names=['Dr. Ritu Raval', 'Dr. Fayaz SM'],
+    widths=[40, 60],
+    srcs=["ritu-ma-am-picture.jpg", "fayaz-sir-picture.jpg"],
+    leads=["Associate Professor,
+    Department of Biotechnology,
+    Manipal Institute of Technology,
+    Manipal, India.", "Assistant Professor—Selection Grade
+    Department of Biotechnology,
+    Manipal Institute of Technology,
+    Manipal, India."],
+    abouts=["Dr. Ritu Raval was integral in collating the experimental and design aspects of AMPifin. From continual
+    mentorship for our project to involving herself in our educational activities, her contribution toward iGEM
+    MIT_MAHE has been irreplaceable.", "Dr Fayaz played a crucial role in consolidating the peptide design approach and
+    helped us analyse the results of
+    the molecular dynamic simulation. His contribution to the team and project has been impeccable."]
+    %}
 
-    <p>Dr. Ritu Raval was integral in collating the experimental and design aspects of AMPifin. From continual
-        mentorship for our project to involving herself in our educational activities, her contribution toward iGEM
-        MIT_MAHE has been irreplaceable.</p>
+    {% for index in range(names|length) %}
+    {% with width=widths[index], name=names[index], src=srcs[index], lead=leads[index], about=abouts[index] %}
+    <img style="width: {{width}}%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/{{src}}">
+    <h2>{{ name }}</h2>
+    <p><b>{{ lead }}</b></p>
+    <p>{{ about }}</p>
+    {% endwith %}
+    {% endfor %}
 
-    <img style="width: 60%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/fayaz-sir-picture.jpg">
-    <h2>Dr. Fayaz SM</h2>
-    <p><b>Assistant Professor—Selection Grade
-            Department of Biotechnology,
-            Manipal Institute of Technology,
-            Manipal, India.</b></p>
-
-    <p>Dr Fayaz played a crucial role in consolidating the peptide design approach and helped us analyse the results of
-        the molecular dynamic simulation. His contribution to the team and project has been impeccable.</p>
+    {% endwith %}
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/ashrith-sagar-y.jpg">
     <h2>Ashrith Sagar Yedlapalli</h2>
