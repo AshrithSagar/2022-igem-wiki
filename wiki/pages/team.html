@@ -4,28 +4,23 @@
 
 {% block page_content %}
 
-<div class="row">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-masonry='{"percentPosition": true }'>
     {% with
-    names=['Dr. Ritu Raval', 'Dr. Fayaz SM'],
-    widths=[40, 60],
-    srcs=["ritu-ma-am-picture.jpg", "fayaz-sir-picture.jpg"],
-    leads=["Associate Professor,
+    names=[' Dr. Ritu Raval', 'Dr. Fayaz SM' ], widths=[40, 60],
+    srcs=["ritu-ma-am-picture.jpg", "fayaz-sir-picture.jpg" ], leads=["Associate Professor, Department of Biotechnology,
+    Manipal Institute of Technology, Manipal, India.", "Assistant Professor—Selection Grade
     Department of Biotechnology,
     Manipal Institute of Technology,
-    Manipal, India.", "Assistant Professor—Selection Grade
-    Department of Biotechnology,
-    Manipal Institute of Technology,
-    Manipal, India."],
-    abouts=["Dr. Ritu Raval was integral in collating the experimental and design aspects of AMPifin. From continual
-    mentorship for our project to involving herself in our educational activities, her contribution toward iGEM
-    MIT_MAHE has been irreplaceable.", "Dr Fayaz played a crucial role in consolidating the peptide design approach and
+    Manipal, India." ], abouts=["Dr. Ritu Raval was integral in collating the experimental and design aspects of
+    AMPifin. From continual mentorship for our project to involving herself in our educational activities, her
+    contribution toward iGEM MIT_MAHE has been irreplaceable.", "Dr Fayaz played a crucial role in consolidating the
+    peptide design approach
+    and
     helped us analyse the results of
-    the molecular dynamic simulation. His contribution to the team and project has been impeccable."]
-    %}
-
-    {% for index in range(names|length) %}
-    {% with width=widths[index], name=names[index], src=srcs[index], lead=leads[index], about=abouts[index] %}
-    <img style="width: {{width}}%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/{{src}}">
+    the molecular dynamic simulation. His contribution to the team and project has been impeccable." ] %} {% for
+    index in range(names|length) %} {% with width=widths[index], name=names[index], src=srcs[index], lead=leads[index],
+    about=abouts[index] %} <img style="width: {{width}}%;"
+        src="https://static.igem.wiki/teams/4200/wiki/attributions/{{src}}">
     <h2>{{ name }}</h2>
     <p><b>{{ lead }}</b></p>
     <p>{{ about }}</p>
@@ -40,7 +35,8 @@
 
     <p>One of the most competent members of our team, Ashrith is your go-to member for all things tech! With the
         cleverest of ideas, he can code his way through anything! Nicknamed the ‘hecker’, you’ll find him watching
-        3Blue1Brown in his spare time. As good as he is with his laptop’s keyboard, he’s also a seasoned keyboardist!
+        3Blue1Brown in his spare time. As good as he is with his laptop’s keyboard, he’s also a seasoned
+        keyboardist!
     </p>
 
     <img style="width: 60%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/avani-hegde.jpg">
@@ -48,33 +44,42 @@
     <b>Head of Research</b>
 
     <p>A master of all arts, Avani is a force to be reckoned with! From her unending knowledge that helps string our
-        project together to her exceptional debating skills—she’s easily one of the most pivotal members of our team. A
-        major astronomy enthusiast, she’s always around to geek away about the cosmos. In her free time, you’ll find her
+        project together to her exceptional debating skills—she’s easily one of the most pivotal members of our
+        team. A
+        major astronomy enthusiast, she’s always around to geek away about the cosmos. In her free time, you’ll find
+        her
         singing melodiously!</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/dnyanada-khile.jpg">
     <h2>Dnyanada Anil Khile</h2>
     <b>Research Member</b>
 
-    <p>Dnyanada—she’ll adore you if you pronounce that right in the first go. With the most amiable personality, she’s
-        one member that seems to have it all together! Dnyanada loves her water bottle—she claims it’s her motivation to
+    <p>Dnyanada—she’ll adore you if you pronounce that right in the first go. With the most amiable personality,
+        she’s
+        one member that seems to have it all together! Dnyanada loves her water bottle—she claims it’s her
+        motivation to
         hydrate herself. Besides her brilliant research skills, she’s also a proficient tennis player!</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/nava-manickam.jpg">
     <h2>Nava Bharati Manickam</h2>
     <b>Head of Human Practices</b>
 
-    <p>If you spot someone in an all-black outfit, it has to be Nava. She’s an excellent communicator and always looks
-        out for our project. Nava loves her morning coffee—she can’t do without it. You’ll find her straightening her
-        hair on a whim when stressed out. The week is incomplete if there isn’t a Myntra parcel arriving for her.</p>
+    <p>If you spot someone in an all-black outfit, it has to be Nava. She’s an excellent communicator and always
+        looks
+        out for our project. Nava loves her morning coffee—she can’t do without it. You’ll find her straightening
+        her
+        hair on a whim when stressed out. The week is incomplete if there isn’t a Myntra parcel arriving for her.
+    </p>
 
     <img style="width: 60%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/naomi-thomas.jpg">
     <h2>Naomi Ann Thomas</h2>
     <b>Management and Human Practices Member</b>
 
-    <p>Naomi is the sweetest member of our team. She has brilliant managerial skills, and she’s highly reliable. An avid
+    <p>Naomi is the sweetest member of our team. She has brilliant managerial skills, and she’s highly reliable. An
+        avid
         K-drama fan—you’ll find her binge-watching it during her free time. Always up for a conversation, Naomi’s a
-        great listener, and she’ll make sure to turn your day around with her charm. And oh, she makes the best ramen
+        great listener, and she’ll make sure to turn your day around with her charm. And oh, she makes the best
+        ramen
         noodles!</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/punya-hirawat.jpg">
@@ -82,7 +87,8 @@
     <b>Dry Lab Member</b>
 
     <p>Punya’s one of the sharpest members of our team, and you’re sure to have some of your best conversations with
-        him. He loves to watch Formula One and enjoys playing different sports. When idle, he tends to watch some of the
+        him. He loves to watch Formula One and enjoys playing different sports. When idle, he tends to watch some of
+        the
         most random content on YouTube. Punya’s also an avid fan of Anime and Manga!</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/rahil-faruk.jpg">
@@ -90,7 +96,8 @@
     <b>Head of Wet Lab</b>
 
     <p>Rahil’s no short of the cinnamon roll of positivity in our team. His jokes will surely crack you up, and his
-        ever-cheerful nature is invigorating! Being the fitness freak he is, you’ll often see him on his way to the gym
+        ever-cheerful nature is invigorating! Being the fitness freak he is, you’ll often see him on his way to the
+        gym
         while sipping a bottle of Sting. He’s a major foodie—by the time you reach half of your burger, he would’ve
         inhaled two of those. On another note, he loves making documents to organise all things wet lab!</p>
 
@@ -98,17 +105,22 @@
     <h2>Rathnamegha Lingamshetty</h2>
     <b>Wet Lab Member</b>
 
-    <p>Megha’s one of the sweetest people on our team—she always looks out for you. She’s as creative as she is smart,
-        and brings structure to our project at each stage. She loves all things biology and science, and has the cutest
+    <p>Megha’s one of the sweetest people on our team—she always looks out for you. She’s as creative as she is
+        smart,
+        and brings structure to our project at each stage. She loves all things biology and science, and has the
+        cutest
         bows to match all of her outfits. Megha is fond of gaming and anime, probably just as much as IKEA.</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/renuka-basawa.jpg">
     <h2>Renuka Basawa</h2>
     <b>Research Member</b>
 
-    <p>A boss woman. Being one of our most integral research members, Renuka’s terrific at what she does. She’s lovely
-        to be around—almost like our little dumpling. Her analytical nature makes our project better every day. In her
-        free time, she loves to sketch. Renuka’s always on the lookout for new snacks, and she may have tried everything
+    <p>A boss woman. Being one of our most integral research members, Renuka’s terrific at what she does. She’s
+        lovely
+        to be around—almost like our little dumpling. Her analytical nature makes our project better every day. In
+        her
+        free time, she loves to sketch. Renuka’s always on the lookout for new snacks, and she may have tried
+        everything
         you’ll find at the Campus store! </p>
 
     <img style="width: 60%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/riddhi.jpg">
@@ -116,24 +128,30 @@
     <b>Graphics Member</b>
 
     <p>Riddhi’s a brilliant designer; the sky isn’t the limit for a mind like hers. Her skillset in graphics and
-        likeable character make her a go-to person for a good conversation. In her free time, Riddhi’s fond of cooking,
-        and one of her favourite dishes is a good bowl of pasta. She’s also into reading and photography—pretty skies
+        likeable character make her a go-to person for a good conversation. In her free time, Riddhi’s fond of
+        cooking,
+        and one of her favourite dishes is a good bowl of pasta. She’s also into reading and photography—pretty
+        skies
         being her best-loved aesthetic. </p>
 
     <img style="width: 60%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/rohit-harikumar.jpg">
     <h2>Rohit Harikumar </h2>
     <b>Graphics Member</b>
 
-    <p>Not only does Rohit’s cheerful nature ease tensions on a terrible day, but he is also one of the most amicable
-        people you will ever have a chance to meet. An exceptionally skilful artist, he can make the canvas come alive
-        with his strokes. Rohit loves to play all kinds of instruments, especially the guitar. He is also an avid fan of
+    <p>Not only does Rohit’s cheerful nature ease tensions on a terrible day, but he is also one of the most
+        amicable
+        people you will ever have a chance to meet. An exceptionally skilful artist, he can make the canvas come
+        alive
+        with his strokes. Rohit loves to play all kinds of instruments, especially the guitar. He is also an avid
+        fan of
         Anime and Manga!</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/rohit-manikantan.jpg">
     <h2>Rohit Manikantan </h2>
     <b>Management and Human Practices Member</b>
 
-    <p>Being the Mallu boy that he is, Rohit has a definite South Indian overlord vibe. He’s an optimistic person and
+    <p>Being the Mallu boy that he is, Rohit has a definite South Indian overlord vibe. He’s an optimistic person
+        and
         gives the best bear hugs. In his free time, he loves to watch anime and play basketball. Anything
         management-related, he’s your go-to guy!</p>
 
@@ -141,17 +159,22 @@
     <h2>Serin Joby Parekkadan</h2>
     <b>Wet Lab Member</b>
 
-    <p>Serin is one of the kindest members of our team. She’s dependable and adept at what she does. She’s easily one of
-        the most photogenic members on our team—her dimples are to die for! Serin enjoys a game of badminton and listens
+    <p>Serin is one of the kindest members of our team. She’s dependable and adept at what she does. She’s easily
+        one of
+        the most photogenic members on our team—her dimples are to die for! Serin enjoys a game of badminton and
+        listens
         to her favourite tunes in her free time!</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/shaan-ganatra.jpg">
     <h2>Shaan Chirag Ganatra</h2>
     <b> Dry Lab Member</b>
 
-    <p>Shaan’s one of the quickest learners on our team. He makes the funniest Babu Rao impression—it’s almost iconic!
-        You’d wish to be in the same hostel as him because he’s always stocked up on the yummiest snacks. Shaan’s a huge
-        fan of KK and Linkin Park—he would give anything to jam to their music. He’s also into rock bands and loves to
+    <p>Shaan’s one of the quickest learners on our team. He makes the funniest Babu Rao impression—it’s almost
+        iconic!
+        You’d wish to be in the same hostel as him because he’s always stocked up on the yummiest snacks. Shaan’s a
+        huge
+        fan of KK and Linkin Park—he would give anything to jam to their music. He’s also into rock bands and loves
+        to
         catch a Formula One race in his free time.</p>
 
     <img style="width: 40%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/suhani-kabra.jpg">
@@ -159,16 +182,20 @@
     <b>Team Co-Leader</b>
 
     <p>Suhani is compassionate, level-headed and objective. She knows how to bring out the best in everyone and
-        understand what they might be going through. Her Instagram feed is all cats, and she likes to refer to them as
-        ‘smol’. When stressed, she enjoys a game of Subway Surfers. She’s also super passionate about writing and loves
+        understand what they might be going through. Her Instagram feed is all cats, and she likes to refer to them
+        as
+        ‘smol’. When stressed, she enjoys a game of Subway Surfers. She’s also super passionate about writing and
+        loves
         a pleasant morning run!</p>
 
     <img style="width: 60%;" src="https://static.igem.wiki/teams/4200/wiki/attributions/tushar-mishra.jpg">
     <h2>Tushar Mishra</h2>
     <b>Team Co-Leader</b>
 
-    <p>Tushar’s hard work and passion motivate everyone else. He loves all things science, pushing himself, the team,
-        and the project to be better every day. He’s one of the most approachable members of our team and is still a kid
+    <p>Tushar’s hard work and passion motivate everyone else. He loves all things science, pushing himself, the
+        team,
+        and the project to be better every day. He’s one of the most approachable members of our team and is still a
+        kid
         at heart! Tushar does not like Meta—he has a mysterious feud with the Zuck. He’s a food enthusiast and a
         pro-baker in the making! </p>
 
@@ -177,7 +204,8 @@
     <b>Head of Dry Lab</b>
 
     <p>Vaibhav is a quick learner, and he never gives up. He’s the only one we trust with the core aspects of our
-        project. Exam season is incomplete without us hovering around for his notes! Besides his brilliant mind when it
+        project. Exam season is incomplete without us hovering around for his notes! Besides his brilliant mind when
+        it
         comes to the technicalities of our project, Vaibhav’s also a great photographer! You’ll see him playing the
         guitar and listening to rock music in his free time</p>.
 
