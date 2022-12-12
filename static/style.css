@@ -62,18 +62,6 @@ body {
   border-left-color: #d9534f
 }
 
-/* footer */
-footer a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
 /* --------------------------------------------------------------------------- */
 /* General */
 
@@ -89,10 +77,6 @@ body {
   font-size: 1.3rem;
 }
 
-.footer {
-  background-color: #24576F;
-}
-
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -105,6 +89,26 @@ body {
   margin-left: 10vw;
   color: black;
 }
+
+/* --------------------------------------------------------------------------- */
+/* footer */
+
+.footer {
+  background-color: #24576F;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer-logo {}
 
 /* --------------------------------------------------------------------------- */
 /* Gradient */
