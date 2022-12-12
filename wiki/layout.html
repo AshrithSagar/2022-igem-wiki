@@ -13,13 +13,11 @@
 
   <!-- Custom CSS -->
   <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename = 'toc.css') }}" rel="stylesheet">
 
   <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2022</title>
-
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#toc">
+<body>
   <!-- Navigation -->
   {% include 'menu.html' %}
 
@@ -28,26 +26,8 @@
     <div class="container.fluid h-100">
       <div class="row h-100 align-items-center">
         <div class="col-lg-12">
-          <h1 class="display-2 mt-5 mb-2 page-header-text" data-toc-skip>{{ self.title() }}</h1>
+          <h1 class="display-2 mt-5 mb-2 page-header-text">{{ self.title() }}</h1>
           <p class="lead mb-5 page-header-text-lead">{% block lead %}{% endblock %}</p>
-        </div>
-        <div class="deep-blue-waves-body">
-          <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none">
-            <defs>
-              <path id="gentle-wave" d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z" />
-            </defs>
-            <g class="waves-parallax">
-              <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
-              <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
-              <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
-            </g>
-          </svg>
         </div>
       </div>
     </div>
@@ -58,11 +38,6 @@
     {% block page_content %}{% endblock %}
   </div>
 
-  <!-- Back to top button -->
-  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   {% include 'footer.html' %}
 
@@ -72,12 +47,11 @@
   <!-- Bootstrap Bundle with Popper -->
   <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
 
-  <script src="{{ url_for('static', filename = 'jquery-3.6.1.min.js') }}"></script>
   <script src="{{ url_for('static', filename = 'script.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'mathjax_at3_es5_tex-mml-chtml.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'bootstrap-toc.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'jquery-3.6.1.min.js') }}"></script>
   <script src="{{ url_for('static', filename = 'masonry.pkgd.min.js') }}"></script>
   <script src="{{ url_for('static', filename = 'imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'mathjax.js') }}"></script>
 </body>
 
 </html>
