@@ -27,6 +27,17 @@ img {
   display: none;
 }
 
+a {
+  /* color: white; */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: white; */
+  text-decoration: underline;
+}
+
 /* --------------------------------------------------------------------------- */
 /* Header */
 
