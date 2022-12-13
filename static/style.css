@@ -1,70 +1,10 @@
 /* --------------------------------------------------------------------------- */
-/* Default */
+/* General */
 
 body {
   padding-top: 56px;
   background-color: #e7f5eb;
 }
-
-.logo-home {
-  height: 512px;
-  width: 512px;
-  margin: 0;
-
-}
-
-.left-aligned {
-  margin-left: auto;
-}
-
-.bg-dark {
-  background-color: #343a40 !important;
-}
-
-.bg-hero {
-  background-color: #7952b3;
-}
-
-/* CALLOUT */
-.bd-callout {
-  padding: 1.25rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border: 1px solid #e9ecef;
-  border-left-width: .25rem;
-  border-radius: .25rem
-}
-
-.bd-callout h4 {
-  margin-bottom: .25rem
-}
-
-.bd-callout p:last-child {
-  margin-bottom: 0
-}
-
-.bd-callout code {
-  border-radius: .25rem
-}
-
-.bd-callout+.bd-callout {
-  margin-top: -.25rem
-}
-
-.bd-callout-info {
-  border-left-color: #5bc0de
-}
-
-.bd-callout-warning {
-  border-left-color: #f0ad4e
-}
-
-.bd-callout-danger {
-  border-left-color: #d9534f
-}
-
-/* --------------------------------------------------------------------------- */
-/* General */
 
 img {
   max-width: 90%;
@@ -74,6 +14,12 @@ img {
   justify-content: center;
 }
 
+.logo-home {
+  height: 512px;
+  width: 512px;
+  margin: 0;
+}
+
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -81,14 +27,16 @@ img {
   display: none;
 }
 
+/* --------------------------------------------------------------------------- */
+/* Header */
+
 .page-header-text,
 .page-header-text-lead {
   margin-left: 10vw;
   color: black;
 }
 
-/* --------------------------------------------------------------------------- */
-/* Header */
+/* Waves */
 
 .ocean {
   height: 5%;
@@ -160,6 +108,8 @@ img {
     transform: translate3d(0, 5px, 0);
   }
 }
+
+/* Gradient */
 
 header {
   background: radial-gradient(circle, #e7f5eb, #3f788a);
@@ -488,6 +438,59 @@ b {
   height: 10em;
   max-height: 100vh;
   margin: 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Default */
+
+.left-aligned {
+  margin-left: auto;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.bg-hero {
+  background-color: #7952b3;
+}
+
+/* CALLOUT */
+.bd-callout {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #e9ecef;
+  border-left-width: .25rem;
+  border-radius: .25rem
+}
+
+.bd-callout h4 {
+  margin-bottom: .25rem
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0
+}
+
+.bd-callout code {
+  border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -.25rem
+}
+
+.bd-callout-info {
+  border-left-color: #5bc0de
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f
 }
 
 /* --------------------------------------------------------------------------- */
