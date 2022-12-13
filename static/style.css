@@ -1,4 +1,5 @@
 /* --------------------------------------------------------------------------- */
+/* Default */
 
 body {
   padding-top: 56px;
@@ -73,10 +74,6 @@ img {
   justify-content: center;
 }
 
-body {
-  font-size: 1.3rem;
-}
-
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -91,7 +88,102 @@ body {
 }
 
 /* --------------------------------------------------------------------------- */
-/* footer */
+/* Header */
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://static.igem.wiki/teams/4200/wiki/wiki/header/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@-webkit-keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+header {
+  background: radial-gradient(circle, #e7f5eb, #3f788a);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  height: calc(100vh - 56px);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
+/* Footer */
 
 .footer {
   background-color: #24576F;
@@ -109,30 +201,6 @@ footer a:hover {
 }
 
 #footer-logo {}
-
-/* --------------------------------------------------------------------------- */
-/* Gradient */
-
-header {
-  background: radial-gradient(circle, #e7f5eb, #3f788a);
-  animation: gradient 10s ease infinite;
-  background-size: 400% 400%;
-  height: 90vh;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 /* --------------------------------------------------------------------------- */
 /* Fonts */
@@ -160,6 +228,7 @@ header {
 
 body {
   font-family: "Montserrat-Regular";
+  font-size: 1.3rem;
 }
 
 b {
@@ -290,13 +359,6 @@ b {
 }
 
 /* --------------------------------------------------------------------------- */
-/* TOC elements */
-
-#toc {
-  margin-right: 20px;
-}
-
-/* --------------------------------------------------------------------------- */
 /* Modals for IHP, Experimentation */
 
 .modal-dialog {
@@ -371,80 +433,6 @@ b {
   to {
     transform: translate3d(0px, 0px, -1px);
     box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
-  }
-}
-
-/* --------------------------------------------------------------------------- */
-/* Header for all pages */
-
-.ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #015871;
-}
-
-.wave {
-  background: url(https://static.igem.wiki/teams/4200/wiki/wiki/header/wave.svg) repeat-x;
-  position: absolute;
-  top: -198px;
-  width: 6400px;
-  height: 198px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-  top: -175px;
-  -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
-  opacity: 1;
-}
-
-@-webkit-keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: -1600px;
-  }
-}
-
-@-webkit-keyframes swell {
-
-  0%,
-  100% {
-    transform: translate3d(0, -25px, 0);
-  }
-
-  50% {
-    transform: translate3d(0, 5px, 0);
-  }
-}
-
-@keyframes swell {
-
-  0%,
-  100% {
-    transform: translate3d(0, -25px, 0);
-  }
-
-  50% {
-    transform: translate3d(0, 5px, 0);
   }
 }
 
