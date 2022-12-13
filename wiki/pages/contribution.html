@@ -16,12 +16,13 @@
 
 <p>Our software <b>GRASP</b> addresses the unavailability of reliable softwares that consider <b>conformational changes</b> while performing <b>conserved mutations</b> to a peptide sequence. Thus, GRASP is a unique tool that would help future iGEM teams perform conserved point mutations at respective sites. This software would help by simplifying the creation of appropriate conserved mutations to their corresponding sequence. Our software is one-of-a-kind in its approach to automating and exponentially simplifying the process of random conserved mutations, which allows the user to carry out <b>protein/peptide engineering</b> by virtue of <b>forced evolution</b>. GRASP, thus would enable users to design potential protein/peptide ligands for their protein of interest and even carry out rational interaction studies.</p>
 
-<p>To know more about our software, visit our <a href="https://2022.igem.wiki/mit-mahe/software">Software</a> page.</p>
+<p>To know more about our software, visit our <a href="{{ url_for('pages', page='software') }}">Software</a> page.</p>
 
 <h1>Handbook on Protein Docking Servers</h1>
 
 <p>The multitude of available tools to simulate Protein-Protein interactions and structure predictions, howsoever
-  useful, comes with the added cost of not knowing which tool to use when and where. Our team faced the aforementioned issues
+  useful, comes with the added cost of not knowing which tool to use when and where. Our team faced the aforementioned
+  issues
   when <b>docking studies</b> were carried out. Another iGEM team, IISER Pune 2 reported that they faced similar
   problems. This common ground of <b>confusion</b> inspired the <b>handbook</b>. It was made to ease the process of choosing a relevant tool from the
   array of available tools for upcoming iGEMers. In this handbook, we have compiled the algorithm and use cases of <b>popular
@@ -37,11 +38,11 @@
 
 <p>With our progress in the project, the Wet Lab team made a <b>detailed itinerary of planned experiments</b>. This curated handbook includes both experiments that were performed and perfected and ones that were just planned. The troubleshooting yielded the best possible results for each experiment, including plasmid isolation, competent cell preparation by CaCl2 method, PCR amplification etc. The primary <b>objective</b> of this handbook is to help other iGEM teams carry out these <b>molecular biology experiments</b>.</p>
 
-<p>More information on our troubleshooting and experimentation timeline is available <a href="https://2022.igem.wiki/mit-mahe/experiments">here.</a></p>
+<p>More information on our troubleshooting and experimentation timeline is available <a
+    href="{{ url_for('pages', page='experiments') }}">here.</a></p>
 
 <h2>Wet lab handbook</h2>
 <iframe class="align-self-center my-5" loading="lazy" height="500px" width="100%" title="Wet Lab Handbook"
   src="https://static.igem.wiki/teams/4200/wiki/pdfs/igem-mit-mahe-experimentation-handbook.pdf#zoom=FitW"></iframe>
 
 {% endblock %}
-
