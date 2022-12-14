@@ -161,7 +161,27 @@ footer a:hover {
   text-decoration: underline;
 }
 
-#footer-logo {}
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.5;
+}
+
+.footer-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-socials {
+    margin-top: 15px;
+  }
+
+  .footer-logo-text {
+    text-align: center;
+  }
+}
 
 /* --------------------------------------------------------------------------- */
 /* Fonts */
