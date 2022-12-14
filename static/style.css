@@ -217,6 +217,21 @@ b {
 }
 
 /* --------------------------------------------------------------------------- */
+/* Home page */
+
+.sponsors-parent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .sponsors-parent span img {
+    scale: 1.2;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
 /* IHP Page */
 
 .ihp-circle {
