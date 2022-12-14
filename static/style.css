@@ -27,13 +27,13 @@ img {
   display: none;
 }
 
-a:not(.navbar-brand, .nav-link, .dropdown-item) {
+a:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
   color: royalblue;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:hover:not(.navbar-brand, .nav-link, .dropdown-item) {
+a:hover:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
   color: darkblue;
   text-decoration: underline;
 }
