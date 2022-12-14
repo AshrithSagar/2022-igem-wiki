@@ -1,3 +1,4 @@
+// ------------------------------------------------------------------------
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
 
@@ -46,5 +47,15 @@ imagesLoaded(grid).on('progress', function () {
   msnry.layout();
 });
 
+
+// ------------------------------------------------------------------------
+
+function toggleTheme() {
+  document.body.classList.toggle("dark-theme");
+
+  let toggleButton = document.getElementById("toggle-theme");
+  console.log(toggleButton);
+  toggleButton.innerText = document.body.classList.contains("dark-theme") ? "L" : "D";
+}
 
 // ------------------------------------------------------------------------

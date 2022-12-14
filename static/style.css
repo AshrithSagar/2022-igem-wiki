@@ -38,6 +38,11 @@ a:hover:not(.navbar-brand, .nav-link, .dropdown-item) {
   text-decoration: underline;
 }
 
+.dark-theme {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
 /* --------------------------------------------------------------------------- */
 /* Header */
 
@@ -45,6 +50,16 @@ a:hover:not(.navbar-brand, .nav-link, .dropdown-item) {
 .page-header-text-lead {
   margin-left: 10vw;
   color: black;
+}
+
+#toggle-theme {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  font-size: 0.8rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
 }
 
 /* Waves */
