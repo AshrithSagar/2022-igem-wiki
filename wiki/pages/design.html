@@ -8,150 +8,165 @@
 {% endwith %}
 
 {% block page_content %}
+<div class="container">
 
-<div class="row mt-4">
-  <h2><i>In silico</i> design of the peptide</h2>
+  <div class="row mt-4">
+    <h2><i>In silico</i> design of the peptide</h2>
 
-  <p>The interaction between MAM7, Fibronectin, and phosphatidic acid is well-established in the literature. The MAM7
-    binding site in Fibronectin is located in the 30-kDa N-terminal region [1], which is also used by several other
-    Fn-binding proteins.</p>
+    <p>The interaction between MAM7, Fibronectin, and phosphatidic acid is well-established in the literature. The MAM7
+      binding site in Fibronectin is located in the 30-kDa N-terminal region [1], which is also used by several other
+      Fn-binding proteins.</p>
 
-  <p>However, we found that the structures of the proteins MAM7 and Fibronectin were not well established; hence, we
-    decided to predict the structures for the same.</p>
+    <p>However, we found that the structures of the proteins MAM7 and Fibronectin were not well established; hence, we
+      decided to predict the structures for the same.</p>
 
-  <p>With the recent advent of various <i>ab initio</i> models, Alphafold has been regarded as one of the most reliable
-    tool in successfully predicting the
-    structures of proteins [2].</p>
+    <p>With the recent advent of various <i>ab initio</i> models, Alphafold has been regarded as one of the most
+      reliable
+      tool in successfully predicting the
+      structures of proteins [2].</p>
 
-  <p>The structures for MAM7 and the Heparin-Binding Domains (HBD) of Fibronectin from the trout fish were thus
-    predicted using AlphaFoldII and AlphaFoldI, respectively [2]. These predicted structures were screened for
-    similarities with the existing literature, after which each of the five repeats of the type I module present in
-    Fibronectin was considered as one peptide, respectively. Fibronectin is known to require five continuous repeats to
-    dock with MAM7; therefore, designing a peptide that would bind to only one of these domains was deemed sufficient
-    [1].</p>
+    <p>The structures for MAM7 and the Heparin-Binding Domains (HBD) of Fibronectin from the trout fish were thus
+      predicted using AlphaFoldII and AlphaFoldI, respectively [2]. These predicted structures were screened for
+      similarities with the existing literature, after which each of the five repeats of the type I module present in
+      Fibronectin was considered as one peptide, respectively. Fibronectin is known to require five continuous repeats
+      to
+      dock with MAM7; therefore, designing a peptide that would bind to only one of these domains was deemed sufficient
+      [1].</p>
 
-  <p>This process was iterative in nature, involving multiple cycles of design, build, test, and learn, as described on
-    the <a href="{{ url_for('pages', page='engineering') }}">engineering success page</a>.</p>
+    <p>This process was iterative in nature, involving multiple cycles of design, build, test, and learn, as described
+      on
+      the <a href="{{ url_for('pages', page='engineering') }}">engineering success page</a>.</p>
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/mam7-fn-docked.png" class="figure-img img-fluid rounded"
-      alt="Fibronectin docked with MAM7">
-    <figcaption class="figure-caption text-center">
-      Fig 1: Fibronectin docked with MAM7 (visualised on PyMol [3])
-    </figcaption>
-  </figure>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/mam7-fn-docked.png" class="figure-img img-fluid rounded"
+        alt="Fibronectin docked with MAM7">
+      <figcaption class="figure-caption text-center">
+        Fig 1: Fibronectin docked with MAM7 (visualised on PyMol [3])
+      </figcaption>
+    </figure>
 
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/multiplepeptide5.png" class="figure-img img-fluid rounded"
-      alt="Peptide docked with MAM7">
-    <figcaption class="figure-caption text-center">
-      Fig 2: Peptide docked with MAM7(visualised on PyMol)
-    </figcaption>
-  </figure>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/multiplepeptide5.png" class="figure-img img-fluid rounded"
+        alt="Peptide docked with MAM7">
+      <figcaption class="figure-caption text-center">
+        Fig 2: Peptide docked with MAM7(visualised on PyMol)
+      </figcaption>
+    </figure>
 
-  <h2>Plasmid design</h2>
-  <p>We planned to carry out the MAM7(<a href="https://parts.igem.org/Part:BBa_K4200000">BBa_K4200000</a>) expression
-    using <i>E. coli</i> as our chassis with pET-22b(+) as the vector. For peptide production, we plan on
-    using the same vector system and chassis. However small peptides, when expressed using bacterial systems, are
-    unstable <i>in vivo</i> due to their susceptibility to proteolytic degradation. To overcome the issue, the peptide
-    encoding gene is fused with a gene encoding a carrier protein. For our experiments we decided to use the split
-    intein derived from <i>Synechocystis</i> spp GyrB protein as the carrier protein.</p>
-  <h3>What is an Intein, and why are we using it?</h3>
-  <p>Inteins, short for INTervening protEINS, are in-frame interceding polypeptides that are capable of
-    post-translationally excising themselves from the precursor protein through a protein splicing mechanism that is
-    similar to the mechanism of mRNA splicing [5]. After the intein excision, its two flanking regions join together to
-    form the functional protein or peptide sequence. Inteins undergo conditional protein splicing; that is, the splicing
-    reaction is induced either by introducing small molecules like thiols, proteases, ligands, or by altering reaction
-    conditions like temperature and pH [5]. They can be utilised to chemically alter almost any polypeptide backbone
-    [6]. The reason we decided to choose inteins as part of the purification of our peptide is because they not only
-    make the purification easy since they excise themselves from the peptide but they also help stabilize the peptide.
-  </p>
+    <h2>Plasmid design</h2>
+    <p>We planned to carry out the MAM7(<a href="https://parts.igem.org/Part:BBa_K4200000">BBa_K4200000</a>) expression
+      using <i>E. coli</i> as our chassis with pET-22b(+) as the vector. For peptide production, we plan on
+      using the same vector system and chassis. However small peptides, when expressed using bacterial systems, are
+      unstable <i>in vivo</i> due to their susceptibility to proteolytic degradation. To overcome the issue, the peptide
+      encoding gene is fused with a gene encoding a carrier protein. For our experiments we decided to use the split
+      intein derived from <i>Synechocystis</i> spp GyrB protein as the carrier protein.</p>
+    <h3>What is an Intein, and why are we using it?</h3>
+    <p>Inteins, short for INTervening protEINS, are in-frame interceding polypeptides that are capable of
+      post-translationally excising themselves from the precursor protein through a protein splicing mechanism that is
+      similar to the mechanism of mRNA splicing [5]. After the intein excision, its two flanking regions join together
+      to
+      form the functional protein or peptide sequence. Inteins undergo conditional protein splicing; that is, the
+      splicing
+      reaction is induced either by introducing small molecules like thiols, proteases, ligands, or by altering reaction
+      conditions like temperature and pH [5]. They can be utilised to chemically alter almost any polypeptide backbone
+      [6]. The reason we decided to choose inteins as part of the purification of our peptide is because they not only
+      make the purification easy since they excise themselves from the peptide but they also help stabilize the peptide.
+    </p>
 
-  <p>Inteins can be classified into four main categories, full-length inteins, mini-inteins, split inteins, and alanine
-    inteins [5]. For the synthesis of our peptide, we will be using split inteins.
-    Split inteins are composed of two brief intein segments, the N-terminal intein (I<sub>N</sub>) and the C-terminal
-    intein (I<sub>C</sub>), which are both in charge of cleaving the respective terminals. Hence, split inteins help in
-    the splicing of proteins at that specific terminal.</p>
+    <p>Inteins can be classified into four main categories, full-length inteins, mini-inteins, split inteins, and
+      alanine
+      inteins [5]. For the synthesis of our peptide, we will be using split inteins.
+      Split inteins are composed of two brief intein segments, the N-terminal intein (I<sub>N</sub>) and the C-terminal
+      intein (I<sub>C</sub>), which are both in charge of cleaving the respective terminals. Hence, split inteins help
+      in
+      the splicing of proteins at that specific terminal.</p>
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/design/splitintein.png" class="figure-img img-fluid rounded"
-      alt="Split intein">
-    <figcaption class="figure-caption text-center">
-      Fig 3: Split Intein. Source:[6]
-    </figcaption>
-  </figure>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/design/splitintein.png" class="figure-img img-fluid rounded"
+        alt="Split intein">
+      <figcaption class="figure-caption text-center">
+        Fig 3: Split Intein. Source:[6]
+      </figcaption>
+    </figure>
 
-  <p>We have built our gene circuit in a way where the split intein and the 6X His-tag connected to our peptide at the N
-    terminal. And the Ssp Gyr B split intein we choose will post-translationally self-cleave of our antimicrobial
-    peptide at the N terminal.</p>
+    <p>We have built our gene circuit in a way where the split intein and the 6X His-tag connected to our peptide at the
+      N
+      terminal. And the Ssp Gyr B split intein we choose will post-translationally self-cleave of our antimicrobial
+      peptide at the N terminal.</p>
 
-  <h3> Plasmid design for expressing fusion peptide</h3>
-  <p>We planned on assembling the parts encoding the peptide(<a
-      href="https://parts.igem.org/Part:BBa_K4200313">BBa_K4200313</a>) and intein(<a
-      href="https://parts.igem.org/Part:BBa_K4200780">BBa_K4200780</a>) using scarless
-    Gibson assembly into the vector pET-22b(+). The final plasmid design and the corresponding gene circuit for the
-    fusion peptide is represented as belows:</p>
+    <h3> Plasmid design for expressing fusion peptide</h3>
+    <p>We planned on assembling the parts encoding the peptide(<a
+        href="https://parts.igem.org/Part:BBa_K4200313">BBa_K4200313</a>) and intein(<a
+        href="https://parts.igem.org/Part:BBa_K4200780">BBa_K4200780</a>) using scarless
+      Gibson assembly into the vector pET-22b(+). The final plasmid design and the corresponding gene circuit for the
+      fusion peptide is represented as belows:</p>
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/design/peptide-production-plasmid.png"
-      class="figure-img img-fluid rounded" alt="Peptide production vector system" style="width: 50%;">
-    <figcaption class="figure-caption text-center">
-      Fig 4: Peptide production vector system. Source:[4]
-    </figcaption>
-  </figure>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/design/peptide-production-plasmid.png"
+        class="figure-img img-fluid rounded" alt="Peptide production vector system" style="width: 50%;">
+      <figcaption class="figure-caption text-center">
+        Fig 4: Peptide production vector system. Source:[4]
+      </figcaption>
+    </figure>
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/design/genecircuit.png" class="figure-img img-fluid rounded"
-      alt="Plasmid gene circuit">
-    <figcaption class="figure-caption text-center">
-      Fig 5: Plasmid gene circuit.
-    </figcaption>
-  </figure>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/design/genecircuit.png" class="figure-img img-fluid rounded"
+        alt="Plasmid gene circuit">
+      <figcaption class="figure-caption text-center">
+        Fig 5: Plasmid gene circuit.
+      </figcaption>
+    </figure>
 
-  <h2>The Delivery System</h2>
-  <p>Given the susceptibility of our peptide to degradation and other factors, it was necessary to develop a sturdy
-    delivery mechanism for the pisciculture set-up. From our literature review and human practices visits, we decided
-    on the encapsulation of our antimicrobial peptide using chitosan nanoparticles due to its promising properties.</p>
-  <p>Once produced in-vitro, our peptide would be subjected to encapsulation for delivery. We would check the Zeta
-    potential of our produced nanoparticles which is essential for determimining the stability of a nanoparticle in
-    a given suspension. The final plan for in-field testing is to subject the inlet tank with a nanoparticle (containing
-    peptide) loaded mesh such that as the water flows, the peptide is subsequently released.</p>
-  <p>This setup would help maintain a controlled release of our peptide into the water. Here, the bacteria in the water
-    would interact with our peptide by binding to MAM7 present on the surface of the bacteria, thus rendering it
-    harmless. Consequently, the microbiota of the aquaculture system is also maintained.</p>
-  <p>This mesh would serve as a one-time application, such that when the peptide is fully released out of the
-    nanoparticle, it would have to be replaced with a new one. </p>
+    <h2>The Delivery System</h2>
+    <p>Given the susceptibility of our peptide to degradation and other factors, it was necessary to develop a sturdy
+      delivery mechanism for the pisciculture set-up. From our literature review and human practices visits, we decided
+      on the encapsulation of our antimicrobial peptide using chitosan nanoparticles due to its promising properties.
+    </p>
+    <p>Once produced in-vitro, our peptide would be subjected to encapsulation for delivery. We would check the Zeta
+      potential of our produced nanoparticles which is essential for determimining the stability of a nanoparticle in
+      a given suspension. The final plan for in-field testing is to subject the inlet tank with a nanoparticle
+      (containing
+      peptide) loaded mesh such that as the water flows, the peptide is subsequently released.</p>
+    <p>This setup would help maintain a controlled release of our peptide into the water. Here, the bacteria in the
+      water
+      would interact with our peptide by binding to MAM7 present on the surface of the bacteria, thus rendering it
+      harmless. Consequently, the microbiota of the aquaculture system is also maintained.</p>
+    <p>This mesh would serve as a one-time application, such that when the peptide is fully released out of the
+      nanoparticle, it would have to be replaced with a new one. </p>
 
-  <p><b>But what would happen to the chitosan during the peptide release?</b></p>
-  <p>Given the properties of chitosan, being a biodegradable polymer, it would not harm the marine life present in the
-    water. Prior to degradation, the chitosan, if and when ingested by the fish, would enhance their gut microbiota and
-    induce positive immunomodulatory effects, too. [8]</p>
+    <p><b>But what would happen to the chitosan during the peptide release?</b></p>
+    <p>Given the properties of chitosan, being a biodegradable polymer, it would not harm the marine life present in the
+      water. Prior to degradation, the chitosan, if and when ingested by the fish, would enhance their gut microbiota
+      and
+      induce positive immunomodulatory effects, too. [8]</p>
 
-  <b>References</b>
-  <ol>
-    <li>A. M. Krachler and K. Orth, ‘Functional characterization of the interaction between bacterial adhesin
-      multivalent adhesion molecule 7 (MAM7) protein and its host cell ligands’, J Biol Chem, vol. 286, no. 45, pp.
-      38939–38947, Nov. 2011, doi: 10.1074/JBC.M111.291377.</li>
-    <li>J. Jumper et al., ‘Highly accurate protein structure prediction with AlphaFold’, Nature 2021 596:7873, vol. 596,
-      no. 7873, pp. 583–589, Jul. 2021, doi: 10.1038/s41586-021-03819-2.
-    </li>
-    <li> PyMOL
-      The PyMOL Molecular Graphics System, Version 2.5.2 Schrödinger, LLC.
-    </li>
-    <li>Benchling [Biology Software]. (2022). Retrieved from https://benchling.com.
-    </li>
-    <li>G. N. Basturea, ‘Inteins’, Materials and Methods, vol. 10, Jan. 2020, doi: 10.13070/MM.EN.10.2868.
-    </li>
-    <li>N. H. Shah and T. W. Muir, ‘Inteins: Nature’s Gift to Protein Chemists’, Chemical science (Royal Society of
-      Chemistry : 2010), vol. 5, no. 1, p. 446, Feb. 2014, doi: 10.1039/C3SC52951G.
-    </li>
-    <li>“https://www.molecularcloud.org/what-is-Gibson-assembly.html.” </li>
-    <li>C. Nikapitiya et al., ‘Chitosan nanoparticles: A positive immune response modulator as display in zebrafish
-      larvae against Aeromonas hydrophila infection’, Fish Shellfish Immunol, vol. 76, pp. 240–246, May 2018, doi:
-      10.1016/J.FSI.2018.03.010.
-    </li>
-  </ol>
+    <b>References</b>
+    <ol>
+      <li>A. M. Krachler and K. Orth, ‘Functional characterization of the interaction between bacterial adhesin
+        multivalent adhesion molecule 7 (MAM7) protein and its host cell ligands’, J Biol Chem, vol. 286, no. 45, pp.
+        38939–38947, Nov. 2011, doi: 10.1074/JBC.M111.291377.</li>
+      <li>J. Jumper et al., ‘Highly accurate protein structure prediction with AlphaFold’, Nature 2021 596:7873, vol.
+        596,
+        no. 7873, pp. 583–589, Jul. 2021, doi: 10.1038/s41586-021-03819-2.
+      </li>
+      <li> PyMOL
+        The PyMOL Molecular Graphics System, Version 2.5.2 Schrödinger, LLC.
+      </li>
+      <li>Benchling [Biology Software]. (2022). Retrieved from https://benchling.com.
+      </li>
+      <li>G. N. Basturea, ‘Inteins’, Materials and Methods, vol. 10, Jan. 2020, doi: 10.13070/MM.EN.10.2868.
+      </li>
+      <li>N. H. Shah and T. W. Muir, ‘Inteins: Nature’s Gift to Protein Chemists’, Chemical science (Royal Society of
+        Chemistry : 2010), vol. 5, no. 1, p. 446, Feb. 2014, doi: 10.1039/C3SC52951G.
+      </li>
+      <li>“https://www.molecularcloud.org/what-is-Gibson-assembly.html.” </li>
+      <li>C. Nikapitiya et al., ‘Chitosan nanoparticles: A positive immune response modulator as display in zebrafish
+        larvae against Aeromonas hydrophila infection’, Fish Shellfish Immunol, vol. 76, pp. 240–246, May 2018, doi:
+        10.1016/J.FSI.2018.03.010.
+      </li>
+    </ol>
+  </div>
+
 </div>
-
 {% endblock %}

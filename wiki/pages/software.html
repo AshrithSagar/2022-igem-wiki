@@ -8,191 +8,201 @@
 {% endwith %}
 
 {% block page_content %}
+<div class="container">
 
-<div class="row mt-4">
-  <h2>Introduction</h2>
-  <p><b>GRASP</b> - Generating random alanine scanned peptides is a peptide mutator that performs conserved
-    substitutions
-    based on inputs from an <b>alanine scan</b>. This was a crucial step in significantly increasing the scope of
-    possible mutations. Existing softwares in the domain only consider surface-level information, ignoring any
-    conformational changes that may occur. GRASP creates combinations of <b>conserved substitutions</b> on selected
-    amino acids that fall within the specified range. Then, five random sequences are chosen from the sample set
-    created. These are then tested and subjected to further analysis. Thus, our software is a one-of-a-kind approach to
-    automating and exponentially simplifying the process of <b>random</b> conserved mutations. This process can be
-    employed to potentially <b>increase the affinity</b> of the peptide to its interacting ligands. </p>
-
-  <h1>GRASP</h1>
-  <blockquote>
-    <p><em><strong><span>Peptide sequence mutator through Alanine Scanning</span></strong></em></p>
-  </blockquote>
-
-  <h3>About</h3>
-  <blockquote>
-    <p><em><span>For more information, refer to this page on our wiki: </span><strong> <a
-            href="{{ url_for('pages', page='engineering') }}" class='url'>Engineering success</a></strong></em><br>
-      <em><span>Checkout the software at: </span><strong> <a href="https://gitlab.igem.org/2022/software-tools/mit-mahe"
-            class='url'>MIT_MAHE Software
-            tools</a></strong></em>
-    </p>
-  </blockquote>
-
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/software/cartesianproduct-manimce-v0-16-0-post0.gif"
-      class="figure-img img-fluid rounded" alt="GRASP GIF animation" style="width: 85%;">
-    <figcaption class="figure-caption text-center">
-      Peptide sequence mutations on a sample sequence. Right: The list of all the output sequences.
-    </figcaption>
-  </figure>
-
-  <h3>Description</h3>
-  <p><span>The software comprises of the following modules:</span></p>
-  <ol>
-    <li>
-      <p><strong><span>Alanine Scan \( \Delta \Delta G \) values</span></strong>
-        <span>BUDE Alanine scan is employed to obtain \( \Delta \Delta G \) values of each residue present in the
-          input.</span>
-      </p>
-    </li>
-    <li>
-      <p><strong><span>Conservative mutations</span></strong></p>
-      <p><span>Conserved mutation is a process in which mutations are made within the same type of residues.</span>
-      </p>
-      <p><em><span>For example:</em><span> We replaced amino acids within the same group, for
-          example, hydrophobic re 3—hydrophobic residues with hydrophobic residues or amino acids of same charge with
-          each other.</span></p>
-    </li>
-    <li>
-      <p><strong><span>Random sampler</span></strong></p>
-      <p><span>Random peptides are selected as samples from the huge sequence list received to reduce the user workload.
-          Note that this selection is <b>pseudo-random</b>.</span>
-      </p>
-    </li>
-  </ol>
-
-  <h3><span>Features</span></h3>
-  <ol>
-    <li>
-      <p><strong><span>Command Line Interface (CLI)</span></strong>
-        <span>We can use the software locally on command prompt.</span>
-      </p>
-    </li>
-    <li>
-      <p><strong><span>Integrable modules</span></strong></p>
-      <p><span>Our software consists of different modules for the mutator and alanine scan to integrate them into
-          different and more extensive networks by other iGEM teams and parties.</span></p>
-    </li>
-    <li>
-      <p><strong><span>Mutation lock</span></strong>
-        <span>To prevent the mutation of an already modified residue, that part of the sequence was put under a mutation
-          lock</span>
-      </p>
-    </li>
-    <li>
-      <p><strong><span>Aggrescan</span></strong></p>
-      <p><span>Inclusion of a <b>BASH</b> script, which takes the output and prepends FASTA headers to each sequence in
-          the text file.</span></p>
-    </li>
-  </ol>
-
-  <h3><span>Background</span></h3>
-  <p><span>Protein engineering is modifying a protein through substitution, insertion, or deletion to exhibit desired
-      characteristics and properties.</span></p>
-  <p><span>During the process of designing our peptide, we came across the problem of having an <b>extensive sample
-        set</b> of substitutions through trial and error. However, even after this, we could not guarantee an increase
-      in affinity compared to the original peptide as needed in our case. To overcome this problem, we designed this
-      software to provide all the most probable mutations that increase the binding affinity.
-    </span></p>
-  <p><span>Furthermore, we explored other point mutation softwares for our problem; however, they only took surface
-      information into consideration. We decided to take \( \Delta \Delta G \) value of a residue as the parameter for
-      mutation which
-      give an increase in the accuracy of the mutation.</span></p>
-
-  <h2>Method</h2>
-
-  <h3>\( \Delta \Delta G \) threshold</h3>
-  <p>
-    We take \( \Delta \Delta G \)value of each residue derived from BUDE alanine scan as a parameter to do mutations. To
-    make these
-    mutations we <b>set a threshold</b> \( \Delta \Delta G \)range for each residue (in our case, 0 to 1). Only if the
-    \( \Delta \Delta G \) value lies between
-    this
-    range will it be mutated.
-  </p>
-
-  <h3>Significance of Cartesian product</h3>
-  <p>
-    Cartesian Product: The Cartesian Product of sets \(A\) and \(B\) is defined as the set of all ordered pairs \((x,
-    y)\)
-    such
-    that \(x\) belongs to \(A\)and \(y\) belongs to \(B\)
-    For example, if \(A = {1, 2}\) and \(B = {3, 4, 5}\), then the Cartesian Product of A and B is \({(1, 3), (1, 4),
-    (1, 5),
-    (2, 3), (2, 4), (2, 5)}\).
-    Originally, during a test run, the computational time that the software took for making 3 mutation positions was 2
-    hours 20 mins.
-    After incorporating the cartesian product into the mutator, the time reduced to 11 mutation positions in 10 seconds.
-  </p>
-
-  <h3>Algorithm</h3>
-  <p>
-    We first create a Mutater object, which support the following three formats:
-  </p>
-  <ol>
-    <li>
-      Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to be replaced with.
-    </li>
-    <li>
-      Just the Wild type amino acid and its position, without the Mutant type. This can act as the template to create
-      new
-      Mutater objects.
-    </li>
-    <li>
-      Just the position in the sequence.
-    </li>
-  </ol>
-
-  <h3>Alanine scanning</h3>
-  <p>
-    The Alanine scanning results from BUDE Alanine scan are parsed through which results in a position array over which
-    mutations are possibly required.
-  </p>
-
-  <h3>Group mutations</h3>
-  <p>
-    The sequence is taken as a template over which a special array is constructed, with the following steps:
-  </p>
-  <ol>
-    <li>
-      Iterate over the sequence and get the wild type amino acid at each stage.
-    </li>
-    <li>
-      Retain the wild type if mutation isn't required at this position. This could result when the position doesn't want
+  <div class="row mt-4">
+    <h2>Introduction</h2>
+    <p><b>GRASP</b> - Generating random alanine scanned peptides is a peptide mutator that performs conserved
+      substitutions
+      based on inputs from an <b>alanine scan</b>. This was a crucial step in significantly increasing the scope of
+      possible mutations. Existing softwares in the domain only consider surface-level information, ignoring any
+      conformational changes that may occur. GRASP creates combinations of <b>conserved substitutions</b> on selected
+      amino acids that fall within the specified range. Then, five random sequences are chosen from the sample set
+      created. These are then tested and subjected to further analysis. Thus, our software is a one-of-a-kind approach
       to
-      be mutated, or when the position is present in the mutation lock array.
-    </li>
-    <li>
-      If a mutation is required in the current position, replace the position with an array of all the possible amino
-      acids
-      within the same group. This step is important to achieve Conserved mutations.
-    </li>
-  </ol>
+      automating and exponentially simplifying the process of <b>random</b> conserved mutations. This process can be
+      employed to potentially <b>increase the affinity</b> of the peptide to its interacting ligands. </p>
 
-  <h3>Cartesian product</h3>
-  <p>
-    The special array is then passed to the <code>itertools.product()</code> function, which evaluates the Cartesian
-    product on the
-    elements of the special array. This results in an iterable object that contains all the final sequences, which is
-    then
-    stored in the text file.
-  </p>
+    <h1>GRASP</h1>
+    <blockquote>
+      <p><em><strong><span>Peptide sequence mutator through Alanine Scanning</span></strong></em></p>
+    </blockquote>
 
-  <h3>Random sample</h3>
-  <p>
-    A trivial random sampler is implemented using <code>random.sample()</code> on the sequences array, and then stored
-    in a text
-    file.
-  </p>
+    <h3>About</h3>
+    <blockquote>
+      <p><em><span>For more information, refer to this page on our wiki: </span><strong> <a
+              href="{{ url_for('pages', page='engineering') }}" class='url'>Engineering success</a></strong></em><br>
+        <em><span>Checkout the software at: </span><strong> <a
+              href="https://gitlab.igem.org/2022/software-tools/mit-mahe" class='url'>MIT_MAHE Software
+              tools</a></strong></em>
+      </p>
+    </blockquote>
+
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/software/cartesianproduct-manimce-v0-16-0-post0.gif"
+        class="figure-img img-fluid rounded" alt="GRASP GIF animation" style="width: 85%;">
+      <figcaption class="figure-caption text-center">
+        Peptide sequence mutations on a sample sequence. Right: The list of all the output sequences.
+      </figcaption>
+    </figure>
+
+    <h3>Description</h3>
+    <p><span>The software comprises of the following modules:</span></p>
+    <ol>
+      <li>
+        <p><strong><span>Alanine Scan \( \Delta \Delta G \) values</span></strong>
+          <span>BUDE Alanine scan is employed to obtain \( \Delta \Delta G \) values of each residue present in the
+            input.</span>
+        </p>
+      </li>
+      <li>
+        <p><strong><span>Conservative mutations</span></strong></p>
+        <p><span>Conserved mutation is a process in which mutations are made within the same type of residues.</span>
+        </p>
+        <p><em><span>For example:</em><span> We replaced amino acids within the same group, for
+            example, hydrophobic re 3—hydrophobic residues with hydrophobic residues or amino acids of same charge with
+            each other.</span></p>
+      </li>
+      <li>
+        <p><strong><span>Random sampler</span></strong></p>
+        <p><span>Random peptides are selected as samples from the huge sequence list received to reduce the user
+            workload.
+            Note that this selection is <b>pseudo-random</b>.</span>
+        </p>
+      </li>
+    </ol>
+
+    <h3><span>Features</span></h3>
+    <ol>
+      <li>
+        <p><strong><span>Command Line Interface (CLI)</span></strong>
+          <span>We can use the software locally on command prompt.</span>
+        </p>
+      </li>
+      <li>
+        <p><strong><span>Integrable modules</span></strong></p>
+        <p><span>Our software consists of different modules for the mutator and alanine scan to integrate them into
+            different and more extensive networks by other iGEM teams and parties.</span></p>
+      </li>
+      <li>
+        <p><strong><span>Mutation lock</span></strong>
+          <span>To prevent the mutation of an already modified residue, that part of the sequence was put under a
+            mutation
+            lock</span>
+        </p>
+      </li>
+      <li>
+        <p><strong><span>Aggrescan</span></strong></p>
+        <p><span>Inclusion of a <b>BASH</b> script, which takes the output and prepends FASTA headers to each sequence
+            in
+            the text file.</span></p>
+      </li>
+    </ol>
+
+    <h3><span>Background</span></h3>
+    <p><span>Protein engineering is modifying a protein through substitution, insertion, or deletion to exhibit desired
+        characteristics and properties.</span></p>
+    <p><span>During the process of designing our peptide, we came across the problem of having an <b>extensive sample
+          set</b> of substitutions through trial and error. However, even after this, we could not guarantee an increase
+        in affinity compared to the original peptide as needed in our case. To overcome this problem, we designed this
+        software to provide all the most probable mutations that increase the binding affinity.
+      </span></p>
+    <p><span>Furthermore, we explored other point mutation softwares for our problem; however, they only took surface
+        information into consideration. We decided to take \( \Delta \Delta G \) value of a residue as the parameter for
+        mutation which
+        give an increase in the accuracy of the mutation.</span></p>
+
+    <h2>Method</h2>
+
+    <h3>\( \Delta \Delta G \) threshold</h3>
+    <p>
+      We take \( \Delta \Delta G \)value of each residue derived from BUDE alanine scan as a parameter to do mutations.
+      To
+      make these
+      mutations we <b>set a threshold</b> \( \Delta \Delta G \)range for each residue (in our case, 0 to 1). Only if the
+      \( \Delta \Delta G \) value lies between
+      this
+      range will it be mutated.
+    </p>
+
+    <h3>Significance of Cartesian product</h3>
+    <p>
+      Cartesian Product: The Cartesian Product of sets \(A\) and \(B\) is defined as the set of all ordered pairs \((x,
+      y)\)
+      such
+      that \(x\) belongs to \(A\)and \(y\) belongs to \(B\)
+      For example, if \(A = {1, 2}\) and \(B = {3, 4, 5}\), then the Cartesian Product of A and B is \({(1, 3), (1, 4),
+      (1, 5),
+      (2, 3), (2, 4), (2, 5)}\).
+      Originally, during a test run, the computational time that the software took for making 3 mutation positions was 2
+      hours 20 mins.
+      After incorporating the cartesian product into the mutator, the time reduced to 11 mutation positions in 10
+      seconds.
+    </p>
+
+    <h3>Algorithm</h3>
+    <p>
+      We first create a Mutater object, which support the following three formats:
+    </p>
+    <ol>
+      <li>
+        Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to be replaced with.
+      </li>
+      <li>
+        Just the Wild type amino acid and its position, without the Mutant type. This can act as the template to create
+        new
+        Mutater objects.
+      </li>
+      <li>
+        Just the position in the sequence.
+      </li>
+    </ol>
+
+    <h3>Alanine scanning</h3>
+    <p>
+      The Alanine scanning results from BUDE Alanine scan are parsed through which results in a position array over
+      which
+      mutations are possibly required.
+    </p>
+
+    <h3>Group mutations</h3>
+    <p>
+      The sequence is taken as a template over which a special array is constructed, with the following steps:
+    </p>
+    <ol>
+      <li>
+        Iterate over the sequence and get the wild type amino acid at each stage.
+      </li>
+      <li>
+        Retain the wild type if mutation isn't required at this position. This could result when the position doesn't
+        want
+        to
+        be mutated, or when the position is present in the mutation lock array.
+      </li>
+      <li>
+        If a mutation is required in the current position, replace the position with an array of all the possible amino
+        acids
+        within the same group. This step is important to achieve Conserved mutations.
+      </li>
+    </ol>
+
+    <h3>Cartesian product</h3>
+    <p>
+      The special array is then passed to the <code>itertools.product()</code> function, which evaluates the Cartesian
+      product on the
+      elements of the special array. This results in an iterable object that contains all the final sequences, which is
+      then
+      stored in the text file.
+    </p>
+
+    <h3>Random sample</h3>
+    <p>
+      A trivial random sampler is implemented using <code>random.sample()</code> on the sequences array, and then stored
+      in a text
+      file.
+    </p>
+
+  </div>
 
 </div>
-
 {% endblock %}
