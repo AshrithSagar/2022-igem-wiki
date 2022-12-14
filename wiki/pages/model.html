@@ -2,241 +2,267 @@
 
 {% block title %}Model{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
+<div class="container">
 
-<div class="row">
-  <h1>Molecular Dynamic Simulations</h1>
-  <p>
-    Determining the behaviour of a protein or peptide in response to environmental stresses is crucial in
-    establishing
-    the efficacy of the peptide in a system. Thus, molecular dynamics simulation can help us subject the peptide to
-    different conditions that mimic the natural environment that it may exist in, <i>in silico</i>.
-  </p>
-  <p>
-    Multiple tools can be used to perform MDS, such as GROMACS [1][2][3], CHARMM [4], AMBER [5] and Desmond [6].
-    However, MDS requires high
-    computational power. Given our limited resources, we partnered with IISER Pune II, to run molecular dynamics
-    simulations on their supercomputer PARAM. The results were then analysed by us to check for the stability of the
-    peptide in the given environment.
-  </p>
-  <p>
-    We discovered that a pH of 7.5 and a temperature of 298K are the typical characteristics of an aquaculture system
-    for consumable fish through our human practices and research. These parameters were applied to a cubic system and an
-    OPLS-AA/M force field was applied across the system to analyse the dynamic changes in the conformation of the
-    peptide.
-  </p>
+  <div class="row">
+    <h1>Molecular Dynamic Simulations</h1>
+    <p>
+      Determining the behaviour of a protein or peptide in response to environmental stresses is crucial in
+      establishing
+      the efficacy of the peptide in a system. Thus, molecular dynamics simulation can help us subject the peptide to
+      different conditions that mimic the natural environment that it may exist in, <i>in silico</i>.
+    </p>
+    <p>
+      Multiple tools can be used to perform MDS, such as GROMACS [1][2][3], CHARMM [4], AMBER [5] and Desmond [6].
+      However, MDS requires high
+      computational power. Given our limited resources, we partnered with IISER Pune II, to run molecular dynamics
+      simulations on their supercomputer PARAM. The results were then analysed by us to check for the stability of the
+      peptide in the given environment.
+    </p>
+    <p>
+      We discovered that a pH of 7.5 and a temperature of 298K are the typical characteristics of an aquaculture system
+      for consumable fish through our human practices and research. These parameters were applied to a cubic system and
+      an
+      OPLS-AA/M force field was applied across the system to analyse the dynamic changes in the conformation of the
+      peptide.
+    </p>
 
-  <h3>RMSD</h3>
+    <h3>RMSD</h3>
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmds.png" class="figure-img img-fluid rounded"
-      alt="RMS v/s time" width="70%">
-    <figcaption class="figure-caption text-center">
-      Fig 1: Root Mean Square Distance (nm) versus Time (ps) from GROMACS
-    </figcaption>
-  </figure>
-
-
-  <i></i>
-  <p>RMSD or root mean squared distance is the numerical representation of the difference between the peptide's initial
-    structure and the structure at a given moment in time. Generally, an RMSD variation of less than 2 Angstorms is supposed to be very close and stable.
-    \[ \text{RMSD} = \sqrt{\frac{\sum [m_i(x_i-y_i)^2]}{M}} \]
-  </p>
-
-  <p>The RMSD value was seen to increase for the first 50ns, which is a given due to the peptide stabilizing to the
-    given conditions in the system. It was observed that the RMSD values decreased briefly and then stabilized with a
-    fluctuation of approximately 1 Angstorms, which falls comfortably below the accepted threshold of
-    2 Angstorms, indicating that our peptide is very stable in the given environment. It also shows that <b>no
-      conformational changes</b> occur within the first 100 ns of the simulation, which could otherwise hamper its target interaction.</p>
-
-  <h3>RMSF</h3>
-
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmsf.jpg" class="figure-img img-fluid rounded"
-      alt="RMS v/s residue" width="70%">
-    <figcaption class="figure-caption text-center">
-      Fig 2: Root Mean Square Fluctuation (nm) versus Residue from GROMACS
-    </figcaption>
-  </figure>
-
-  <p>RMSF or root mean squared fluctuations is a calculation of individual residue flexibility, or how much a particular
-    residue moves (fluctuates) during a simulation.
-    \[
-    \text{RMSF} = {\sqrt{\frac{\sum [m_i(x_i(t_j)-x_{ref})^2]}{T}}}
-    \]
-  </p>
-  <p>The residues at the very beginning and end of our peptide show the highest fluctuations and this indicates that
-    they are less stable than the residues with fewer fluctuations. For example, the amino acid residues between 14 to
-    24 are much more stable than the residues from 36 to 40, which correspond to loops in the structure of the peptide.
-  </p>
-  <h3>Radius of Gyration</h3>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmds.png" class="figure-img img-fluid rounded"
+        alt="RMS v/s time" width="70%">
+      <figcaption class="figure-caption text-center">
+        Fig 1: Root Mean Square Distance (nm) versus Time (ps) from GROMACS
+      </figcaption>
+    </figure>
 
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rg.jpg" class="figure-img img-fluid rounded"
-      alt="Radius of gyration v/s time" width="70%">
-    <figcaption class="figure-caption text-center">
-      Fig 3: Radius of Gyration (nm) versus Time (ps) from GROMACS
-    </figcaption>
-  </figure>
+    <i></i>
+    <p>RMSD or root mean squared distance is the numerical representation of the difference between the peptide's
+      initial
+      structure and the structure at a given moment in time. Generally, an RMSD variation of less than 2 Angstorms is
+      supposed to be very close and stable.
+      \[ \text{RMSD} = \sqrt{\frac{\sum [m_i(x_i-y_i)^2]}{M}} \]
+    </p>
+
+    <p>The RMSD value was seen to increase for the first 50ns, which is a given due to the peptide stabilizing to the
+      given conditions in the system. It was observed that the RMSD values decreased briefly and then stabilized with a
+      fluctuation of approximately 1 Angstorms, which falls comfortably below the accepted threshold of
+      2 Angstorms, indicating that our peptide is very stable in the given environment. It also shows that <b>no
+        conformational changes</b> occur within the first 100 ns of the simulation, which could otherwise hamper its
+      target interaction.</p>
+
+    <h3>RMSF</h3>
+
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rmsf.jpg" class="figure-img img-fluid rounded"
+        alt="RMS v/s residue" width="70%">
+      <figcaption class="figure-caption text-center">
+        Fig 2: Root Mean Square Fluctuation (nm) versus Residue from GROMACS
+      </figcaption>
+    </figure>
+
+    <p>RMSF or root mean squared fluctuations is a calculation of individual residue flexibility, or how much a
+      particular
+      residue moves (fluctuates) during a simulation.
+      \[
+      \text{RMSF} = {\sqrt{\frac{\sum [m_i(x_i(t_j)-x_{ref})^2]}{T}}}
+      \]
+    </p>
+    <p>The residues at the very beginning and end of our peptide show the highest fluctuations and this indicates that
+      they are less stable than the residues with fewer fluctuations. For example, the amino acid residues between 14 to
+      24 are much more stable than the residues from 36 to 40, which correspond to loops in the structure of the
+      peptide.
+    </p>
+    <h3>Radius of Gyration</h3>
 
 
-  <p>The radius of gyration for a given molecule is a measure of the compactness of the molecule or how far apart the
-    mass of the object is distributed around its centre of mass.
-    \[
-    R_g = \sqrt{\frac{\sum [m_i(x_i-x_c)^2]}{M}}
-    \]</p>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-rg.jpg" class="figure-img img-fluid rounded"
+        alt="Radius of gyration v/s time" width="70%">
+      <figcaption class="figure-caption text-center">
+        Fig 3: Radius of Gyration (nm) versus Time (ps) from GROMACS
+      </figcaption>
+    </figure>
 
-  <p>From the resulting plot of the radius of gyration versus time, we can see that the net radius of gyration remains
-    fairly constant and is <b>within the range of 1 Angstorm</b>. This indicates that the peptide does not fold
-    or
-    unfold
-    over time, thereby contributing to no change in the compactness of the peptide. We can also conclude that the
-    peptide does not undergo any major conformational changes which can result in changes in the folded volume of the
-    protein, and thereby talks about the <b>stability of the peptide</b>.</p>
-  <p>MD Simulations on the MAM7-peptide dock would give a lot more information about the interactions present, the
-    stability of the complex, interaction energies, compactness and the effect of conformational changes on the
-    interaction. Parameters such as RMSF would give crucial information regarding the interacting residues present in
-    the complex. Induced conformational changes upon docking could be analyzed using graphs for RMSD as well as
-    observing the trajectory file. We planned on performing these simulations to analyze the MAM7-peptide interaction
-    but were limited by time and resources.</p>
 
-  <h1>IC<sub>50</sub></h1>
-  <p>The <b>optimum dosage values</b> of the peptide is essential for effective prevention of the disease Since both the
-    peptide and fibronectin are in a position to interact with MAM7, we concluded that our peptide would act as a
-    <b>competitive inhibitor</b> against fibronectin. Therefore, our mathematical model describes the relationship
-    between the
-    concentration of peptide required for a given concentration of fibronectin present in the system.
-  </p>
-  <ul>
-    <li>IC<sub>50</sub> is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that
-      reduces or
-      inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
-    <li>IC<sub>50</sub> values are typically calculated via an IC<sub>50</sub> assay using a serial dilution of the drug. Based
-      on the
-      definition of IC<sub>50</sub>, we arrived at an equation for the IC<sub>50</sub> concentration for our antimicrobial
-      peptide</li>
+    <p>The radius of gyration for a given molecule is a measure of the compactness of the molecule or how far apart the
+      mass of the object is distributed around its centre of mass.
+      \[
+      R_g = \sqrt{\frac{\sum [m_i(x_i-x_c)^2]}{M}}
+      \]</p>
 
-    <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
-      reaction mechanism. We derived an equation for the IC<sub>50</sub> value of our peptide with the following steps:
+    <p>From the resulting plot of the radius of gyration versus time, we can see that the net radius of gyration remains
+      fairly constant and is <b>within the range of 1 Angstorm</b>. This indicates that the peptide does not fold
+      or
+      unfold
+      over time, thereby contributing to no change in the compactness of the peptide. We can also conclude that the
+      peptide does not undergo any major conformational changes which can result in changes in the folded volume of the
+      protein, and thereby talks about the <b>stability of the peptide</b>.</p>
+    <p>MD Simulations on the MAM7-peptide dock would give a lot more information about the interactions present, the
+      stability of the complex, interaction energies, compactness and the effect of conformational changes on the
+      interaction. Parameters such as RMSF would give crucial information regarding the interacting residues present in
+      the complex. Induced conformational changes upon docking could be analyzed using graphs for RMSD as well as
+      observing the trajectory file. We planned on performing these simulations to analyze the MAM7-peptide interaction
+      but were limited by time and resources.</p>
 
-      <ol>
-        <li>
-          <p>
-            The reaction mechanism can be considered to be a parallel reaction scheme where MAM7 gets partitioned
-            between
-            Fibronectin and our peptide.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-1.png" alt="M+F=MF" width="30%">
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-2.png" alt="M+P=MP" width="30%">
-          </p>
-          <p>
-            Equations for the Association and Dissociation constant can be written as follows:
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png" alt="Association and Dissociation Equations" width="30%">
-          </p>
-          <p>
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png" alt="Association and Dissociation Constants" width="30%">
-          </p>
-        </li>
-        <li>
-          <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the
-            MAM7-Fibronectin
-            complex, MAM7-peptide complex and free MAM7.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png" alt="Total M concentration" width="30%">
-          </p>
-        </li>
-        <li>
-          <p>
-            We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
-            concentration.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png" alt="Rho derivation", width="70%">
-          </p>
-        </li>
-        <li>
-          <p>
-            We defined \(\rho_{in}\) as the interaction ratio in the absence of our peptide.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-9.png" alt="Rho in derivation" width="30%">
-          </p>
-        </li>
-        <li>
-          <p>
-            The below relation was arrived at from the definition of IC<sub>50</sub>.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png" alt="IC50 relation" width="50%">
-          </p>
-        </li>
-        <li>
-          <p>
-            On simplification, the final equation for IC<sub>50</sub> value of our peptide was found.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png" alt="Final IC50 equation" width="30%">
-          </p>
-        </li>
-      </ol>
-    </li>
-    <li>
-      <p>
-        The dissociation constant values substituted here were predicted using <b>PRODIGY</b>, thereby, giving us a
-        prediction of
-        the IC<sub>50</sub> concentration. The actual values of the dissociation constants would be found using Isothermal
-        Calorimetric analysis.
-      </p>
-      <p>The <b>PRODIGY</b> predicted values are:</p><br>
-      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png" alt="Predicted dissociation constant values" width="20%">
-    </li>
-  </ul>
+    <h1>IC<sub>50</sub></h1>
+    <p>The <b>optimum dosage values</b> of the peptide is essential for effective prevention of the disease Since both
+      the
+      peptide and fibronectin are in a position to interact with MAM7, we concluded that our peptide would act as a
+      <b>competitive inhibitor</b> against fibronectin. Therefore, our mathematical model describes the relationship
+      between the
+      concentration of peptide required for a given concentration of fibronectin present in the system.
+    </p>
+    <ul>
+      <li>IC<sub>50</sub> is the concentration of the drug or displacing ligand in a competitive inhibition mechanism
+        that
+        reduces or
+        inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
+      <li>IC<sub>50</sub> values are typically calculated via an IC<sub>50</sub> assay using a serial dilution of the
+        drug. Based
+        on the
+        definition of IC<sub>50</sub>, we arrived at an equation for the IC<sub>50</sub> concentration for our
+        antimicrobial
+        peptide</li>
 
-  <figure class="figure">
-    <img src="https://static.igem.wiki/teams/4200/wiki/model/model-ic50-2.png" class="figure-img img-fluid rounded"
-      alt="fibronectin concentrations" width="80%">
-    <figcaption class="figure-caption text-center">
-      Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations
-    </figcaption>
-  </figure>
+      <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
+        reaction mechanism. We derived an equation for the IC<sub>50</sub> value of our peptide with the following
+        steps:
 
-  <p>As an example,
-  <ul>
-    <li>MW of peptide = 4 kDa = 4 kg/mol</li>
-    <li>Say [F] = 1 nM</li>
-    <li>IC<sub>50</sub> = 10.67 microM = 42 mg/L</li>
-  </ul>
-  </p>
-  <b>References</b>
-  <ol>
-    <li>
-      S. Pronk et al., “GROMACS 4.5: a high-throughput and highly parallel open source molecular simulation toolkit,”
-      Bioinformatics, vol. 29, no. 7, pp. 845–854, Apr. 2013, doi: 10.1093/BIOINFORMATICS/BTT055.
-    </li>
-    <li>
-      M. J. Abraham et al., “GROMACS: High performance molecular simulations through multi-level parallelism from
-      laptops to supercomputers,” SoftwareX, vol. 1–2, pp. 19–25, Sep. 2015, doi: 10.1016/J.SOFTX.2015.06.001.
-    </li>
-    <li>
-      S. Páll, M. J. Abraham, C. Kutzner, B. Hess, and E. Lindahl, “Tackling exascale software challenges in molecular
-      dynamics simulations with GROMACS,” Lect. Notes Comput. Sci. (including Subser. Lect. Notes Artif. Intell. Lect.
-      Notes Bioinformatics), vol. 8759, pp. 3–27, 2015, doi: 10.1007/978-3-319-15976-8_1/FIGURES/7.
-    </li>
-    <li>
-      B. R. Brooks et al., “CHARMM: The Biomolecular Simulation Program,” J. Comput. Chem., vol. 30, no. 10, p. 1545,
-      Jul. 2009, doi: 10.1002/JCC.21287.
-    </li>
-    <li>
-      D.A. Case, H.M. Aktulga, K. Belfon, I.Y. Ben-Shalom, J.T. Berryman, S.R. Brozell, D.S. Cerutti, T.E. Cheatham,
-      III, G.A. Cisneros, V.W.D. Cruzeiro, T.A. Darden, R.E. Duke, G. Giambasu, M.K. Gilson, H. Gohlke, A.W. Goetz, R.
-      Harris, S. Izadi, S.A. Izmailov, K. Kasavajhala, M.C. Kaymak, E. King, A. Kovalenko, T. Kurtzman, T.S. Lee, S.
-      LeGrand, P. Li, C. Lin, J. Liu, T. Luchko, R. Luo, M. Machado, V. Man, M. Manathunga, K.M. Merz, Y. Miao, O.
-      Mikhailovskii, G. Monard, H. Nguyen, K.A. O'Hearn, A. Onufriev, F. Pan, S. Pantano, R. Qi, A. Rahnamoun, D.R. Roe,
-      A. Roitberg, C. Sagui, S. Schott-Verdugo, A. Shajan, J. Shen, C.L. Simmerling, N.R. Skrynnikov, J. Smith, J.
-      Swails, R.C. Walker, J. Wang, J. Wang, H. Wei, R.M. Wolf, X. Wu, Y. Xiong, Y. Xue, D.M. York, S. Zhao, and P.A.
-      Kollman (2022), Amber 2022, University of California, San Francisco.
-    </li>
-    <li>Kevin J. Bowers, Edmond Chow, Huafeng Xu, Ron O. Dror, Michael P. Eastwood, Brent A. Gregersen, John L. Klepeis,
-      Istvan Kolossvary, Mark A. Moraes, Federico D. Sacerdoti, John K. Salmon, Yibing Shan, and David E. Shaw,
-      "Scalable Algorithms for Molecular Dynamics Simulations on Commodity Clusters," Proceedings of the ACM/IEEE
-      Conference on Supercomputing (SC06), Tampa, Florida, 2006, November 11-17
+        <ol>
+          <li>
+            <p>
+              The reaction mechanism can be considered to be a parallel reaction scheme where MAM7 gets partitioned
+              between
+              Fibronectin and our peptide.
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-1.png" alt="M+F=MF" width="30%">
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-2.png" alt="M+P=MP" width="30%">
+            </p>
+            <p>
+              Equations for the Association and Dissociation constant can be written as follows:
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png"
+                alt="Association and Dissociation Equations" width="30%">
+            </p>
+            <p>
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png"
+                alt="Association and Dissociation Constants" width="30%">
+            </p>
+          </li>
+          <li>
+            <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the
+              MAM7-Fibronectin
+              complex, MAM7-peptide complex and free MAM7.
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png" alt="Total M concentration"
+                width="30%">
+            </p>
+          </li>
+          <li>
+            <p>
+              We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
+              concentration.
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png" alt="Rho derivation" , width="70%">
+            </p>
+          </li>
+          <li>
+            <p>
+              We defined \(\rho_{in}\) as the interaction ratio in the absence of our peptide.
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-9.png" alt="Rho in derivation" width="30%">
+            </p>
+          </li>
+          <li>
+            <p>
+              The below relation was arrived at from the definition of IC<sub>50</sub>.
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-10.png" alt="IC50 relation" width="50%">
+            </p>
+          </li>
+          <li>
+            <p>
+              On simplification, the final equation for IC<sub>50</sub> value of our peptide was found.
+              <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png" alt="Final IC50 equation"
+                width="30%">
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          The dissociation constant values substituted here were predicted using <b>PRODIGY</b>, thereby, giving us a
+          prediction of
+          the IC<sub>50</sub> concentration. The actual values of the dissociation constants would be found using
+          Isothermal
+          Calorimetric analysis.
+        </p>
+        <p>The <b>PRODIGY</b> predicted values are:</p><br>
+        <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png"
+          alt="Predicted dissociation constant values" width="20%">
+      </li>
+    </ul>
 
-      <p>Schrödinger Release 2022-3: Desmond Molecular Dynamics System, D. E. Shaw Research, New York, NY, 2021.
-        Maestro-Desmond Interoperability Tools, Schrödinger, New York, NY, 2021.</p>
-    </li>
-  </ol>
+    <figure class="figure">
+      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-ic50-2.png" class="figure-img img-fluid rounded"
+        alt="fibronectin concentrations" width="80%">
+      <figcaption class="figure-caption text-center">
+        Fig 4: \(IC_{50}\) values plotted for a range of Fibronectin concentrations
+      </figcaption>
+    </figure>
+
+    <p>As an example,
+    <ul>
+      <li>MW of peptide = 4 kDa = 4 kg/mol</li>
+      <li>Say [F] = 1 nM</li>
+      <li>IC<sub>50</sub> = 10.67 microM = 42 mg/L</li>
+    </ul>
+    </p>
+    <b>References</b>
+    <ol>
+      <li>
+        S. Pronk et al., “GROMACS 4.5: a high-throughput and highly parallel open source molecular simulation toolkit,”
+        Bioinformatics, vol. 29, no. 7, pp. 845–854, Apr. 2013, doi: 10.1093/BIOINFORMATICS/BTT055.
+      </li>
+      <li>
+        M. J. Abraham et al., “GROMACS: High performance molecular simulations through multi-level parallelism from
+        laptops to supercomputers,” SoftwareX, vol. 1–2, pp. 19–25, Sep. 2015, doi: 10.1016/J.SOFTX.2015.06.001.
+      </li>
+      <li>
+        S. Páll, M. J. Abraham, C. Kutzner, B. Hess, and E. Lindahl, “Tackling exascale software challenges in molecular
+        dynamics simulations with GROMACS,” Lect. Notes Comput. Sci. (including Subser. Lect. Notes Artif. Intell. Lect.
+        Notes Bioinformatics), vol. 8759, pp. 3–27, 2015, doi: 10.1007/978-3-319-15976-8_1/FIGURES/7.
+      </li>
+      <li>
+        B. R. Brooks et al., “CHARMM: The Biomolecular Simulation Program,” J. Comput. Chem., vol. 30, no. 10, p. 1545,
+        Jul. 2009, doi: 10.1002/JCC.21287.
+      </li>
+      <li>
+        D.A. Case, H.M. Aktulga, K. Belfon, I.Y. Ben-Shalom, J.T. Berryman, S.R. Brozell, D.S. Cerutti, T.E. Cheatham,
+        III, G.A. Cisneros, V.W.D. Cruzeiro, T.A. Darden, R.E. Duke, G. Giambasu, M.K. Gilson, H. Gohlke, A.W. Goetz, R.
+        Harris, S. Izadi, S.A. Izmailov, K. Kasavajhala, M.C. Kaymak, E. King, A. Kovalenko, T. Kurtzman, T.S. Lee, S.
+        LeGrand, P. Li, C. Lin, J. Liu, T. Luchko, R. Luo, M. Machado, V. Man, M. Manathunga, K.M. Merz, Y. Miao, O.
+        Mikhailovskii, G. Monard, H. Nguyen, K.A. O'Hearn, A. Onufriev, F. Pan, S. Pantano, R. Qi, A. Rahnamoun, D.R.
+        Roe,
+        A. Roitberg, C. Sagui, S. Schott-Verdugo, A. Shajan, J. Shen, C.L. Simmerling, N.R. Skrynnikov, J. Smith, J.
+        Swails, R.C. Walker, J. Wang, J. Wang, H. Wei, R.M. Wolf, X. Wu, Y. Xiong, Y. Xue, D.M. York, S. Zhao, and P.A.
+        Kollman (2022), Amber 2022, University of California, San Francisco.
+      </li>
+      <li>Kevin J. Bowers, Edmond Chow, Huafeng Xu, Ron O. Dror, Michael P. Eastwood, Brent A. Gregersen, John L.
+        Klepeis,
+        Istvan Kolossvary, Mark A. Moraes, Federico D. Sacerdoti, John K. Salmon, Yibing Shan, and David E. Shaw,
+        "Scalable Algorithms for Molecular Dynamics Simulations on Commodity Clusters," Proceedings of the ACM/IEEE
+        Conference on Supercomputing (SC06), Tampa, Florida, 2006, November 11-17
+
+        <p>Schrödinger Release 2022-3: Desmond Molecular Dynamics System, D. E. Shaw Research, New York, NY, 2021.
+          Maestro-Desmond Interoperability Tools, Schrödinger, New York, NY, 2021.</p>
+      </li>
+    </ol>
+
+  </div>
 
 </div>
-
 {% endblock %}

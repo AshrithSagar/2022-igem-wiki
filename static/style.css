@@ -6,7 +6,7 @@ body {
   background-color: #e7f5eb;
 }
 
-img {
+img:not(#home-header-image) {
   max-width: 90%;
   margin: auto;
   display: block;
@@ -27,13 +27,13 @@ img {
   display: none;
 }
 
-a:not(.navbar-brand, .nav-link, .dropdown-item) {
+a:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
   color: royalblue;
   font-weight: bold;
   text-decoration: none;
 }
 
-a:hover:not(.navbar-brand, .nav-link, .dropdown-item) {
+a:hover:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
   color: darkblue;
   text-decoration: underline;
 }
@@ -161,7 +161,27 @@ footer a:hover {
   text-decoration: underline;
 }
 
-#footer-logo {}
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.5;
+}
+
+.footer-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 992px) {
+  .footer-socials {
+    margin-top: 15px;
+  }
+
+  .footer-logo-text {
+    text-align: center;
+  }
+}
 
 /* --------------------------------------------------------------------------- */
 /* Fonts */
@@ -194,6 +214,55 @@ body {
 
 b {
   font-family: "Montserrat-Bold";
+}
+
+/* --------------------------------------------------------------------------- */
+/* Home page */
+
+.sponsors-parent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .sponsors-parent span img {
+    scale: 1.2;
+  }
+}
+
+#home-header-image {
+  margin-top: 10px;
+  width: 100vw;
+}
+
+#home-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* color: white; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 10rem;
+}
+
+@media screen and (max-width: 992px) {
+  #home-header-text {
+    font-size: 5rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #home-header-text {
+    font-size: 3rem;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
 }
 
 /* --------------------------------------------------------------------------- */
