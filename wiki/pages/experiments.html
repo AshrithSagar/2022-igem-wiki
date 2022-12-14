@@ -2,6 +2,11 @@
 
 {% block title %}Experiments{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <h1>Cloning and Expression System </h1>

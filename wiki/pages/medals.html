@@ -2,6 +2,11 @@
 
 {% block title %}Medals{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <div class="row">

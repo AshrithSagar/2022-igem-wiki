@@ -2,6 +2,11 @@
 
 {% block title %}Team{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 {% macro renderPerson(name, lead='', about='', src='') -%}

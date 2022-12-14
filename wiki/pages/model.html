@@ -2,6 +2,11 @@
 
 {% block title %}Model{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <div class="row">
@@ -39,7 +44,8 @@
 
   <i></i>
   <p>RMSD or root mean squared distance is the numerical representation of the difference between the peptide's initial
-    structure and the structure at a given moment in time. Generally, an RMSD variation of less than 2 Angstorms is supposed to be very close and stable.
+    structure and the structure at a given moment in time. Generally, an RMSD variation of less than 2 Angstorms is
+    supposed to be very close and stable.
     \[ \text{RMSD} = \sqrt{\frac{\sum [m_i(x_i-y_i)^2]}{M}} \]
   </p>
 
@@ -47,7 +53,8 @@
     given conditions in the system. It was observed that the RMSD values decreased briefly and then stabilized with a
     fluctuation of approximately 1 Angstorms, which falls comfortably below the accepted threshold of
     2 Angstorms, indicating that our peptide is very stable in the given environment. It also shows that <b>no
-      conformational changes</b> occur within the first 100 ns of the simulation, which could otherwise hamper its target interaction.</p>
+      conformational changes</b> occur within the first 100 ns of the simulation, which could otherwise hamper its
+    target interaction.</p>
 
   <h3>RMSF</h3>
 
@@ -112,9 +119,11 @@
     <li>IC<sub>50</sub> is the concentration of the drug or displacing ligand in a competitive inhibition mechanism that
       reduces or
       inhibits the receptor-ligand interaction by 50%. It is a measure of the potency of a drug.</li>
-    <li>IC<sub>50</sub> values are typically calculated via an IC<sub>50</sub> assay using a serial dilution of the drug. Based
+    <li>IC<sub>50</sub> values are typically calculated via an IC<sub>50</sub> assay using a serial dilution of the
+      drug. Based
       on the
-      definition of IC<sub>50</sub>, we arrived at an equation for the IC<sub>50</sub> concentration for our antimicrobial
+      definition of IC<sub>50</sub>, we arrived at an equation for the IC<sub>50</sub> concentration for our
+      antimicrobial
       peptide</li>
 
     <li>Our peptide competitively binds to MAM7 and inhibits its interaction with Fibronectin, therefore fitting the
@@ -131,24 +140,27 @@
           </p>
           <p>
             Equations for the Association and Dissociation constant can be written as follows:
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png" alt="Association and Dissociation Equations" width="30%">
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-3-4.png"
+              alt="Association and Dissociation Equations" width="30%">
           </p>
           <p>
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png" alt="Association and Dissociation Constants" width="30%">
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-5-6.png"
+              alt="Association and Dissociation Constants" width="30%">
           </p>
         </li>
         <li>
           <p>Given the total concentration of MAM7 in a system, the MAM7 would be partitioned between the
             MAM7-Fibronectin
             complex, MAM7-peptide complex and free MAM7.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png" alt="Total M concentration" width="30%">
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-7.png" alt="Total M concentration"
+              width="30%">
           </p>
         </li>
         <li>
           <p>
             We defined \(\rho\) as the ratio of the concentration of the MAM7-Fibronectin complex to the total MAM7
             concentration.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png" alt="Rho derivation", width="70%">
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-8.png" alt="Rho derivation" , width="70%">
           </p>
         </li>
         <li>
@@ -166,7 +178,8 @@
         <li>
           <p>
             On simplification, the final equation for IC<sub>50</sub> value of our peptide was found.
-            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png" alt="Final IC50 equation" width="30%">
+            <img src="https://static.igem.wiki/teams/4200/wiki/model/model-11.png" alt="Final IC50 equation"
+              width="30%">
           </p>
         </li>
       </ol>
@@ -175,11 +188,13 @@
       <p>
         The dissociation constant values substituted here were predicted using <b>PRODIGY</b>, thereby, giving us a
         prediction of
-        the IC<sub>50</sub> concentration. The actual values of the dissociation constants would be found using Isothermal
+        the IC<sub>50</sub> concentration. The actual values of the dissociation constants would be found using
+        Isothermal
         Calorimetric analysis.
       </p>
       <p>The <b>PRODIGY</b> predicted values are:</p><br>
-      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png" alt="Predicted dissociation constant values" width="20%">
+      <img src="https://static.igem.wiki/teams/4200/wiki/model/model-12.png"
+        alt="Predicted dissociation constant values" width="20%">
     </li>
   </ul>
 

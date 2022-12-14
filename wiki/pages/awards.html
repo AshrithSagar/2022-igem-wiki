@@ -2,6 +2,11 @@
 
 {% block title %}Awards{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <img src="https://static.igem.wiki/teams/4200/wiki/home/igem-team-pic.jpeg" alt="iGEM Team Pic">

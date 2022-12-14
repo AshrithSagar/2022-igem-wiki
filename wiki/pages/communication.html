@@ -2,6 +2,11 @@
 
 {% block title %}Communication{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
@@ -89,7 +94,8 @@
         in this with great enthusiasm!</p>
 
       <p>In the following days, many teachers and students approached our team members about the contents of our
-        presentation with numerous different follow-up questions. They shared snapshots of the event through their platforms to help engage
+        presentation with numerous different follow-up questions. They shared snapshots of the event through their
+        platforms to help engage
         their
         readers on the activities of our session.
       </p>
@@ -182,7 +188,10 @@
         what we tried to communicate, and their answers were in tandem with AMPifin’s problem statement.</p>
 
       <p>After we explained our project to them, we spoke about a foldscope microscope. We showed them a foldscope
-        microscope and how it works. The students were enthusiastic and responded well to our questions and the session. After the session, a few of them asked us how they could learn more synthetic biology and genetic engineering concepts. Furthermore, the educators and administrators at the school wanted us to conduct more such sessions for the students. Our team decided to
+        microscope and how it works. The students were enthusiastic and responded well to our questions and the session.
+        After the session, a few of them asked us how they could learn more synthetic biology and genetic engineering
+        concepts. Furthermore, the educators and administrators at the school wanted us to conduct more such sessions
+        for the students. Our team decided to
         make it a regular activity after our iGEM season.</p>
 
       <p>High school science majors often face confusion between choosing engineering or biological sciences. This is
@@ -282,7 +291,8 @@
       <p>In spite of their expertise barrier, they listened to our idea with rapt attention. Throughout the
         presentation,
         they asked us questions on concepts that they were unfamiliar with. During the question and answer session, they
-        asked us questions on topics that we hadn't previously considered. They encouraged us to continue our work post-iGEM, and
+        asked us questions on topics that we hadn't previously considered. They encouraged us to continue our work
+        post-iGEM, and
         improve on our current idea. This pushed us to discuss our future implementation and amalgamate our design with
         a
         commercially-viable solution. At the end of this meeting, all the members built an inquisitiveness toward

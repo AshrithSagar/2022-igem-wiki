@@ -2,6 +2,11 @@
 
 {% block title %}Human Practices{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -29,7 +34,7 @@
     <!-- Overview tab content goes here -->
     <div class="row">
       <h2>Introduction</h2>
-        <p><b>Vibriosis</b> is a serious disease in fish, crustaceans and shellfish as recognised by the FAO, United
+      <p><b>Vibriosis</b> is a serious disease in fish, crustaceans and shellfish as recognised by the FAO, United
         Nations. It
         leads to <b>significant economic losses</b> and affects multiple sectors, thus hindering the development of the
         country. According to a recent study, the most prevalent species triggering vibriosis in aquaculture farms are
@@ -83,7 +88,8 @@
         our project and identify better solutions with supplementary advantages. Overall, the project benefited by
         knowing the stakeholders' viewpoints and how human practices affected the project. It helped the project
         represent its objectives in the most effective way possible. The need to interact with project stakeholders was
-        crucial to us. We benefitted immensely from considering our initiative's potential effects on them and learning about their viewpoints on the matter. The stakeholders we identified are all mentioned here, along
+        crucial to us. We benefitted immensely from considering our initiative's potential effects on them and learning
+        about their viewpoints on the matter. The stakeholders we identified are all mentioned here, along
         with an explanation of why we contacted them and what we discovered.</p>
 
       <figure class="figure">
@@ -128,11 +134,13 @@
       </figure>
       <h3>Responsible</h3>
       <p>As iGEM is a competition based on synthetic biology, there are several biosafety issues that could emerge. Our
-        target organism—<i>Vibrio parahaemolyticus</i> is a Risk Group 2 organism. To avoid any sort of hazards, we decided to not work with this organism for our experiments. Instead, we decided to
+        target organism—<i>Vibrio parahaemolyticus</i> is a Risk Group 2 organism. To avoid any sort of hazards, we
+        decided to not work with this organism for our experiments. Instead, we decided to
         express our target molecule–MAM7 via <i>E.coli</i>.
       <p>
       <h3>Reflective</h3>
-      <p>Human practices and community engagement formed the backbone of our project. The conversations we had with the multiple
+      <p>Human practices and community engagement formed the backbone of our project. The conversations we had with the
+        multiple
         individuals helped us gain a holistic perspective of the problem. The insights and opinions helped us shape our
         project. After every interaction, our team sat together and reflected upon the content of the meetings in
         order to make improvements to our solution.</p>
@@ -172,8 +180,10 @@
         about various topics, including parasites and viruses, as well as feed and water purification. We learnt about
         the major diseases in fish and the present methods of prevention and cure. He was the one who first mentioned
         <i>Vibrio parahaemolyticus</i> and Oxytetracycline to us. We decided to work on the bacteria <i>Vibrio
-          parahaemolyticus</i> owing to the insightful conversation we had with him.An aspect he emphasised was the significance of not entirely eradicating all microorganisms from the water
-        body. He also discussed several strategies for distributing feed and raising fish.</p>
+          parahaemolyticus</i> owing to the insightful conversation we had with him.An aspect he emphasised was the
+        significance of not entirely eradicating all microorganisms from the water
+        body. He also discussed several strategies for distributing feed and raising fish.
+      </p>
 
       <h2>Government Shrimp and Fish Hatchery</h2>
 
@@ -192,7 +202,8 @@
         of vibriosis, pretreatment methods are employed immediately after the seeds are hatched. In the case of an
         infection, antibiotics are used as a treatment method. They emphasised on how the dosage has seen a surge over
         the years. Furthermore, they mentioned that detection is primarily carried out via PCR. Their hatchery consists
-        of massive units, maintained at a temperature varying from 25-28 degrees celcius using regulated heaters, and the
+        of massive units, maintained at a temperature varying from 25-28 degrees celcius using regulated heaters, and
+        the
         salinity of
         the water is maintained at 20 ppm. Through this visit, we learnt about the various methods to identify the
         levels of pathogenicity and how fisherfolk differentiate between diseased and healthy fish. We
@@ -241,7 +252,10 @@
         methods of prevention of diseases in most seafood shops were nebulous, especially for the wild-caught ones.
         Since most of them were sellers and not pisciculture farmers, they did not have much knowledge on the various
         medicines used in fish hatcheries. We explained our project to them and they provided us with their opinion on
-        selling or consuming seafood that has been treated with our peptide. Since most were sellers and not pisciculture farmers, they did not know much about the various medicines used in fish hatcheries. Furthermore, they were encouraging of more such sustainable solutions. From this visit, we understood the importance of consulting secondary stakeholders, who are a critical part of the food supply chain.</p>
+        selling or consuming seafood that has been treated with our peptide. Since most were sellers and not
+        pisciculture farmers, they did not know much about the various medicines used in fish hatcheries. Furthermore,
+        they were encouraging of more such sustainable solutions. From this visit, we understood the importance of
+        consulting secondary stakeholders, who are a critical part of the food supply chain.</p>
 
       <figure class="figure">
         <img src="https://static.igem.wiki/teams/4200/wiki/communication/fish-market-1.jpg"
@@ -259,7 +273,8 @@
         about 25%, along with a pH range of 8.5, and the breeding period is usually carried out for four months. He
         mentioned how these conditions were applicable for fish as well.</p>
 
-      <p>For fish, any disease is detected by visual cues—cuts, scars, bleeding on the skin, and necrosis. The detection of such diseases is carried out by testing the water with a calcium soda mix. Since
+      <p>For fish, any disease is detected by visual cues—cuts, scars, bleeding on the skin, and necrosis. The detection
+        of such diseases is carried out by testing the water with a calcium soda mix. Since
         AMPifin could potentially be a broad-spectrum solution for all gram-negative pathogens, we were delighted to see
         such accepting nature toward the utilisation of our solution.</p>
 
@@ -383,9 +398,10 @@
       <p>Every year, they face a loss percentage of 5–10% due to different types of diseases. On explaining our
         project to him, he was eager to see the result. He explained how the pipe fittings and the connections were
         formed in order to incorporate various water filters. This paved the route for our delivery mechanism to find
-        an appropriate real-life application. Given the description of the Recirculatory Aquaculture System (RAS) in his farm, we made our implementation
+        an appropriate real-life application. Given the description of the Recirculatory Aquaculture System (RAS) in his
+        farm, we made our implementation
         design to increase the feasibility of integrating AMPifin in fish farms. He
-        displayed eagerness toward our project and said that solutions like AMPifin are required owing to 
+        displayed eagerness toward our project and said that solutions like AMPifin are required owing to
         antibiotic resistance becoming a rising concern.</p>
 
       <div class="row">
@@ -433,7 +449,7 @@
       <p>We introduced them to our project—AMPifin and they were inquisitive about our delivery mechanism. From this
         visit, we understood the effects of diseased/rotten fish on different stages of consumption. We also learned
         the methods of segregating rotten or diseased fish at a seafood restaurant. We
-        ended this visit by trying two of their famous seafood dishes. The dishes were absolutely delicious, and 
+        ended this visit by trying two of their famous seafood dishes. The dishes were absolutely delicious, and
         highlighted how these cuisines form the backbone of our rich Indian culture. This visit helped us broaden our
         stakeholder interaction spectrum and understand the prevalence of vibriosis at various stages of the
         food-supply chain.</p>
@@ -450,7 +466,8 @@
       <p>On 7th October 2022, we collaborated with the Astronomy Club, Manipal to talk about synthetic biology and
         its applications in the space industry. The podcast comprised two members of the Astronomy Club and two
         members of Manipal BioMachines. The podcast started off with an introduction to the respective members and
-        iGEM. The discussion was based on how synthetic biology could be used to enhance and use the extreme environments of
+        iGEM. The discussion was based on how synthetic biology could be used to enhance and use the extreme
+        environments of
         space to our advantage. For example—extremophiles for the elimination of biowaste and synthesis of
         biomaterial, self healing bio-compounds for integrity of the space shuttle, and nutrient-rich-space-conserving
         food given the limitation on resources that can be carried. There were talks about previous iGEM teams’
@@ -468,7 +485,8 @@
       <p>To understand the perception of the general public on the pisciculture industry, we rolled out an exhaustive
         consumer survey. This survey helped us understand the opinion of the general public on sustainable solutions
         based on synthetic biology. The responses brought a broader perspective to our project, and it was interesting
-        to see the level of awareness amongst various seafood consumers on diseases in fish and their prevalence. Attached
+        to see the level of awareness amongst various seafood consumers on diseases in fish and their prevalence.
+        Attached
         below is a detailed consolidation and summarised inference:</p>
 
       <iframe class="align-self-center my-5" loading="lazy" height="500px" width="100%" title="survey consolidation"

@@ -21,11 +21,6 @@
   <!-- Navigation -->
   {% include 'menu.html' %}
 
-  <!-- Header -->
-  {% with title = self.title() %}
-  {% include 'header.html' %}
-  {% endwith %}
-
   <!-- Page Content -->
   <div class="container">
     {% block page_content %}{% endblock %}

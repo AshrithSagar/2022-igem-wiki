@@ -2,12 +2,18 @@
 
 {% block title %}Collaborations{% endblock %}
 
+<!-- Header -->
+{% with title = self.title() %}
+{% include 'header.html' %}
+{% endwith %}
+
 {% block page_content %}
 
 <div class="row">
   <h2>Overview</h2>
   <p>Collaboration bolsters the essence of iGEM, and in tandem with that, we pushed to collaborate with various iGEM
-    teams worldwide. Through our multiple interactions with iGEM teams worldwide, we gained insight and feedback on our approach, and helped other teams with their
+    teams worldwide. Through our multiple interactions with iGEM teams worldwide, we gained insight and feedback on our
+    approach, and helped other teams with their
     troubleshooting aspects. Our collaborations brought in an all-encompassing view of iGEM and the multitude of teams
     participating in the competition. We thank the community of students with whom we were fortunate enough to interact.
   </p>
@@ -20,10 +26,12 @@
 
   <p>Our first interaction with <a href="https://2022.igem.wiki/queens-canada/">iGEM Queens_Canada</a> was in May 2022.
     We began by explaining our projects to each other
-    and looking at possible collaborations and fruitful areas of work. The Queens iGEM team told us that the necessity for
+    and looking at possible collaborations and fruitful areas of work. The Queens iGEM team told us that the necessity
+    for
     effective filtration and detection technology has become critical due to the persistent problem of unsafe drinking
     water in indigenous communities across Canada. Their objective is to offer these communities a point-of-care water
-    filtration system that will remove harmful chemicals like lead, mercury, and <i>Escherichia coli</i> and assist them in
+    filtration system that will remove harmful chemicals like lead, mercury, and <i>Escherichia coli</i> and assist them
+    in
     identifying undesired microorganisms in their water to ensure it is safe to drink. Our project for 2022 focuses on
     synthesising a novel antimicrobial peptide that can bind to the protein MAM7 on the bacteria, thus preventing
     infection. On interacting with their team, we troubleshot ideas based on our project. We decided to collaborate on
@@ -102,7 +110,8 @@
     and approach the pisciculture markets in India and Hongkong, respectively.</p>
 
   <p>Our first meeting with the iGEM HKUST team was on 5th July 2022, during which both teams presented their project
-    ideas and looked for potential areas of collaboration. Upon identifying possible similarities in our human practices and dry lab modules, these seemed to be the most feasible areas for collaboration.</p>
+    ideas and looked for potential areas of collaboration. Upon identifying possible similarities in our human practices
+    and dry lab modules, these seemed to be the most feasible areas for collaboration.</p>
 
   <figure class="figure">
     <img src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-hkustxmit-mahe.jpg"
