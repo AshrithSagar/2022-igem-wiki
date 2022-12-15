@@ -123,7 +123,9 @@ a:hover:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
 /* Gradient */
 
 header {
-  background: radial-gradient(circle, #e7f5eb, #3f788a);
+  /* background: radial-gradient(circle, #e7f5eb, #3f788a); */
+  background-color: #06522c;
+  background-image: linear-gradient(315deg, #06522c 0%, #3f788a 74%);
   animation: gradient 10s ease infinite;
   background-size: 200% 200%;
   height: calc(100vh - 56px);
