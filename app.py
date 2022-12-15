@@ -14,23 +14,27 @@ app.config['FREEZER_RELATIVE_URLS'] = True
 app.config['FREEZER_IGNORE_MIMETYPE_WARNINGS'] = True
 freezer = Freezer(app)
 
+
 @app.cli.command()
 def freeze():
     freezer.freeze()
+
 
 @app.cli.command()
 def serve():
     freezer.run()
 
+
 @app.route('/')
 def index():
     return render_template('pages/index.html')
+
 
 @app.route('/<page>')
 def pages(page):
     return render_template(str(Path('pages') / (page.lower() + '.html')))
 
+
 # Main Function, Runs at http://0.0.0.0:8080
 if __name__ == "__main__":
-    freezer.freeze()
     app.run(port=8080, debug=True)
