@@ -300,7 +300,9 @@ b {
 .page-tabs:active,
 #pills-overview-tab:active,
 #pills-engagement-tab:active,
-#pills-IHP-tab:active {
+#pills-IHP-tab:active,
+#pills-education-tab:active,
+#pills-communication-tab:active {
   background-color: #67afc7;
   color: white;
   box-shadow: 0 5px #666;
@@ -310,7 +312,9 @@ b {
 .page-tabs:hover,
 #pills-overview-tab:hover,
 #pills-engagement-tab:hover,
-#pills-IHP-tab:hover {
+#pills-IHP-tab:hover,
+#pills-education-tab:hover,
+#pills-communication-tab:hover {
   background-color: #06522c;
   color: white;
 }
