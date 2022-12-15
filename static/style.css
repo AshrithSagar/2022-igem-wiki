@@ -12,6 +12,8 @@ img:not(#home-header-image) {
   display: block;
   text-align: center;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .logo-home {
