@@ -21,8 +21,24 @@
   <!-- Navigation -->
   {% include 'menu.html' %}
 
+  <!-- Header -->
+  {% block header %}
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">{{ self.title() }}</h1>
+          <p class="lead mb-5 page-header-text-lead">{% block lead %}{% endblock %}</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% endblock %}
+
   <!-- Page Content -->
-  {% block page_content %}{% endblock %}
+  <div class="container">
+    {% block page_content %}{% endblock %}
+  </div>
 
   <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
   {% include 'footer.html' %}

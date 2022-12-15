@@ -3,7 +3,7 @@
 {% block title %}AMPIFIN{% endblock %}
 {% block lead %}Antimicrobial peptides to tackle vibriosis in fish.{% endblock %}
 
-{% block page_content %}
+{% block header %}
 
 <div class="container-fluid">
   <!-- <img src="https://static.igem.wiki/teams/4200/wiki/logo.svg" class="logo-home"> -->
@@ -12,98 +12,98 @@
   <p class="display-1" id="home-header-text">AMPIFIN</p>
 </div>
 
-<div class="container">
+{% endblock %}
+
+{% block page_content %}
+
+<div class="row">
+  <div class="col-6">
+    <img src="https://static.igem.wiki/teams/4200/wiki/home/home-3.png" alt=""
+      style="margin: auto; scale: 1.5; margin-left: 200px;">
+  </div>
 
   <div class="row">
     <div class="col-6">
-      <img src="https://static.igem.wiki/teams/4200/wiki/home/home-3.png" alt=""
-        style="margin: auto; scale: 1.5; margin-left: 200px;">
     </div>
 
-    <div class="row">
-      <div class="col-6">
-      </div>
-
-      <div class="col-6">
-        <p class="h2">
-          <img src="https://static.igem.wiki/teams/4200/wiki/home/home-2.png" alt="" style="margin: auto; scale: 1.3;">
-        </p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <br><br>
-        <p class="lead">
-          An increase in the production demand has led to over-exploitative methods of cultivation. This has triggered
-          the
-          establishment of subsequent bacterial and viral diseases, causing major economic loss.</p>
-        <br><br>
-      </div>
-    </div>
-
-    <img src="https://static.igem.wiki/teams/4200/wiki/home/map.svg" alt="*World map">
-
-    <div class="row">
-      <div class="col">
-        <img src="https://static.igem.wiki/teams/4200/wiki/home/fish-bacteria-1.svg" alt="Fish-bacteria"
-          style="transform: rotate(-14.69deg);">
-      </div>
-      <div class="col">
-        <br>
-        <p class="h3">Vibriosis is a bacterial infection caused by the vibrio species. <br><br> It causes weariness,
-          necrosis of the skin and appendages, leading to body malformation, and eventually, mortality of fishes.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        <p class="display-3">
-          Our solution:
-        </p>
-      </div>
-    </div>
-
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p class="h2">An antimicrobial peptide that would bind to MAM7 surface protein present on the bacteria, and
-          inhibit adhesion to the fish.</p>
-      </blockquote>
-    </figure>
-
-    <div class="row">
-      <div class="col-12">
-        <p class="h4 text-center">The peptide will be encapsulated in <span
-            class="badge rounded-pill bg-warning text-dark">Chitosan
-            Nanoparticles</span></p>
-        <br>
-      </div>
-    </div>
-
-    <img src="https://static.igem.wiki/teams/4200/wiki/home/csnp-capsules.gif"
-      alt="MIT_MAHE: CSNP_capsules (2022) [English]">
-
-    <div class="row">
-      <div class="col">
-        <p class="display-4">Sponsors</p>
-        <div class="row sponsors-parent">
-          <span class="col">
-            <img src="https://static.igem.wiki/teams/4200/wiki/home/beckman-logo.png" alt="beckman-logo">
-          </span>
-          <span class="col">
-            <img src="https://static.igem.wiki/teams/4200/wiki/home/neb-logo.png" alt="neb-logo">
-          </span>
-          <span class="col">
-            <img src="https://static.igem.wiki/teams/4200/wiki/home/mahe-logo.png" alt="mahe-logo" style="width: 40%;">
-          </span>
-          <span class="col">
-            <img src="https://static.igem.wiki/teams/4200/wiki/home/idt-logo.png" alt="idt-logo">
-          </span>
-        </div>
-      </div>
+    <div class="col-6">
+      <p class="h2">
+        <img src="https://static.igem.wiki/teams/4200/wiki/home/home-2.png" alt="" style="margin: auto; scale: 1.3;">
+      </p>
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-12">
+      <br><br>
+      <p class="lead">
+        An increase in the production demand has led to over-exploitative methods of cultivation. This has triggered
+        the
+        establishment of subsequent bacterial and viral diseases, causing major economic loss.</p>
+      <br><br>
+    </div>
+  </div>
+
+  <img src="https://static.igem.wiki/teams/4200/wiki/home/map.svg" alt="*World map">
+
+  <div class="row">
+    <div class="col">
+      <img src="https://static.igem.wiki/teams/4200/wiki/home/fish-bacteria-1.svg" alt="Fish-bacteria"
+        style="transform: rotate(-14.69deg);">
+    </div>
+    <div class="col">
+      <br>
+      <p class="h3">Vibriosis is a bacterial infection caused by the vibrio species. <br><br> It causes weariness,
+        necrosis of the skin and appendages, leading to body malformation, and eventually, mortality of fishes.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p class="display-3">
+        Our solution:
+      </p>
+    </div>
+  </div>
+
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p class="h2">An antimicrobial peptide that would bind to MAM7 surface protein present on the bacteria, and
+        inhibit adhesion to the fish.</p>
+    </blockquote>
+  </figure>
+
+  <div class="row">
+    <div class="col-12">
+      <p class="h4 text-center">The peptide will be encapsulated in <span
+          class="badge rounded-pill bg-warning text-dark">Chitosan
+          Nanoparticles</span></p>
+      <br>
+    </div>
+  </div>
+
+  <img src="https://static.igem.wiki/teams/4200/wiki/home/csnp-capsules.gif"
+    alt="MIT_MAHE: CSNP_capsules (2022) [English]">
+
+  <div class="row">
+    <div class="col">
+      <p class="display-4">Sponsors</p>
+      <div class="row sponsors-parent">
+        <span class="col">
+          <img src="https://static.igem.wiki/teams/4200/wiki/home/beckman-logo.png" alt="beckman-logo">
+        </span>
+        <span class="col">
+          <img src="https://static.igem.wiki/teams/4200/wiki/home/neb-logo.png" alt="neb-logo">
+        </span>
+        <span class="col">
+          <img src="https://static.igem.wiki/teams/4200/wiki/home/mahe-logo.png" alt="mahe-logo" style="width: 40%;">
+        </span>
+        <span class="col">
+          <img src="https://static.igem.wiki/teams/4200/wiki/home/idt-logo.png" alt="idt-logo">
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

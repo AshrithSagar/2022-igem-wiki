@@ -2,127 +2,119 @@
 
 {% block title %}Medals{% endblock %}
 
-<!-- Header -->
-{% with title = self.title() %}
-{% include 'header.html' %}
-{% endwith %}
-
 {% block page_content %}
-<div class="container">
 
-    <div class="row">
-        <h1>Bronze medal</h1>
-        <ol>
-            <li>
-                <h3>Competition Deliverables</h3>
-                <ul>
-                    <li>
-                        <h5>Wiki</h5>
-                        <p>You are currently browsing through our <a href="{{ url_for('index') }}">wiki</a>; we
-                            hope you like it!</p>
-                    </li>
-                    <li>
-                        <h5>Project Promotion Video</h5>
-                        <p>To know about what our project is in under two minutes, do check out our <a
-                                href="https://video.igem.org/w/4rvnqWVgHiCyDfSQSTu8Wv">Promotional Video</a>.</p>
-                    <li>
-                        <h5>Judging form </h5>
-                        <p>Our <a href="https://old.igem.org/2022_Judging_Form?id=4200">Judging Form</a> is an
-                            all-encompassing view of the medal criteria requirements.</p>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h3>Attributions</h3>
-                <p>
-                    Check out our <a href="{{ url_for('pages', page='team') }}">Team</a> and the <a
-                        href="{{ url_for('pages', page='attributions') }}">Attributions</a> page to learn about the
-                    contributions made by each of our team members.
-                </p>
-            </li>
-            <li>
-                <h3>Project description</h3>
-                <p>
-                    AMPifin is a sustainable solution to vibriosis which employs a novel antimicrobial peptide
-                    synthesised
-                    by us. <br>(Find out more on our <a
-                        href="{{ url_for('pages', page='description') }}">Description</a>
-                    page)</p>
-            </li>
-            <li>
-                <h3> Contribution </h3>
-                <p>Our <a href="{{ url_for('pages', page='software') }}">Software</a>,
-                    GRASP, mutates peptide sequences
-                    through Alanine Scanning.</p>
-            </li>
-        </ol>
-        <h1>Silver medal</h1>
-        <ol>
-            <li>
-                <h3>Engineering success</h3>
-                <p>Our <a href="{{ url_for('pages', page='engineering') }}">Engineering
-                        Success</a> shows the
-                    Design-Build-Test-Learn (DBTL) cycle for the modification cycle of the peptides.</p>
-            </li>
-            <li>
+<div class="row">
+    <h1>Bronze medal</h1>
+    <ol>
+        <li>
+            <h3>Competition Deliverables</h3>
+            <ul>
+                <li>
+                    <h5>Wiki</h5>
+                    <p>You are currently browsing through our <a href="{{ url_for('index') }}">wiki</a>; we
+                        hope you like it!</p>
+                </li>
+                <li>
+                    <h5>Project Promotion Video</h5>
+                    <p>To know about what our project is in under two minutes, do check out our <a
+                            href="https://video.igem.org/w/4rvnqWVgHiCyDfSQSTu8Wv">Promotional Video</a>.</p>
+                <li>
+                    <h5>Judging form </h5>
+                    <p>Our <a href="https://old.igem.org/2022_Judging_Form?id=4200">Judging Form</a> is an
+                        all-encompassing view of the medal criteria requirements.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Attributions</h3>
+            <p>
+                Check out our <a href="{{ url_for('pages', page='team') }}">Team</a> and the <a
+                    href="{{ url_for('pages', page='attributions') }}">Attributions</a> page to learn about the
+                contributions made by each of our team members.
+            </p>
+        </li>
+        <li>
+            <h3>Project description</h3>
+            <p>
+                AMPifin is a sustainable solution to vibriosis which employs a novel antimicrobial peptide
+                synthesised
+                by us. <br>(Find out more on our <a href="{{ url_for('pages', page='description') }}">Description</a>
+                page)</p>
+        </li>
+        <li>
+            <h3> Contribution </h3>
+            <p>Our <a href="{{ url_for('pages', page='software') }}">Software</a>,
+                GRASP, mutates peptide sequences
+                through Alanine Scanning.</p>
+        </li>
+    </ol>
+    <h1>Silver medal</h1>
+    <ol>
+        <li>
+            <h3>Engineering success</h3>
+            <p>Our <a href="{{ url_for('pages', page='engineering') }}">Engineering
+                    Success</a> shows the
+                Design-Build-Test-Learn (DBTL) cycle for the modification cycle of the peptides.</p>
+        </li>
+        <li>
 
-                <h3>Collaborations</h3>
-                <p>We collaborated with other iGEM teams to help further each other's projects and advance the synthetic
-                    biology community in India. (Check out our <a
-                        href="{{ url_for('pages', page='collaborations') }}">Collaborations</a> page)</p>
-            </li>
-            <li>
-                <h3>Human practices</h3>
-                <p>For <a href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>, we extended our
-                    outreach to the community by showcasing the impact of our problem and solution.</p>
-            </li>
-            <li>
-                <h3>Proposed implementation</h3>
-                <p>AMPifin finds its <a href="{{ url_for('pages', page='implementation') }}">Implementation</a> in RAS
-                    by
-                    employing a mesh-stack subjected at the inlet of the first tank in the system.</p>
-            </li>
-        </ol>
+            <h3>Collaborations</h3>
+            <p>We collaborated with other iGEM teams to help further each other's projects and advance the synthetic
+                biology community in India. (Check out our <a
+                    href="{{ url_for('pages', page='collaborations') }}">Collaborations</a> page)</p>
+        </li>
+        <li>
+            <h3>Human practices</h3>
+            <p>For <a href="{{ url_for('pages', page='human-practices') }}">Human Practices</a>, we extended our
+                outreach to the community by showcasing the impact of our problem and solution.</p>
+        </li>
+        <li>
+            <h3>Proposed implementation</h3>
+            <p>AMPifin finds its <a href="{{ url_for('pages', page='implementation') }}">Implementation</a> in RAS
+                by
+                employing a mesh-stack subjected at the inlet of the first tank in the system.</p>
+        </li>
+    </ol>
 
-        <h1>Gold medal</h1>
-        <ol>
-            <li>
+    <h1>Gold medal</h1>
+    <ol>
+        <li>
 
-                <h3>Integrated human practices</h3>
-                <p>Our <a href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a> is a
-                    culmination of all the interactions, visits, and input we received through our broader base of
-                    stakeholders.</p>
-            </li>
-            <li>
+            <h3>Integrated human practices</h3>
+            <p>Our <a href="{{ url_for('pages', page='human-practices') }}">Integrated Human Practices</a> is a
+                culmination of all the interactions, visits, and input we received through our broader base of
+                stakeholders.</p>
+        </li>
+        <li>
 
-                <h3>Project modelling </h3>
-                <p>Our mathematical model explains the relation between the amount of peptide needed for a specific
-                    amount
-                    of fibronectin present in the system. Additionally, it reflects the analysis of the molecular
-                    dynamics
-                    simulation of the peptide. (Our <a href="{{ url_for('pages', page='model') }}">Modelling</a> page)
-                </p>
-            </li>
-            <li>
+            <h3>Project modelling </h3>
+            <p>Our mathematical model explains the relation between the amount of peptide needed for a specific
+                amount
+                of fibronectin present in the system. Additionally, it reflects the analysis of the molecular
+                dynamics
+                simulation of the peptide. (Our <a href="{{ url_for('pages', page='model') }}">Modelling</a> page)
+            </p>
+        </li>
+        <li>
 
-                <h3>Partnership</h3>
-                <p>We partnered with IISER Pune 2 to help improve each other's projects. Via this <a
-                        href="{{ url_for('pages', page='partnership') }}">Partnership</a>, we were successful in
-                    establishing a valuable exchange of information which aided in structuring our projects.</p>
-            </li>
-            <li>
+            <h3>Partnership</h3>
+            <p>We partnered with IISER Pune 2 to help improve each other's projects. Via this <a
+                    href="{{ url_for('pages', page='partnership') }}">Partnership</a>, we were successful in
+                establishing a valuable exchange of information which aided in structuring our projects.</p>
+        </li>
+        <li>
 
-                <h3>Education and communication</h3>
-                <p>As part of our <a href="{{ url_for('pages', page='communication') }}">Education and Communication
-                        initiatives</a>,
-                    we expounded and discussed the rudimentary aspects of synthetic biology and iGEM to various target
-                    audiences through our interactions with the working class population, undergraduate, high school,
-                    middle
-                    school, and differently-abled students.</p>
-            </li>
-        </ol>
-
-    </div>
+            <h3>Education and communication</h3>
+            <p>As part of our <a href="{{ url_for('pages', page='communication') }}">Education and Communication
+                    initiatives</a>,
+                we expounded and discussed the rudimentary aspects of synthetic biology and iGEM to various target
+                audiences through our interactions with the working class population, undergraduate, high school,
+                middle
+                school, and differently-abled students.</p>
+        </li>
+    </ol>
 
 </div>
+
 {% endblock %}

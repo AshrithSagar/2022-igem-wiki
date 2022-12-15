@@ -2,29 +2,22 @@
 
 {% block title %}Education{% endblock %}
 
-<!-- Header -->
-{% with title = self.title() %}
-{% include 'header.html' %}
-{% endwith %}
-
 {% block page_content %}
-<div class="container">
 
-    <p>In many instances, specific bands of our community are excluded from the STEM and synthetic biology
-        conversation.To
-        educate and communicate with a wider audience, our primary goal was to reach out to various age groups. While
-        doing
-        so, we incorporated various activity-based sections in all our visits. These components were designed for
-        specific
-        age groups of the society, as well as our primary and secondary stakeholders. Aspects like a podcast, comic
-        strips,
-        and pamphlets were simple components we used as connectors between us and the general public. Our interactions
-        not
-        only facilitated spreading cognisance on synthetic biology, buy also served as a learning platform for our team
-        members.</p>
-    <p>To know more about our education and communication efforts, visit our <a
-            href="{{ url_for('pages', page='communication') }}">Communication</a> page.
-    </p>
+<p>In many instances, specific bands of our community are excluded from the STEM and synthetic biology
+    conversation.To
+    educate and communicate with a wider audience, our primary goal was to reach out to various age groups. While
+    doing
+    so, we incorporated various activity-based sections in all our visits. These components were designed for
+    specific
+    age groups of the society, as well as our primary and secondary stakeholders. Aspects like a podcast, comic
+    strips,
+    and pamphlets were simple components we used as connectors between us and the general public. Our interactions
+    not
+    only facilitated spreading cognisance on synthetic biology, buy also served as a learning platform for our team
+    members.</p>
+<p>To know more about our education and communication efforts, visit our <a
+        href="{{ url_for('pages', page='communication') }}">Communication</a> page.
+</p>
 
-</div>
 {% endblock %}
