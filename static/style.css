@@ -289,21 +289,29 @@ b {
 .page-tabs {
   background-color: #77caac;
   color: black;
+  border-style: solid;
   border-radius: 5px;
-  border: none;
+  border-width: 1px;
+  border-color: #343a40;
   font-weight: bold;
   font-style: normal;
 }
 
-.page-tabs:active {
-  background-color: #06522c;
+.page-tabs:active,
+#pills-overview-tab:active,
+#pills-engagement-tab:active,
+#pills-IHP-tab:active {
+  background-color: #67afc7;
   color: white;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-.page-tabs:hover {
-  background-color: #67afc7;
+.page-tabs:hover,
+#pills-overview-tab:hover,
+#pills-engagement-tab:hover,
+#pills-IHP-tab:hover {
+  background-color: #06522c;
   color: white;
 }
 
