@@ -5,14 +5,15 @@
 {% block page_content %}
 
 {% macro renderPerson(name, lead='', about='', src='') -%}
-<div class="card shadow-sm">
-    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/{{src}}" alt="{{name}}" width="100%" height="100%">
+<div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/{{src}}" alt="{{name}}" width="100%" height="100%"
+        class="reveal-on-scroll">
 
-    <div class="card-body">
-        <p class="card-text h3">{{name}}</p>
-        <small class="text-muted">{{lead}}</small>
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">{{name}}</p>
+        <small class="text-muted reveal-on-scroll">{{lead}}</small>
         <div class="d-flex justify-content-between">
-            <p>{{about}}</p>
+            <p class="reveal-on-scroll">{{about}}</p>
         </div>
     </div>
 </div>
