@@ -52,7 +52,8 @@ a:hover:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
   transform: translateY(0);
 }
 
-@media (prefers-reduced-motion) {
+@media (prefers-reduced-motion),
+(scripting: none) {
   .reveal-on-scroll {
     opacity: 1;
     transition: none;
