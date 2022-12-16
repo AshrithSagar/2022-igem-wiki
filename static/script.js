@@ -1,36 +1,38 @@
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+// // ------------------------------------------------------------------------
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
-})
+// var myModal = document.getElementById('myModal')
+// var myInput = document.getElementById('myInput')
 
-// ------------------------------------------------------------------------
-//Get the button
-let mybutton = document.getElementById("btn-back-to-top");
+// myModal.addEventListener('shown.bs.modal', function () {
+//   myInput.focus()
+// })
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
+// // ------------------------------------------------------------------------
+// //Get the button
+// let mybutton = document.getElementById("btn-back-to-top");
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function () {
+//   scrollFunction();
+// };
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// function scrollFunction() {
+//   if (
+//     document.body.scrollTop > 20 ||
+//     document.documentElement.scrollTop > 20
+//   ) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
+// // When the user clicks on the button, scroll to the top of the document
+// mybutton.addEventListener("click", backToTop);
+
+// function backToTop() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
 
 // ------------------------------------------------------------------------
 
@@ -46,5 +48,22 @@ imagesLoaded(grid).on('progress', function () {
   msnry.layout();
 });
 
+
+// ------------------------------------------------------------------------
+// Animate on Scroll
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log("Reveal", entry, entry.isIntersecting);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal');
+    } else {
+      entry.target.classList.remove('reveal');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.reveal-on-scroll');
+hiddenElements.forEach((element) => observer.observe(element));
 
 // ------------------------------------------------------------------------

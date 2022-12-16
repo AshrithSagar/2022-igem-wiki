@@ -38,6 +38,27 @@ a:hover:not(.navbar-brand, .nav-link, .dropdown-item, footer a) {
   text-decoration: underline;
 }
 
+.reveal-on-scroll {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(+15%);
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+}
+
+.reveal {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .reveal-on-scroll {
+    opacity: 1;
+    transition: none;
+  }
+}
+
 /* --------------------------------------------------------------------------- */
 /* Header */
 
