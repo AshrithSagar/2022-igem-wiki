@@ -40,12 +40,12 @@
   <h3 class="reveal-on-scroll">Description</h3>
   <p class="reveal-on-scroll"><span>The software comprises of the following modules:</span></p>
   <ol class="reveal-on-scroll">
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Alanine Scan \( \Delta \Delta G \) values</span></strong> <span>BUDE
           Alanine scan is employed to obtain \( \Delta \Delta G \) values of each residue present in the input.</span>
       </p>
     </li>
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Conservative mutations</span></strong></p>
       <p class="reveal-on-scroll"><span>Conserved mutation is a process in which mutations are made within the same type
           of residues.</span> </p>
@@ -53,7 +53,7 @@
           example, hydrophobic re 3—hydrophobic residues with hydrophobic residues or amino acids of same charge with
           each other.</span></p>
     </li>
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Random sampler</span></strong></p>
       <p class="reveal-on-scroll"><span>Random peptides are selected as samples from the huge sequence list received to
           reduce the user workload. Note that this selection is <b>pseudo-random</b>.</span> </p>
@@ -68,20 +68,20 @@
   </figure>
 
   <ol class="reveal-on-scroll">
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Command Line Interface (CLI)</span></strong> <span>We can use the
           software locally on command prompt.</span> </p>
     </li>
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Integrable modules</span></strong></p>
       <p class="reveal-on-scroll"><span>Our software consists of different modules for the mutator and alanine scan to
           integrate them into different and more extensive networks by other iGEM teams and parties.</span></p>
     </li>
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Mutation lock</span></strong> <span>To prevent the mutation of an
           already modified residue, that part of the sequence was put under a mutation lock</span> </p>
     </li>
-    <li>
+    <li class="reveal-on-scroll">
       <p class="reveal-on-scroll"><strong><span>Aggrescan</span></strong></p>
       <p class="reveal-on-scroll"><span>Inclusion of a <b>BASH</b> script, which takes the output and prepends FASTA
           headers to each sequence in the text file.</span></p>
@@ -121,10 +121,10 @@
   <p class="reveal-on-scroll"> We first create a Mutater object, which support the following three formats:
   </p>
   <ol>
-    <li> Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to be replaced with. </li>
-    <li> Just the Wild type amino acid and its position, without the Mutant type. This can act as the template to create
+    <li class="reveal-on-scroll"> Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to be replaced with. </li>
+    <li class="reveal-on-scroll"> Just the Wild type amino acid and its position, without the Mutant type. This can act as the template to create
       new Mutater objects. </li>
-    <li> Just the position in the sequence. </li>
+    <li class="reveal-on-scroll"> Just the position in the sequence. </li>
   </ol>
 
   <h3 class="reveal-on-scroll">Alanine scanning</h3>
@@ -137,10 +137,10 @@
     following steps:
   </p>
   <ol class="reveal-on-scroll">
-    <li> Iterate over the sequence and get the wild type amino acid at each stage. </li>
-    <li> Retain the wild type if mutation isn't required at this position. This could result when the position doesn't
+    <li class="reveal-on-scroll"> Iterate over the sequence and get the wild type amino acid at each stage. </li>
+    <li class="reveal-on-scroll"> Retain the wild type if mutation isn't required at this position. This could result when the position doesn't
       want to be mutated, or when the position is present in the mutation lock array. </li>
-    <li> If a mutation is required in the current position, replace the position with an array of all the possible amino
+    <li class="reveal-on-scroll"> If a mutation is required in the current position, replace the position with an array of all the possible amino
       acids within the same group. This step is important to achieve Conserved mutations. </li>
   </ol>
 
