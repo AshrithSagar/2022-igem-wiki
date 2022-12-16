@@ -67,3 +67,33 @@ const hiddenElements = document.querySelectorAll('.reveal-on-scroll');
 hiddenElements.forEach((element) => observer.observe(element));
 
 // ------------------------------------------------------------------------
+// Proximity Hover effect
+// On Fish eyes in Description page
+
+const eyes = document.getElementById('fishEye')
+const anchor = document.getElementById('fishBody')
+const rekt = anchor.getBoundingClientRect();
+const anchorX = rekt.left + rekt.width / 2;
+const anchorY = rekt.top + rekt.height / 2;
+
+document.addEventListener('mousemove', (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+  const eye = document.getElementById('fishEye')
+  eye.style.transform = `rotate(${90 + angleDeg}deg)`
+});
+
+function angle(cx, cy, ex, ey) {
+  const dy = ey - cy;
+  const dx = ex - cx;
+
+  const rad = Math.atan2(dy, dx); // range (-PI, PI]
+  const deg = rad * 180 / Math.PI; // rads to degs, range(-180, 180]
+
+  return deg;
+}
+
+// ------------------------------------------------------------------------
