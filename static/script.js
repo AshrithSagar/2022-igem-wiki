@@ -1,39 +1,3 @@
-// // ------------------------------------------------------------------------
-
-// var myModal = document.getElementById('myModal')
-// var myInput = document.getElementById('myInput')
-
-// myModal.addEventListener('shown.bs.modal', function () {
-//   myInput.focus()
-// })
-
-// // ------------------------------------------------------------------------
-// //Get the button
-// let mybutton = document.getElementById("btn-back-to-top");
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 20 ||
-//     document.documentElement.scrollTop > 20
-//   ) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-// // When the user clicks on the button, scroll to the top of the document
-// mybutton.addEventListener("click", backToTop);
-
-// function backToTop() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
 // ------------------------------------------------------------------------
 
 let grid = document.querySelector('.masonry-grid');
@@ -71,20 +35,24 @@ hiddenElements.forEach((element) => observer.observe(element));
 // On Fish eyes in Description page
 
 try {
-  document.addEventListener('mousemove', (e) => {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
+  if (document.getElementById('fishEye')) {
 
-    const anchor = document.getElementById('fishBody')
-    const rekt = anchor.getBoundingClientRect();
-    const anchorX = rekt.left + rekt.width / 2;
-    const anchorY = rekt.top + rekt.height / 2;
+    document.addEventListener('mousemove', (e) => {
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
 
-    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+      const anchor = document.getElementById('fishBody')
+      const rekt = anchor.getBoundingClientRect();
+      const anchorX = rekt.left + rekt.width / 2;
+      const anchorY = rekt.top + rekt.height / 2;
 
-    const eye = document.getElementById('fishEye')
-    eye.style.transform = `rotate(${60 + angleDeg}deg)`
-  });
+      const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+      const eye = document.getElementById('fishEye')
+      eye.style.transform = `rotate(${60 + angleDeg}deg)`
+    });
+
+  }
 } catch (error) { }
 
 function angle(cx, cy, ex, ey) {
@@ -95,6 +63,43 @@ function angle(cx, cy, ex, ey) {
   const deg = rad * 180 / Math.PI; // rads to degs, range(-180, 180]
 
   return deg;
+}
+
+// ------------------------------------------------------------------------
+// Modals
+
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
+
+// ------------------------------------------------------------------------
+//Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 // ------------------------------------------------------------------------
