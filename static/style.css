@@ -290,6 +290,68 @@ b {
 }
 
 /* --------------------------------------------------------------------------- */
+/* Description Page */
+
+#fishBody {
+  width: 40%;
+  position: relative;
+}
+
+#fishEye {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 576px) {
+  #fishEye {
+    position: relative;
+    top: -112px;
+    left: -79px;
+    width: 5%;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #fishEye {
+    position: relative;
+    top: -151px;
+    left: -106px;
+    width: 5%;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #fishEye {
+    position: relative;
+    top: -203px;
+    left: -143px;
+    width: 5%;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #fishEye {
+    position: relative;
+    top: -242px;
+    left: -170px;
+    width: 5%;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #fishEye {
+    position: relative;
+    top: -282px;
+    left: -198px;
+    width: 5%;
+    visibility: visible;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
 /* IHP Page */
 
 .ihp-circle {
