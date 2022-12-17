@@ -352,7 +352,7 @@ b {
 }
 
 /* --------------------------------------------------------------------------- */
-/* IHP Page */
+/* IHP Page, Experimentation Page */
 
 .ihp-circle {
   height: 20px;
@@ -625,8 +625,7 @@ b {
   }
 }
 
-/* --------------------------------------------------------------------------- */
-/* Modals for IHP, Experimentation */
+/* Modals */
 
 .modal-dialog {
   max-width: 75%;
