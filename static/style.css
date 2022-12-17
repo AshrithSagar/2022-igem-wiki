@@ -805,9 +805,9 @@ b {
 }
 
 :root {
-  /* --color-text: black;
-  --color-bg: white;
-  --color-bg-accent: gray; */
+  /* --color-text: black; */
+  /* --color-bg: white; */
+  /* --color-bg-accent: gray; */
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
   --duration: 10s;
@@ -873,7 +873,7 @@ b {
   }
 }
 
-.marquee-child {
+/* .marquee-child {
   display: grid;
   place-items: center;
   width: var(--size);
@@ -883,7 +883,7 @@ b {
   padding: calc(var(--size) / 10);
   border-radius: 0.5rem;
   border-style: solid;
-}
+} */
 
 .wrapper {
   display: flex;
