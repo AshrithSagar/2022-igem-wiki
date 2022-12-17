@@ -360,8 +360,13 @@ b {
   display: table-cell;
   border-radius: 50%;
   background: black;
-  float: left;
-  margin-right: 5px;
+}
+
+#ihp-timeline-legend {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
 }
 
 .wet-lab-timeline-circle {}
