@@ -369,10 +369,6 @@ b {
   margin: auto;
 }
 
-.wet-lab-timeline-circle {}
-
-.wet-lab-timeline-content {}
-
 .page-tabs {
   background-color: #77caac;
   color: black;
@@ -630,6 +626,84 @@ b {
 }
 
 /* --------------------------------------------------------------------------- */
+/* Modals for IHP, Experimentation */
+
+.modal-dialog {
+  max-width: 75%;
+  align-self: center;
+}
+
+.modal.show {
+  display: flex !important;
+  justify-content: center;
+}
+
+.wet-lab-result {
+  color: green;
+}
+
+.wet-lab-troubleshoot {
+  color: blue
+}
+
+.boxesParent {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.boxesGrid {
+  padding: 10px;
+  background: linear-gradient(rgb(200, 237, 243), rgb(149, 187, 225));
+  flex: 0 0 auto;
+  perspective: 600px;
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(2, 60px);
+  grid-gap: 20px;
+  width: 100%;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.boxesGrid button {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxesGrid button:nth-child(odd) {
+  -webkit-animation: 1000ms ease-in-out infinite alternate boxesPulse;
+  animation: 1000ms ease-in-out infinite alternate boxesPulse;
+}
+
+.boxesGrid button:nth-child(even) {
+  -webkit-animation: 1000ms 1000ms ease-in-out infinite alternate boxesPulse;
+  animation: 1000ms 1000ms ease-in-out infinite alternate boxesPulse;
+}
+
+@-webkit-keyframes boxesPulse {
+  to {
+    transform: translate3d(0px, 0px, -60px);
+    box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes boxesPulse {
+  to {
+    transform: translate3d(0px, 0px, -1px);
+    box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* --------------------------------------------------------------------------- */
 /* Teams page */
 
 .team-cards-section {
@@ -712,84 +786,6 @@ b {
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
   word-spacing: 100vw;
-}
-
-/* --------------------------------------------------------------------------- */
-/* Modals for IHP, Experimentation */
-
-.modal-dialog {
-  max-width: 75%;
-  align-self: center;
-}
-
-.modal.show {
-  display: flex !important;
-  justify-content: center;
-}
-
-.wet-lab-result {
-  color: green;
-}
-
-.wet-lab-troubleshoot {
-  color: blue
-}
-
-.boxesParent {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.boxesGrid {
-  padding: 10px;
-  background: linear-gradient(rgb(200, 237, 243), rgb(149, 187, 225));
-  flex: 0 0 auto;
-  perspective: 600px;
-  display: grid;
-  grid-template-columns: repeat(4, 120px);
-  grid-template-rows: repeat(2, 60px);
-  grid-gap: 20px;
-  width: 100%;
-  vertical-align: middle;
-  justify-content: center;
-}
-
-.boxesGrid button {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 20px;
-  box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
-  border-radius: 2px;
-  color: black;
-  align-items: center;
-  justify-content: center;
-}
-
-.boxesGrid button:nth-child(odd) {
-  -webkit-animation: 1000ms ease-in-out infinite alternate boxesPulse;
-  animation: 1000ms ease-in-out infinite alternate boxesPulse;
-}
-
-.boxesGrid button:nth-child(even) {
-  -webkit-animation: 1000ms 1000ms ease-in-out infinite alternate boxesPulse;
-  animation: 1000ms 1000ms ease-in-out infinite alternate boxesPulse;
-}
-
-@-webkit-keyframes boxesPulse {
-  to {
-    transform: translate3d(0px, 0px, -60px);
-    box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
-  }
-}
-
-@keyframes boxesPulse {
-  to {
-    transform: translate3d(0px, 0px, -1px);
-    box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
-  }
 }
 
 /* --------------------------------------------------------------------------- */
