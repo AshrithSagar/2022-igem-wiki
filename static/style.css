@@ -14,12 +14,6 @@ img:not(#home-header-image) {
   justify-content: center;
 }
 
-.logo-home {
-  height: 512px;
-  width: 512px;
-  margin: 0;
-}
-
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -287,6 +281,12 @@ b {
     left: 50%;
     transform: translate(-50%, 30%);
   }
+}
+
+.logo-home {
+  height: 512px;
+  width: 512px;
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------------- */
