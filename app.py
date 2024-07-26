@@ -42,15 +42,15 @@ def index():
     return render_template("pages/index.html")
 
 
-@app.route("/<page>")
+@app.route("/<path:page>/")
 def pages(page):
     return render_template(str(Path("pages") / (page.lower() + ".html")))
 
 
-# Main Function, Runs at http://0.0.0.0:8080
 if __name__ == "__main__":
+    port = 8080
     freezer.freeze()  # Freeze the app into FREEZER_DESTINATION
-    # freezer.serve()  # Serve the app locally from FREEZER_DESTINATION
+    freezer.serve(port=port)  # Serve the app locally from FREEZER_DESTINATION
 
-    # freezer.run()  # Choose for URL checking
-    app.run(port=8080, debug=True)  # Choose to run locally from Flask
+    # freezer.run(port=port)  # Choose for URL checking
+    # app.run(port=port, debug=True)  # Choose to run locally from Flask
