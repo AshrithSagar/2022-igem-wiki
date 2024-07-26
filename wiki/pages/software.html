@@ -14,7 +14,8 @@
     sequences are chosen from the sample set created. These are then tested and subjected to further analysis. Thus, our
     software is a one-of-a-kind approach to automating and exponentially simplifying the process of <b>random</b>
     conserved mutations. This process can be employed to potentially <b>increase the affinity</b> of the peptide to its
-    interacting ligands. </p>
+    interacting ligands.
+  </p>
 
   <h1 class="reveal-on-scroll">GRASP</h1>
   <blockquote>
@@ -25,9 +26,10 @@
   <h3 class="reveal-on-scroll">About</h3>
   <blockquote>
     <p class="reveal-on-scroll"><em><span>For more information, refer to this page on our wiki: </span><strong> <a
-            href="{{ url_for('pages', page='engineering') }}" class='url'>Engineering success</a></strong></em><br>
+            href="{{ 'pages' | link_url(page='engineering') }}" class='url'>Engineering success</a></strong></em><br>
       <em><span>Checkout the software at: </span><strong> <a href="https://gitlab.igem.org/2022/software-tools/mit-mahe"
-            class='url'>MIT_MAHE Software tools</a></strong></em> </p>
+            class='url'>MIT_MAHE Software tools</a></strong></em>
+    </p>
   </blockquote>
 
   <figure class="figure reveal-on-scroll"> <img
@@ -121,8 +123,10 @@
   <p class="reveal-on-scroll"> We first create a Mutater object, which support the following three formats:
   </p>
   <ol>
-    <li class="reveal-on-scroll"> Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to be replaced with. </li>
-    <li class="reveal-on-scroll"> Just the Wild type amino acid and its position, without the Mutant type. This can act as the template to create
+    <li class="reveal-on-scroll"> Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to
+      be replaced with. </li>
+    <li class="reveal-on-scroll"> Just the Wild type amino acid and its position, without the Mutant type. This can act
+      as the template to create
       new Mutater objects. </li>
     <li class="reveal-on-scroll"> Just the position in the sequence. </li>
   </ol>
@@ -138,9 +142,11 @@
   </p>
   <ol class="reveal-on-scroll">
     <li class="reveal-on-scroll"> Iterate over the sequence and get the wild type amino acid at each stage. </li>
-    <li class="reveal-on-scroll"> Retain the wild type if mutation isn't required at this position. This could result when the position doesn't
+    <li class="reveal-on-scroll"> Retain the wild type if mutation isn't required at this position. This could result
+      when the position doesn't
       want to be mutated, or when the position is present in the mutation lock array. </li>
-    <li class="reveal-on-scroll"> If a mutation is required in the current position, replace the position with an array of all the possible amino
+    <li class="reveal-on-scroll"> If a mutation is required in the current position, replace the position with an array
+      of all the possible amino
       acids within the same group. This step is important to achieve Conserved mutations. </li>
   </ol>
 

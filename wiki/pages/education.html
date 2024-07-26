@@ -14,7 +14,7 @@
 </p>
 
 <p class="reveal-on-scroll">To know more about our education and communication efforts, visit our <a
-        href="{{ url_for('pages', page='communication') }}">Communication</a> page.
+        href="{{ 'pages' | link_url(page='communication') }}">Communication</a> page.
 </p>
 
 {% endblock %}

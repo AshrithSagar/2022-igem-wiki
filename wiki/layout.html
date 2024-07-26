@@ -9,10 +9,10 @@
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
   <!-- Bootstrap CSS -->
-  <link href="{{ url_for('static', filename = 'bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ 'bootstrap.min.css' | static_dir }}" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="{{ url_for('static', filename = 'style.css') }}" rel="stylesheet">
+  <link href="{{ 'style.css' | static_dir }}" rel="stylesheet">
 
   <title>{% block title %}{% endblock %} | MIT_MAHE - iGEM 2022</title>
 </head>
@@ -47,13 +47,13 @@
   <!-- {% include 'wiki-tools.html' %} -->
 
   <!-- Bootstrap Bundle with Popper -->
-  <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ 'bootstrap.bundle.min.js' | static_dir }}"></script>
 
-  <script defer src="{{ url_for('static', filename = 'script.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'jquery-3.6.1.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'masonry.pkgd.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'imagesloaded.pkgd.min.js') }}"></script>
-  <script src="{{ url_for('static', filename = 'mathjax.js') }}"></script>
+  <script defer src="{{ 'script.js' | static_dir }}"></script>
+  <script src="{{ 'jquery-3.6.1.min.js' | static_dir }}"></script>
+  <script src="{{ 'masonry.pkgd.min.js' | static_dir }}"></script>
+  <script src="{{ 'imagesloaded.pkgd.min.js' | static_dir }}"></script>
+  <script src="{{ 'mathjax.js' | static_dir }}"></script>
 </body>
 
 </html>
