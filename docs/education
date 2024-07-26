@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4200/wiki/wiki/android-chrome-512x512.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <title>Education | MIT_MAHE - iGEM 2022</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="./">MIT_MAHE</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="medals">Medals</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team">Team</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+            <li><a class="dropdown-item" href="collaborations">Collaborations</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="communication">Communication</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="description">Description</a></li>
+            <li><a class="dropdown-item" href="design">Design</a></li>
+            <li><a class="dropdown-item" href="education">Education</a></li>
+            <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+            <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+            <li><a class="dropdown-item" href="implementation">Implementation</a></li>
+            <li><a class="dropdown-item" href="model">Model</a></li>
+            <li><a class="dropdown-item" href="partnership">Partnership</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+          </ul>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="human-practices">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="awards">Awards</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100 reveal-on-scroll">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">Education</h1>
+          <p class="lead mb-5 page-header-text-lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<p class="reveal-on-scroll">In many instances, specific bands of our community are excluded from the STEM and synthetic
+    biology conversation.To educate and communicate with a wider audience, our primary goal was to reach out to various
+    age groups. While doing so, we incorporated various activity-based sections in all our visits. These components were
+    designed for specific age groups of the society, as well as our primary and secondary stakeholders. Aspects like a
+    podcast, comic strips, and pamphlets were simple components we used as connectors between us and the general public.
+    Our interactions not only facilitated spreading cognisance on synthetic biology, buy also served as a learning
+    platform for our team members.
+</p>
+
+<p class="reveal-on-scroll">To know more about our education and communication efforts, visit our <a
+        href="communication">Communication</a> page.
+</p>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <footer class="pt-5 pb-5 footer py-5 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-4 footer-parent">
+      <div class="col-lg-6 col-xs-12">
+        <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/footer-logo.png" alt="AMPIFIN-footer-logo">
+        <p class="h5 footer-logo-text"><em>A sustainable solution for Vibriosis in fish</em></p>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="mailto:manipalbiomachines.igem@gmail.com">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/envelope.svg" alt="mail" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://www.linkedin.com/company/manipal-biomachines/">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/linkedin.svg" alt="linkedin" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://instagram.com/manipalbiomachines?igshid=YmMyMTA2M2Y=">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/instagram.svg" alt="instagram" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://twitter.com/m_biomachines?t=EmCfYt5V-Q6pa5j1KyXSYA&s=09">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/twitter.svg" alt="twitter" width="32"
+            height="32">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2022 - Content on this site is licensed under a <a class="subfoot"
+              href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0
+              International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a
+              href="https://gitlab.igem.org/2022/mit-mahe">gitlab.igem.org/2022/mit-mahe</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  <!-- <style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script> -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+
+  <script defer src="static/script.js"></script>
+  <script src="static/jquery-3.6.1.min.js"></script>
+  <script src="static/masonry.pkgd.min.js"></script>
+  <script src="static/imagesloaded.pkgd.min.js"></script>
+  <script src="static/mathjax.js"></script>
+</body>
+
+</html>

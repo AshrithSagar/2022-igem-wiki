@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4200/wiki/wiki/android-chrome-512x512.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <title>Collaborations | MIT_MAHE - iGEM 2022</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="./">MIT_MAHE</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="medals">Medals</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team">Team</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+            <li><a class="dropdown-item" href="collaborations">Collaborations</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="communication">Communication</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="description">Description</a></li>
+            <li><a class="dropdown-item" href="design">Design</a></li>
+            <li><a class="dropdown-item" href="education">Education</a></li>
+            <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+            <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+            <li><a class="dropdown-item" href="implementation">Implementation</a></li>
+            <li><a class="dropdown-item" href="model">Model</a></li>
+            <li><a class="dropdown-item" href="partnership">Partnership</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+          </ul>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="human-practices">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="awards">Awards</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100 reveal-on-scroll">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">Collaborations</h1>
+          <p class="lead mb-5 page-header-text-lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<div class="row">
+
+  <h2 class="reveal-on-scroll">Overview</h2>
+
+  <p class="reveal-on-scroll"> Collaboration bolsters the essence of iGEM, and in tandem with that, we pushed to
+    collaborate with various iGEM teams worldwide. Through our multiple interactions with iGEM teams worldwide, we
+    gained insight and feedback on our approach, and helped other teams with their troubleshooting aspects. Our
+    collaborations brought in an all-encompassing view of iGEM and the multitude of teams participating in the
+    competition. We thank the community of students with whom we were fortunate enough to interact.</p>
+
+  <h2 class="reveal-on-scroll">Webinars in collaboration with iGEM Queens_Canada</h2>
+
+  <p class="reveal-on-scroll">We collaborated with iGEM Queens_Canada through webinars to build on both teams' knowledge
+    of waterborne pathogens. Furthermore, these webinars touched on important topics like <b>entrepreneurship</b> and
+    <b>developing processes in bioremediation and aquaculture</b>.
+  </p>
+
+  <p class="reveal-on-scroll">Our first interaction with <a href="https://2022.igem.wiki/queens-canada/">iGEM
+      Queens_Canada</a> was in May 2022. We began by explaining our projects to each other and looking at possible
+    collaborations and fruitful areas of work. The Queens iGEM team told us that the necessity for effective filtration
+    and detection technology has become critical due to the persistent problem of unsafe drinking water in indigenous
+    communities across Canada. Their objective is to offer these communities a point-of-care water filtration system
+    that will remove harmful chemicals like lead, mercury, and <i>Escherichia coli</i> and assist them in identifying
+    undesired microorganisms in their water to ensure it is safe to drink. Our project for 2022 focuses on synthesising
+    a novel antimicrobial peptide that can bind to the protein MAM7 on the bacteria, thus preventing infection. On
+    interacting with their team, we troubleshot ideas based on our project. We decided to collaborate on <b>spreading
+      awareness</b> and promoting discussion based on <b>waterborne pathogens</b> and <b>synthetic-biology-based
+      techniques</b> that have paved the way to finding solutions to these problems. </p>
+
+  <p class="reveal-on-scroll">Our first webinar, held on 14th August, 2022, was based on an exciting set of talks on the
+    different bacteria, viruses, and other pathogens that live in water. Our speakers—Dr. Mamatha Ballal and Dr. Cecilia
+    Gimenez—both extremely proficient academicians in their respective fields, set the stage by discussing infectious
+    diseases, waterborne pathogens, and the <b>importance of clean water</b> across all localities. The webinar saw over
+    sixty attendees from across the regions of Canada and India, including university students and scholars.
+    Furthermore, in the Question and Answer portion of the seminar, the audience picked up engaging discussion points.
+    They asked the speakers about their work, and interlinked these aspects with the webinar’s topic.</p>
+
+  <div class="row masonry-grid">
+    <div class="col-5 masonry-grid-item">
+      <figure class="figure reveal-on-scroll"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-qgemxmit-mahe-webinar-1-poster.png"
+          class="figure-img img-fluid rounded" alt="webinar poster">
+        <figcaption class="figure-caption text-center"> A snapshot of the webinar's poster! </figcaption>
+      </figure>
+    </div>
+    <div class="col-5 masonry-grid-item">
+      <figure class="figure reveal-on-scroll"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-qgem-webinar-one.png"
+          class="figure-img img-fluid rounded" alt="webinar snapshot">
+        <figcaption class="figure-caption text-center"> A snapshot from the webinar on waterborne pathogens!
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <p class="reveal-on-scroll">Our second webinar, held on 15th September 2022, was based on a talk on developing
+    different <b>synthetic-biology-based entrepreneurial techniques in bioremediation and aquaculture</b>. Sandra
+    Dworatzek, a principal scientist at SiREM Canada, discussed her current outline of work in the field. The webinar
+    saw over thirty attendees from across the regions of Canada and India, including university students and scholars.
+    She elaborated on how the various techniques can be integrated through aspects like entrepreneurship and product
+    development with iGEM teams like ours. Furthermore, in the Question and Answer portion of the seminar, the audience
+    picked up engaging discussion points. They asked the speaker about their work, and interlinked these aspects with
+    the webinar's topic.
+  </p>
+
+  <div class="row">
+    <div class="col-6 reveal-on-scroll">
+      <figure class="figure"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-qgemxmit-mahe-2-poster.png"
+          class="figure-img img-fluid rounded" alt="webinar poster">
+        <figcaption class="figure-caption text-center"> A snapshot of the webinar's poster! </figcaption>
+      </figure>
+    </div>
+    <div class="col-6 reveal-on-scroll">
+      <figure class="figure"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-qgem-webinar-two.jpg"
+          class="figure-img img-fluid rounded" alt="webinar snapshot">
+        <figcaption class="figure-caption text-center"> A snapshot from the webinar on entrepreneurship in
+          bioremediation and aquaculture. </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="reveal-on-scroll">Troubleshooting and Human Practices insights with iGEM HKUST</h2>
+
+  <p class="reveal-on-scroll">We collaborated on numerous topics that involved corroboration between the teams in
+    troubleshooting and building on our existing knowledge of the projects. Furthermore, we identified <b>common
+      stakeholders</b> and helped each other analyse and approach the pisciculture markets in India and Hongkong,
+    respectively.</p>
+
+  <p class="reveal-on-scroll">Our first meeting with the iGEM HKUST team was on 5th July 2022, during which both teams
+    presented their project ideas and looked for potential areas of collaboration. Upon identifying possible
+    similarities in our human practices and dry lab modules, these seemed to be the most feasible areas for
+    collaboration.</p>
+
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-hkustxmit-mahe.jpg"
+      class="figure-img img-fluid rounded" alt="first interaction with iGEM HKUST" width="80%">
+    <figcaption class="figure-caption text-center"> A snapshot from our first interaction with iGEM HKUST. </figcaption>
+  </figure>
+
+  <p class="reveal-on-scroll">The initial meeting inspired us to maximise our stakeholder research and conduct more
+    extensive research into the Indian seafood market. Based on their input, we initiated interactions with the seafood
+    market and restaurant workers across our locality. To facilitate the exchange of stakeholder contacts, the
+    integrated human practices modules from both teams had additional meetings informally. We presented insights from
+    our research and experience with India’s pisciculture industry. We also provided them with contact details and
+    information on a few fish farms and markets in India.</p>
+
+  <p class="reveal-on-scroll">After meeting with the entire team prior, the dry lab modules from each team hosted a
+    second meeting to discuss matters related to mathematical modelling. In particular, the iGEM HKUST team wanted to
+    discuss more stochastic protein and promoter interaction modelling. Our team shared information on the software we
+    used and some details on navigating them. The softwares included BUDE Alanine scan, ClusPro (for molecular docking),
+    and Schrodinger Maestro (visualisation). Furthermore, iGEM HKUST provided our team with information on
+    <b>constructing ODEs</b> and the <b>interpretational methods</b> to generate meaningful graphs from them.
+  </p>
+
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/collaboration/hkustxmit-mahe-2.png"
+      class="figure-img img-fluid rounded" alt="common stakeholder interaction" width="80%">
+    <figcaption class="figure-caption text-center"> A snapshot from our interaction of common stakeholders of the teams.
+    </figcaption>
+  </figure>
+
+  <h2 class="reveal-on-scroll">Handbook on Biology and Engineering with iGEM VIT Vellore</h2>
+
+  <p class="reveal-on-scroll">We had our first interaction with <a href="https://2022.igem.wiki/vit-vellore">iGEM VIT
+      Vellore</a> while collating on the organisational aspects of the All India iGEM Meet. Eleven Indian teams
+    competing in iGEM 2022 attended the immersive three-day meet with activities ranging from project presentations to
+    engrossing seminars on the various aspects of Synthetic biology.</p>
+
+  <p class="reveal-on-scroll">After this, our teams decided to collaborate on a handbook to elucidate the integration
+    between biology and engineering for the use of educators. We included aspects like an <b>introduction to genes and
+      genetics</b>, the <b>central dogma</b>, and basic examples to explain <b>synthetic biology and biomimetics</b>. We
+    also added a section on iGEM High School teams. Through this collaboration, our teams understood the importance of
+    broadening our reach toward young students; students who are at their initial stage of <b>learning and understanding
+      STEM backgrounds</b>. Below is an attachment of the handbook:
+  </p>
+
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%"
+    title="VIT Vellore Handbook"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/igem-mit-mahe-x-igem-vit-vellore-compressed.pdf#zoom=FitW"></iframe>
+
+  <h2 class="reveal-on-scroll">The All India iGEM Meet (2022)</h2>
+
+  <p class="reveal-on-scroll">In the spirit of iGEM, we participated and helped organise the All India iGEM Meet in
+    collaboration with <a href="https://2022.igem.wiki/iisc-bengaluru/">iGEM IISc Bengaluru</a>, <a
+      href="https://2022.igem.wiki/ict-mumbai">ICT Mumbai</a>, <a href="https://2022.igem.wiki/iiser-pune-india">IISER
+      Pune</a>, <a href="https://2022.igem.wiki/iiser-pune2-india/">IISER Pune II</a>, <a
+      href="https://2022.igem.wiki/iit-delhi/">IIT Delhi</a>, <a href="https://2022.igem.wiki/iit-roorkee/">IIT
+      Roorkee</a>, <a href="https://2022.igem.wiki/iiser-berhampur/">IISER Berhampur</a>, <a
+      href="https://2022.igem.wiki/iiser-mohali/">IISER Mohali</a>, <a href="https://2022.igem.wiki/iiser-tvm/">IISER
+      TVM</a>, <a href="https://2022.igem.wiki/vit-vellore">VIT Vellore</a>, and <a
+      href="https://2022.igem.wiki/rec-chennai">REC Chennai</a>. Held between 23rd–25th of July 2022, AIIM was centred
+    around forming collaborations and furthering the Synthetic Biology community in India. Our team comprehended the
+    work of teams with similar political and social environments as ours, and we understood how to build projects
+    together. The event was an essential step in understanding the various synthetic biology-based expertise areas in
+    India and worldwide.</p>
+
+  <p class="reveal-on-scroll">The eleven Indian teams competing in iGEM 2022 attended the presentation competition in an
+    exciting three-day event. The highlight of this event was its mock jamboree-style presentation and judging sessions,
+    where our team got a chance to learn about the other teams’ work, forge collaborations and gain constructive
+    feedback from teams and judges alike. Furthermore, the event saw interesting talks from various members of academia
+    and the iGEM community.
+  </p>
+
+  <div class="row">
+    <div class="col-6 reveal-on-scroll">
+      <figure class="figure"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-aiim-22.jpeg"
+          class="figure-img img-fluid rounded" alt="AIIM interaction">
+        <figcaption class="figure-caption text-center"> A snapshot of our teams' interactions at AIIM. </figcaption>
+      </figure>
+    </div>
+    <div class="col-6 reveal-on-scroll">
+      <figure class="figure"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-aiim-22-presentation.jpg"
+          class="figure-img img-fluid rounded" alt="AIIM presentation">
+        <figcaption class="figure-caption text-center"> A snapshot from our presentation at the All India iGEM Meet.
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h2 class="reveal-on-scroll">Geo Book</h2>
+
+  <p class="reveal-on-scroll">In the spirit of sharing and understanding seafood within the context of different
+    cuisines and localities, MIT_MAHE’s iGEM team decided to collaborate on a compendium of dishes that involve aquatic
+    animals.</p>
+
+  <p class="reveal-on-scroll">The main aim of the Geo Book was to celebrate <b>diversity</b> and bring more
+    <b>recognition</b> to what affects our favourite palates of seafood. Furthermore, it brought light to any
+    unsustainable practices involved in their breeding. All the participating teams included details and photographs of
+    their favourite kinds of seafood, and our team compiled them for inquisitive readers, and of course, seafood
+    connoisseurs!
+  </p>
+
+  <p class="reveal-on-scroll">The teams that participated were <a href="https://2022.igem.wiki/rec-chennai">iGEM REC
+      Chennai</a>, <a href="https://2022.igem.wiki/iiser-pune2-india/">iGEM IISER Pune II</a>, <a
+      href="https://2022.igem.wiki/chalmers-gothenburg/">iGEM Chalmers_Gothenburg</a>, <a
+      href="https://2022.igem.wiki/william-and-mary/">iGEM William and Mary</a>, <a
+      href="https://2022.igem.wiki/vilnius-lithuania/">iGEM Vilnius-Lithuania 2022</a>, <a
+      href="https://2022.igem.wiki/hkust/">iGEM HKUST</a>, <a href="https://2022.igem.wiki/teccem/">iGEM TecCEM </a>, <a
+      href="https://2022.igem.wiki/queens-canada/">iGEM Queens_Canada</a> </p>
+
+  <p class="reveal-on-scroll">Below is an attachment of the Geo Book:</p>
+
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%" title="Geobook"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/igem-mit-mahe-geo-book.pdf"></iframe>
+
+
+  <h2 class="reveal-on-scroll">World Environment Day</h2>
+
+  <p class="reveal-on-scroll">To commemorate the importance of World Environment Day on 4th June, 2022, <a
+      href="https://2022.igem.wiki/iiser-pune-india/">iGEM IISER Pune</a> brought in a novel initiative—iGEM teams
+    pitching in to make our world cleaner and greener! As part of our contribution to the cause, two of our team members
+    planted a sapling near our hostel block. This helped us realise the importance of giving back to the environment,
+    and we reflected on sustainability in today’s time.</p>
+
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/collaboration/collaboration-iiserp1xmit-mahe-env-day.jpg"
+      class="figure-img img-fluid rounded" alt="World Environment Day" width="60%">
+    <figcaption class="figure-caption text-center"> A snapshot of our contribution toward the World Environment Day
+      initiative. </figcaption>
+  </figure>
+
+  <h2 class="reveal-on-scroll">Video on Safe Lab Practices</h2>
+
+  <p class="reveal-on-scroll">In collaboration with <a href="https://2022.igem.wiki/iiser-mohali/">iGEM IISER Mohali</a>
+    on a short video and write-up that elucidated essential lab practices, our team’s members reiterated the importance
+    of following protocols in a lab. It is crucial to comprehend the significance of <b>lab safety</b> because
+    laboratories bring in a wide variety of safety risks. We realised that our team could aid in <b>preventing or
+      eliminating hazards</b> by being familiar with our laboratory and adhering to the lab safety protocols. The video
+    and write-up included personal protective equipment, cleaning and disinfecting surfaces, proper waste disposal
+    methods, and aseptic techniques. Below is a documentation of the protocols:</p>
+
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%" title="Lab safety"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/igem-mit-mahexiiser-mohali-lab-safety-protocols.pdf"></iframe>
+
+  <h2 class="reveal-on-scroll">Bacteria Book</h2>
+
+  <p class="reveal-on-scroll">Through AMPifin, we aim to target <i>Vibrio parahaemolyticus</i>, one of the most
+    prevalent bacteria involved in spreading the vibriosis disease in fish. On seeing the Bacteria Book initiative of
+    iGEM McGill, iGEM Queen’s, iGEM Cornell, and iGEM Costa Rica, we decided to add information on <i>V.
+      parahaemolyticus</i>. The bacteria book would be a great reading experience for the general public that is curious
+    to know more about the world of bacteria and pathogens.</p>
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%"
+    title="Bacteria book"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/igem-mit-mahe-bacteria-book-collaboration.pdf"></iframe>
+
+  <h2 class="reveal-on-scroll">World Dengue Day</h2>
+
+  <p class="reveal-on-scroll">As an initiative for World Dengue Day, we recorded a video to spread awareness of Dengue
+    for compilation by <a href="https://2022.igem.wiki/iiser-pune2-india/">iGEM IISER Pune II</a>. Their novel approach
+    to <b>spreading cognisance</b> instilled a sense of <b>responsibility</b> among our members, and we ensured to
+    communicate their inference to all our members. To view the video, check out <a
+      href="https://2022.igem.wiki/iiser-mohali/">IISER Mohali's wiki!</a> </p>
+
+  <h2 class="reveal-on-scroll">MSP-Maastricht Quiz</h2>
+
+  <p class="reveal-on-scroll">As an initiative by <a href="https://2022.igem.wiki/msp-maastricht/">MSP-Maastricht</a> to
+    introduce children and the elderly to synthetic biology, the team decided to create a puzzle book, including
+    projects of fellow iGEM teams. Here, we collaborated by providing them with information and keywords associated best
+    with AMPifin. The puzzle book helped raise familiarity with synthetic biology and its related work.</p>
+
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%" title="quiz book"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/igem-puzzle-book-msp-collaboration.pdf"></iframe>
+
+  <h2 class="reveal-on-scroll">Podcast with The Astronomy Club, Manipal</h2>
+
+  <p class="reveal-on-scroll">On 7th October 2022, we collaborated with <a
+      href="https://astronomymanipal.herokuapp.com/">The Astronomy Club</a>, Manipal to talk about <b>synthetic biology
+      and its applications in the space industry</b>. The podcast comprised two members of the Astronomy Club and two
+    members of Manipal BioMachines. It began with an introduction to the respective members and iGEM. The discussion was
+    based on how synthetic biology could be used to enhance and use the extreme environments of space to our advantage.
+    For example—extremophiles for the elimination of biowaste and synthesis of biomaterial, self healing bio-compounds
+    for integrity of the space shuttle, and nutrient-rich-space-conserving food. There were talks about previous iGEM
+    teams’ projects that built on the motive of improving space travel quality for the travellers by integrating pure
+    syn-bio-based components. The audio to this podcast has been attached below</p>
+
+  <p class="reveal-on-scroll">This podcast was an opportunity for us to collaborate with astrophiles and understand
+    their areas of interest. Discussing how astronomy integrates with astrology and astrobiology was an intriguing
+    experience for our teams!</p>
+
+  <iframe title="MIT_MAHE: Podcast on synthetic biology in space (2022) [English]" width="560" height="315"
+    src="https://video.igem.org/videos/embed/cc0b2231-dc7c-463b-bc3c-786748c5708d" frameborder="0" allowfullscreen=""
+    sandbox="allow-same-origin allow-scripts allow-popups" class="reveal-on-scroll"></iframe>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <footer class="pt-5 pb-5 footer py-5 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-4 footer-parent">
+      <div class="col-lg-6 col-xs-12">
+        <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/footer-logo.png" alt="AMPIFIN-footer-logo">
+        <p class="h5 footer-logo-text"><em>A sustainable solution for Vibriosis in fish</em></p>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="mailto:manipalbiomachines.igem@gmail.com">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/envelope.svg" alt="mail" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://www.linkedin.com/company/manipal-biomachines/">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/linkedin.svg" alt="linkedin" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://instagram.com/manipalbiomachines?igshid=YmMyMTA2M2Y=">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/instagram.svg" alt="instagram" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://twitter.com/m_biomachines?t=EmCfYt5V-Q6pa5j1KyXSYA&s=09">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/twitter.svg" alt="twitter" width="32"
+            height="32">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2022 - Content on this site is licensed under a <a class="subfoot"
+              href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0
+              International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a
+              href="https://gitlab.igem.org/2022/mit-mahe">gitlab.igem.org/2022/mit-mahe</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  <!-- <style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script> -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+
+  <script defer src="static/script.js"></script>
+  <script src="static/jquery-3.6.1.min.js"></script>
+  <script src="static/masonry.pkgd.min.js"></script>
+  <script src="static/imagesloaded.pkgd.min.js"></script>
+  <script src="static/mathjax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4200/wiki/wiki/android-chrome-512x512.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <title>Team | MIT_MAHE - iGEM 2022</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="./">MIT_MAHE</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="medals">Medals</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team">Team</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+            <li><a class="dropdown-item" href="collaborations">Collaborations</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="communication">Communication</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="description">Description</a></li>
+            <li><a class="dropdown-item" href="design">Design</a></li>
+            <li><a class="dropdown-item" href="education">Education</a></li>
+            <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+            <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+            <li><a class="dropdown-item" href="implementation">Implementation</a></li>
+            <li><a class="dropdown-item" href="model">Model</a></li>
+            <li><a class="dropdown-item" href="partnership">Partnership</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+          </ul>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="human-practices">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="awards">Awards</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100 reveal-on-scroll">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">Team</h1>
+          <p class="lead mb-5 page-header-text-lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 masonry-grid" data-masonry='{"percentPosition": true }'>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/ritu-ma-am-picture.jpg" alt="Dr. Ritu Raval" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Dr. Ritu Raval</p>
+        <small class="text-muted reveal-on-scroll">Associate Professor, Department of Biotechnology, Manipal Institute of Technology, Manipal, India.</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Dr. Ritu Raval was integral in collating the experimental and design aspects of AMPifin. From
+        continual
+        mentorship for our project to involving herself in our educational activities, her contribution toward iGEM
+        MIT_MAHE has been irreplaceable.</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/fayaz-sir-picture.jpg" alt="Dr. Fayaz SM" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Dr. Fayaz SM</p>
+        <small class="text-muted reveal-on-scroll">Assistant Professor—Selection Grade, Department of Biotechnology, Manipal Institute of Technology,
+        Manipal</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Dr Fayaz played a crucial role in consolidating the peptide design approach and helped us analyse
+        the
+        results of the molecular dynamic simulation. His contribution to the team and project has been impeccable.</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/ashrith-sagar-y.jpg" alt="Ashrith Sagar Yedlapalli" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Ashrith Sagar Yedlapalli</p>
+        <small class="text-muted reveal-on-scroll">Head of Software and Wiki Web Development</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">One of the most competent members of our team, Ashrith is your go-to member for all things tech!
+        With
+        the cleverest of ideas, he can code his way through anything! Nicknamed the ‘hecker’, you’ll find him
+        watching
+        3Blue1Brown in his spare time. As good as he is with his laptop’s keyboard, he’s also a seasoned
+        keyboardist!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/avani-hegde.jpg" alt="Avani Hegde" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Avani Hegde</p>
+        <small class="text-muted reveal-on-scroll">Head of Research</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">A master of all arts, Avani is a force to be reckoned with! From her unending knowledge that helps
+        string our project together to her exceptional debating skills—she’s easily one of the most pivotal members
+        of
+        our team. A major astronomy enthusiast, she’s always around to geek away about the cosmos. In her free time,
+        you’ll find her singing melodiously!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/dnyanada-khile.jpg" alt="Dnyanada Anil Khile" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Dnyanada Anil Khile</p>
+        <small class="text-muted reveal-on-scroll">Research Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Dnyanada—she’ll adore you if you pronounce that right in the first go. With the most amiable
+        personality, she’s one member that seems to have it all together! Dnyanada loves her water bottle—she claims
+        it’s her motivation to hydrate herself. Besides her brilliant research skills, she’s also a proficient
+        tennis
+        player!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/nava-manickam.jpg" alt="Nava Bharati Manickam" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Nava Bharati Manickam</p>
+        <small class="text-muted reveal-on-scroll">Head of Human Practices</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">If you spot someone in an all-black outfit, it has to be Nava. She’s an excellent communicator and
+        always looks out for our project. Nava loves her morning coffee—she can’t do without it. You’ll find her
+        straightening her hair on a whim when stressed out. The week is incomplete if there isn’t a Myntra parcel
+        arriving for her.</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/naomi-thomas.jpg" alt="Naomi Ann Thomas" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Naomi Ann Thomas</p>
+        <small class="text-muted reveal-on-scroll">Management and Human Practices Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Naomi is the sweetest member of our team. She has brilliant managerial skills, and she’s highly
+        reliable. An avid K-drama fan—you’ll find her binge-watching it during her free time. Always up for a
+        conversation, Naomi’s a great listener, and she’ll make sure to turn your day around with her charm. And oh,
+        she
+        makes the best ramen noodles!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/punya-hirawat.jpg" alt="Punya Hirawat" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Punya Hirawat</p>
+        <small class="text-muted reveal-on-scroll">Dry Lab Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Punya’s one of the sharpest members of our team, and you’re sure to have some of your best
+        conversations with him. He loves to watch Formula One and enjoys playing different sports. When idle, he
+        tends
+        to watch some of the most random content on YouTube. Punya’s also an avid fan of Anime and Manga!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/rahil-faruk.jpg" alt="Rahil Ummar Faruk Abbu" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Rahil Ummar Faruk Abbu</p>
+        <small class="text-muted reveal-on-scroll">Head of Wet Lab</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Rahil’s no short of the cinnamon roll of positivity in our team. His jokes will surely crack you
+        up,
+        and his ever-cheerful nature is invigorating! Being the fitness freak he is, you’ll often see him on his way
+        to
+        the gym while sipping a bottle of Sting. He’s a major foodie—by the time you reach half of your burger, he
+        would’ve inhaled two of those. On another note, he loves making documents to organise all things wet lab!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/megha.jpg" alt="Rathnamegha Lingamshetty" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Rathnamegha Lingamshetty</p>
+        <small class="text-muted reveal-on-scroll">Wet Lab Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Megha’s one of the sweetest people on our team—she always looks out for you. She’s as creative as
+        she
+        is smart, and brings structure to our project at each stage. She loves all things biology and science, and
+        has
+        the cutest bows to match all of her outfits. Megha is fond of gaming and anime, probably just as much as
+        IKEA.</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/renuka-basawa.jpg" alt="Renuka Basawa" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Renuka Basawa</p>
+        <small class="text-muted reveal-on-scroll">Research Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">A boss woman. Being one of our most integral research members, Renuka’s terrific at what she does.
+        She’s lovely to be around—almost like our little dumpling. Her analytical nature makes our project better
+        every
+        day. In her free time, she loves to sketch. Renuka’s always on the lookout for new snacks, and she may have
+        tried everything you’ll find at the Campus store!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/riddhi.jpg" alt="Riddhi Agrahari" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Riddhi Agrahari</p>
+        <small class="text-muted reveal-on-scroll">Graphics Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Riddhi’s a brilliant designer; the sky isn’t the limit for a mind like hers. Her skillset in
+        graphics
+        and likeable character make her a go-to person for a good conversation. In her free time, Riddhi’s fond of
+        cooking, and one of her favourite dishes is a good bowl of pasta. She’s also into reading and
+        photography—pretty
+        skies being her best-loved aesthetic.</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/rohit-harikumar.jpg" alt="Rohit Harikumar" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Rohit Harikumar</p>
+        <small class="text-muted reveal-on-scroll">Graphics Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Not only does Rohit’s cheerful nature ease tensions on a terrible day, but he is also one of the
+        most
+        amicable people you will ever have a chance to meet. An exceptionally skilful artist, he can make the canvas
+        come alive with his strokes. Rohit loves to play all kinds of instruments, especially the guitar. He is also
+        an
+        avid fan of Anime and Manga!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/rohit-manikantan.jpg" alt="Rohit Manikantan" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Rohit Manikantan</p>
+        <small class="text-muted reveal-on-scroll">Management and Human Practices Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Being the Mallu boy that he is, Rohit has a definite South Indian overlord vibe. He’s an optimistic
+        person and gives the best bear hugs. In his free time, he loves to watch anime and play basketball. Anything
+        management-related, he’s your go-to guy!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/serin-joby.jpg" alt="Serin Joby Parekkadan" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Serin Joby Parekkadan</p>
+        <small class="text-muted reveal-on-scroll">Wet Lab Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Serin is one of the kindest members of our team. She’s dependable and adept at what she does. She’s
+        easily one of the most photogenic members on our team—her dimples are to die for! Serin enjoys a game of
+        badminton and listens to her favourite tunes in her free time!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/shaan-ganatra.jpg" alt="Shaan Chirag Ganatra" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Shaan Chirag Ganatra</p>
+        <small class="text-muted reveal-on-scroll">Dry Lab Member</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Shaan’s one of the quickest learners on our team. He makes the funniest Babu Rao impression—it’s
+        almost
+        iconic! You’d wish to be in the same hostel as him because he’s always stocked up on the yummiest snacks.
+        Shaan’s a huge fan of KK and Linkin Park—he would give anything to jam to their music. He’s also into rock
+        bands
+        and loves to catch a Formula One race in his free time.</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/suhani-kabra.jpg" alt="Suhani Kabra" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Suhani Kabra</p>
+        <small class="text-muted reveal-on-scroll">Team Co-Leader</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Suhani is compassionate, level-headed and objective. She knows how to bring out the best in
+        everyone
+        and understand what they might be going through. Her Instagram feed is all cats, and she likes to refer to
+        them
+        as ‘smol’. When stressed, she enjoys a game of Subway Surfers. She’s also super passionate about writing and
+        loves a pleasant morning run!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/tushar-mishra.jpg" alt="Tushar Mishra" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Tushar Mishra</p>
+        <small class="text-muted reveal-on-scroll">Team Co-Leader</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Tushar’s hard work and passion motivate everyone else. He loves all things science, pushing
+        himself,
+        the team, and the project to be better every day. He’s one of the most approachable members of our team and
+        is
+        still a kid at heart! Tushar does not like Meta—he has a mysterious feud with the Zuck. He’s a food
+        enthusiast
+        and a pro-baker in the making!</p>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="col masonry-grid-item">
+        <div class="card shadow-sm reveal-on-scroll">
+    <img src="https://static.igem.wiki/teams/4200/wiki/attributions/compressed-25/vaibhav-revankar.jpg" alt="Vaibhav Revankar" width="100%"
+        height="100%" class="reveal-on-scroll">
+
+    <div class="card-body reveal-on-scroll">
+        <p class="card-text h3 reveal-on-scroll">Vaibhav Revankar</p>
+        <small class="text-muted reveal-on-scroll">Head of Dry Lab</small>
+        <div class="d-flex justify-content-between">
+            <p class="reveal-on-scroll">Vaibhav is a quick learner, and he never gives up. He’s the only one we trust with the core aspects
+        of
+        our project. Exam season is incomplete without us hovering around for his notes! Besides his brilliant mind
+        when
+        it comes to the technicalities of our project, Vaibhav’s also a great photographer! You’ll see him playing
+        the
+        guitar and listening to rock music in his free time</p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <footer class="pt-5 pb-5 footer py-5 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-4 footer-parent">
+      <div class="col-lg-6 col-xs-12">
+        <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/footer-logo.png" alt="AMPIFIN-footer-logo">
+        <p class="h5 footer-logo-text"><em>A sustainable solution for Vibriosis in fish</em></p>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="mailto:manipalbiomachines.igem@gmail.com">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/envelope.svg" alt="mail" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://www.linkedin.com/company/manipal-biomachines/">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/linkedin.svg" alt="linkedin" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://instagram.com/manipalbiomachines?igshid=YmMyMTA2M2Y=">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/instagram.svg" alt="instagram" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://twitter.com/m_biomachines?t=EmCfYt5V-Q6pa5j1KyXSYA&s=09">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/twitter.svg" alt="twitter" width="32"
+            height="32">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2022 - Content on this site is licensed under a <a class="subfoot"
+              href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0
+              International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a
+              href="https://gitlab.igem.org/2022/mit-mahe">gitlab.igem.org/2022/mit-mahe</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  <!-- <style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script> -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+
+  <script defer src="static/script.js"></script>
+  <script src="static/jquery-3.6.1.min.js"></script>
+  <script src="static/masonry.pkgd.min.js"></script>
+  <script src="static/imagesloaded.pkgd.min.js"></script>
+  <script src="static/mathjax.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4200/wiki/wiki/android-chrome-512x512.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <title>Partnership | MIT_MAHE - iGEM 2022</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="./">MIT_MAHE</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="medals">Medals</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team">Team</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+            <li><a class="dropdown-item" href="collaborations">Collaborations</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="communication">Communication</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="description">Description</a></li>
+            <li><a class="dropdown-item" href="design">Design</a></li>
+            <li><a class="dropdown-item" href="education">Education</a></li>
+            <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+            <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+            <li><a class="dropdown-item" href="implementation">Implementation</a></li>
+            <li><a class="dropdown-item" href="model">Model</a></li>
+            <li><a class="dropdown-item" href="partnership">Partnership</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+          </ul>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="human-practices">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="awards">Awards</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100 reveal-on-scroll">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">Partnership</h1>
+          <p class="lead mb-5 page-header-text-lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<div class="row">
+
+  <h1 class="display-5">Partnership with iGEM IISER Pune II</h1>
+
+  <p class="reveal-on-scroll">The partnership between <a href="https://2022.igem.wiki/iiser-pune2-india/">iGEM IISER
+      Pune II</a> and iGEM MIT
+    MAHE came at a rather unexpected time. We first interacted while collating on the organisational aspects of the
+    <b>All India iGEM Meet</b>. Eleven Indian teams competing in iGEM 2022 attended the immersive three-day meet with
+    activities ranging from project presentations to engrossing seminars on the various aspects of Synthetic biology.
+  </p>
+
+  <p class="reveal-on-scroll">Antibodies are magical molecules created by evolution. As a special class of proteins,
+    they have the perfect
+    balance of surface geometry and surface chemistry. They can target and bind to almost any other protein or
+    biomolecule. They are also very modular. Recombinant technology has enabled us to manipulate antibody domains in a
+    way that we can create different formats of antibodies or antibody fragments. IISER Pune II has identified the best
+    approach to create an antibody fragment that would be an ideal Dengue therapeutic without causing antibody-dependent
+    enhancement.</p>
+
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/partnership/partnership-aiim22-iiserp2-min.jpg"
+      class="figure-img img-fluid rounded" alt="all teams at the Meet" width="80%">
+    <figcaption class="figure-caption text-center"> A picture of all the teams at the Meet </figcaption>
+  </figure>
+
+  <h2 class="reveal-on-scroll">Dry Lab</h2>
+  <p class="reveal-on-scroll">We had our first interaction based on the <b>dry lab aspects</b> of both teams. Following
+    this, we had regular
+    meetings with the team based on discussion and troubleshooting. Before they could go ahead with their first
+    simulations, we helped them navigate their approach to <b>molecular dynamic simulations (MDS)</b> with its specific
+    parameters and details based on our experience and understanding of the topic.</p>
+
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/partnership/partnership-iiserp2-1.jpg"
+      class="figure-img img-fluid rounded" alt="IISER Pune II interaction" width="80%">
+    <figcaption class="figure-caption text-center"> Our interactions with IISER Pune II </figcaption>
+  </figure>
+
+  <p class="reveal-on-scroll">As our dry lab work progressed, we required intricate MDSs to be run on a supercomputer.
+    Our collaborative work was
+    strengthened here as IISER Pune II helped us with the processes involved because our resources could not stretch to
+    that bandwidth. To view our MDS results, check our <a href="model">Model</a> page.
+  </p>
+
+  <p class="reveal-on-scroll"><b>Bioinformatics</b> has a plethora of different tools to help perform specific tasks.
+    They differ in their
+    algorithms and, thus, depend on the context of the application. As students, navigating these tools and fixing them
+    on a particular server is intricate, given our situations. Our teams encountered situations where we needed to dock
+    proteins, predict protein structures, and run Molecular Dynamic Simulations. There are many available tools and no
+    clear information on which tool to use, when and where. Therefore, we decided to make <b>handbooks on MDS and
+      Protein Docking</b> that covers features and use-cases of various existing Bioinformatics tools for the same,
+    which would help narrow down and simplify the choice of these servers for anyone who wants to Dock their proteins,
+    run MDSs and predict structures. These would greatly aid future iGEM teams who wish to accelerate their dry lab
+    aspects and formulate a more cohesive approach to MDS and docking. The MDS handbook is attached below. To view the
+    protein docking handbook, check our <a href="contribution">Contribution</a> page.
+  </p>
+
+  <p class="reveal-on-scroll">Click here for more information of the
+    <a href="https://2022.igem.wiki/iiser-pune2-india/contribution">MDS handbook</a>!
+  </p>
+
+  <h2 class="reveal-on-scroll">Human Practices</h2>
+
+  <p class="reveal-on-scroll">To further our collaborative interactions with IISER Pune II, our teams organised a
+    <b>Webinar on Biosafety in
+      synthetic biology</b>. This webinar aimed to make the general audience aware of the essential Biosafety measures
+    to be followed while working with synthetic biology in the real world.</p>
+
+  <p class="reveal-on-scroll">We invited Dr Vinod Jyothikumar to deliver this presentation. He received his PhD in
+    Pharmaceutical and Biomedical
+    Sciences from Strathclyde University, Glasgow, UK, in 2010 and post-doctoral experience from the University of
+    Guelph, Canada—in 2011. He has executed various safety projects within research laboratories across reputed academic
+    institutions in Europe, the US, and industry settings. It was an extremely interactive and insightful experience.
+    The audience learnt about biosafety practices, dual research use, basic lab protocols and their imperativeness in
+    any workspace, and legal regulations that follow any project. The participants also had many questions and clarified
+    their doubts and misconceptions of the topic in the question and answer session.</p>
+
+  <div class="row">
+    <div class="col-5">
+      <figure class="figure reveal-on-scroll"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/partnership/partnership-iiserp2-poster.png"
+          class="figure-img img-fluid rounded" alt="Webinar poster">
+        <figcaption class="figure-caption text-center"> A snapshot of the webinar's poster. </figcaption>
+      </figure>
+    </div>
+    <div class="col-7">
+      <figure class="figure reveal-on-scroll"> <img
+          src="https://static.igem.wiki/teams/4200/wiki/partnership/partnership-iiserp2-webinar.png"
+          class="figure-img img-fluid rounded" alt="Webinar on biosafety">
+        <figcaption class="figure-caption text-center"> A snapshot from the webinar on biosafety in synthetic biology
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <p class="reveal-on-scroll">Furthermore, being located across from a reputed medical college — i.e., Kasturba Medical
+    College, our team was
+    able
+    to connect with doctors that work in the infectious disease division in various locations, including Kerala and
+    Telangana. <b>We gathered data on important information that iGEM IISER Pune II required to make AbDEN a holistic
+      solution</b>. Through this, we could understand their project and primary stakeholders effectively. Below attached
+    includes our findings for the team.</p>
+
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%" title="IHP"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/iiser-pune-ii-x-mit-mahe-human-practices.pdf#zoom=FitW"></iframe>
+
+  <h2 class="reveal-on-scroll">Wet Lab</h2>
+
+  <p class="reveal-on-scroll">While we did not get the chance to execute some procedures in our respective labs, our
+    teams worked together on
+    creating a <b>study guide on protein expression, alternative vectors, expression systems, methods of induction and
+      selection, and methods of pulldown. </b>Attached below is a detailed version of the study guide.</p>
+
+  <iframe class="align-self-center my-5 reveal-on-scroll" loading="lazy" height="500px" width="100%" title="Study guide"
+    src="https://static.igem.wiki/teams/4200/wiki/pdfs/mit-mahexiiser-pune-ii-study-guide.pdf#zoom=FitW"></iframe>
+
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <footer class="pt-5 pb-5 footer py-5 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-4 footer-parent">
+      <div class="col-lg-6 col-xs-12">
+        <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/footer-logo.png" alt="AMPIFIN-footer-logo">
+        <p class="h5 footer-logo-text"><em>A sustainable solution for Vibriosis in fish</em></p>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="mailto:manipalbiomachines.igem@gmail.com">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/envelope.svg" alt="mail" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://www.linkedin.com/company/manipal-biomachines/">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/linkedin.svg" alt="linkedin" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://instagram.com/manipalbiomachines?igshid=YmMyMTA2M2Y=">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/instagram.svg" alt="instagram" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://twitter.com/m_biomachines?t=EmCfYt5V-Q6pa5j1KyXSYA&s=09">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/twitter.svg" alt="twitter" width="32"
+            height="32">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2022 - Content on this site is licensed under a <a class="subfoot"
+              href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0
+              International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a
+              href="https://gitlab.igem.org/2022/mit-mahe">gitlab.igem.org/2022/mit-mahe</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  <!-- <style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script> -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+
+  <script defer src="static/script.js"></script>
+  <script src="static/jquery-3.6.1.min.js"></script>
+  <script src="static/masonry.pkgd.min.js"></script>
+  <script src="static/imagesloaded.pkgd.min.js"></script>
+  <script src="static/mathjax.js"></script>
+</body>
+
+</html>

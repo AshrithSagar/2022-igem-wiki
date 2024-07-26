@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4200/wiki/wiki/android-chrome-512x512.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <title>Design | MIT_MAHE - iGEM 2022</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="./">MIT_MAHE</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="medals">Medals</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team">Team</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+            <li><a class="dropdown-item" href="collaborations">Collaborations</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="communication">Communication</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="description">Description</a></li>
+            <li><a class="dropdown-item" href="design">Design</a></li>
+            <li><a class="dropdown-item" href="education">Education</a></li>
+            <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+            <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+            <li><a class="dropdown-item" href="implementation">Implementation</a></li>
+            <li><a class="dropdown-item" href="model">Model</a></li>
+            <li><a class="dropdown-item" href="partnership">Partnership</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+          </ul>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="human-practices">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="awards">Awards</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100 reveal-on-scroll">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">Design</h1>
+          <p class="lead mb-5 page-header-text-lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<div class="row mt-4">
+  <h2 class="reveal-on-scroll"><i>In silico</i> design of the peptide</h2>
+
+  <p class="reveal-on-scroll">The interaction between MAM7, Fibronectin, and phosphatidic acid is well-established in
+    the literature. The MAM7 binding site in Fibronectin is located in the 30-kDa N-terminal region [1], which is also
+    used by several other Fn-binding proteins.</p>
+
+  <p class="reveal-on-scroll">However, we found that the structures of the proteins MAM7 and Fibronectin were not well
+    established; hence, we decided to predict the structures for the same.</p>
+
+  <p class="reveal-on-scroll">With the recent advent of various <i>ab initio</i> models, Alphafold has been regarded as
+    one of the most reliable tool in successfully predicting the structures of proteins [2].</p>
+
+  <p class="reveal-on-scroll">The structures for MAM7 and the Heparin-Binding Domains (HBD) of Fibronectin from the
+    trout fish were thus predicted using AlphaFoldII and AlphaFoldI, respectively [2]. These predicted structures were
+    screened for similarities with the existing literature, after which each of the five repeats of the type I module
+    present in Fibronectin was considered as one peptide, respectively. Fibronectin is known to require five continuous
+    repeats to dock with MAM7; therefore, designing a peptide that would bind to only one of these domains was deemed
+    sufficient [1].</p>
+
+  <p class="reveal-on-scroll">This process was iterative in nature, involving multiple cycles of design, build, test,
+    and learn, as described on the <a href="engineering">engineering success page</a>.
+  </p>
+
+  <figure class="figure reveal-on-scroll"> <img src="https://static.igem.wiki/teams/4200/wiki/mam7-fn-docked.png"
+      class="figure-img img-fluid rounded" alt="Fibronectin docked with MAM7">
+    <figcaption class="figure-caption text-center"> Fig 1: Fibronectin docked with MAM7 (visualised on PyMol [3])
+    </figcaption>
+  </figure>
+
+
+  <figure class="figure reveal-on-scroll"> <img src="https://static.igem.wiki/teams/4200/wiki/multiplepeptide5.png"
+      class="figure-img img-fluid rounded" alt="Peptide docked with MAM7">
+    <figcaption class="figure-caption text-center"> Fig 2: Peptide docked with MAM7(visualised on PyMol) </figcaption>
+  </figure>
+
+  <h2 class="reveal-on-scroll">Plasmid design</h2>
+  <p class="reveal-on-scroll">We planned to carry out the MAM7(<a
+      href="https://parts.igem.org/Part:BBa_K4200000">BBa_K4200000</a>) expression using <i>E. coli</i> as our chassis
+    with pET-22b(+) as the vector. For peptide production, we plan on using the same vector system and chassis. However
+    small peptides, when expressed using bacterial systems, are unstable <i>in vivo</i> due to their susceptibility to
+    proteolytic degradation. To overcome the issue, the peptide encoding gene is fused with a gene encoding a carrier
+    protein. For our experiments we decided to use the split intein derived from <i>Synechocystis</i> spp GyrB protein
+    as the carrier protein.</p>
+  <h3 class="reveal-on-scroll">What is an Intein, and why are we using it?</h3>
+  <p class="reveal-on-scroll">Inteins, short for INTervening protEINS, are in-frame interceding polypeptides that are
+    capable of post-translationally excising themselves from the precursor protein through a protein splicing mechanism
+    that is similar to the mechanism of mRNA splicing [5]. After the intein excision, its two flanking regions join
+    together to form the functional protein or peptide sequence. Inteins undergo conditional protein splicing; that is,
+    the splicing reaction is induced either by introducing small molecules like thiols, proteases, ligands, or by
+    altering reaction conditions like temperature and pH [5]. They can be utilised to chemically alter almost any
+    polypeptide backbone [6]. The reason we decided to choose inteins as part of the purification of our peptide is
+    because they not only make the purification easy since they excise themselves from the peptide but they also help
+    stabilize the peptide.
+  </p>
+
+  <p class="reveal-on-scroll">Inteins can be classified into four main categories, full-length inteins, mini-inteins,
+    split inteins, and alanine inteins [5]. For the synthesis of our peptide, we will be using split inteins. Split
+    inteins are composed of two brief intein segments, the N-terminal intein (I<sub>N</sub>) and the C-terminal intein
+    (I<sub>C</sub>), which are both in charge of cleaving the respective terminals. Hence, split inteins help in the
+    splicing of proteins at that specific terminal.</p>
+
+  <figure class="figure reveal-on-scroll"> <img src="https://static.igem.wiki/teams/4200/wiki/design/splitintein.png"
+      class="figure-img img-fluid rounded" alt="Split intein">
+    <figcaption class="figure-caption text-center"> Fig 3: Split Intein. Source:[6] </figcaption>
+  </figure>
+
+  <p class="reveal-on-scroll">We have built our gene circuit in a way where the split intein and the 6X His-tag
+    connected to our peptide at the N terminal. And the Ssp Gyr B split intein we choose will post-translationally
+    self-cleave of our antimicrobial peptide at the N terminal.</p>
+
+  <h3 class="reveal-on-scroll"> Plasmid design for expressing fusion peptide</h3>
+  <p class="reveal-on-scroll">We planned on assembling the parts encoding the peptide(<a
+      href="https://parts.igem.org/Part:BBa_K4200313">BBa_K4200313</a>) and intein(<a
+      href="https://parts.igem.org/Part:BBa_K4200780">BBa_K4200780</a>) using scarless Gibson assembly into the vector
+    pET-22b(+). The final plasmid design and the corresponding gene circuit for the fusion peptide is represented as
+    belows:</p>
+
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/design/peptide-production-plasmid.png"
+      class="figure-img img-fluid rounded" alt="Peptide production vector system" style="width: 50%;">
+    <figcaption class="figure-caption text-center"> Fig 4: Peptide production vector system. Source:[4] </figcaption>
+  </figure>
+
+  <figure class="figure reveal-on-scroll"> <img src="https://static.igem.wiki/teams/4200/wiki/design/genecircuit.png"
+      class="figure-img img-fluid rounded" alt="Plasmid gene circuit">
+    <figcaption class="figure-caption text-center"> Fig 5: Plasmid gene circuit. </figcaption>
+  </figure>
+
+  <h2 class="reveal-on-scroll">The Delivery System</h2>
+  <p class="reveal-on-scroll">Given the susceptibility of our peptide to degradation and other factors, it was necessary
+    to develop a sturdy delivery mechanism for the pisciculture set-up. From our literature review and human practices
+    visits, we decided on the encapsulation of our antimicrobial peptide using chitosan nanoparticles due to its
+    promising properties.
+  </p>
+  <p class="reveal-on-scroll">Once produced in-vitro, our peptide would be subjected to encapsulation for delivery. We
+    would check the Zeta potential of our produced nanoparticles which is essential for determimining the stability of a
+    nanoparticle in a given suspension. The final plan for in-field testing is to subject the inlet tank with a
+    nanoparticle (containing peptide) loaded mesh such that as the water flows, the peptide is subsequently released.
+  </p>
+  <p class="reveal-on-scroll">This setup would help maintain a controlled release of our peptide into the water. Here,
+    the bacteria in the water would interact with our peptide by binding to MAM7 present on the surface of the bacteria,
+    thus rendering it harmless. Consequently, the microbiota of the aquaculture system is also maintained.</p>
+  <p class="reveal-on-scroll">This mesh would serve as a one-time application, such that when the peptide is fully
+    released out of the nanoparticle, it would have to be replaced with a new one. </p>
+
+  <p class="reveal-on-scroll"><b>But what would happen to the chitosan during the peptide release?</b></p>
+  <p class="reveal-on-scroll">Given the properties of chitosan, being a biodegradable polymer, it would not harm the
+    marine life present in the water. Prior to degradation, the chitosan, if and when ingested by the fish, would
+    enhance their gut microbiota and induce positive immunomodulatory effects, too. [8]</p>
+
+  <b class="reveal-on-scroll">References</b>
+  <ol class="reveal-on-scroll">
+    <li class="reveal-on-scroll">A. M. Krachler and K. Orth, ‘Functional characterization of the interaction between bacterial adhesin
+      multivalent adhesion molecule 7 (MAM7) protein and its host cell ligands’, J Biol Chem, vol. 286, no. 45, pp.
+      38939–38947, Nov. 2011, doi: 10.1074/JBC.M111.291377.</li>
+    <li class="reveal-on-scroll">J. Jumper et al., ‘Highly accurate protein structure prediction with AlphaFold’, Nature 2021 596:7873, vol. 596,
+      no. 7873, pp. 583–589, Jul. 2021, doi: 10.1038/s41586-021-03819-2. </li>
+    <li class="reveal-on-scroll"> PyMOL The PyMOL Molecular Graphics System, Version 2.5.2 Schrödinger, LLC. </li>
+    <li class="reveal-on-scroll">Benchling [Biology Software]. (2022). Retrieved from https://benchling.com. </li>
+    <li class="reveal-on-scroll">G. N. Basturea, ‘Inteins’, Materials and Methods, vol. 10, Jan. 2020, doi: 10.13070/MM.EN.10.2868. </li>
+    <li class="reveal-on-scroll">N. H. Shah and T. W. Muir, ‘Inteins: Nature’s Gift to Protein Chemists’, Chemical science (Royal Society of
+      Chemistry : 2010), vol. 5, no. 1, p. 446, Feb. 2014, doi: 10.1039/C3SC52951G. </li>
+    <li class="reveal-on-scroll">“https://www.molecularcloud.org/what-is-Gibson-assembly.html.” </li>
+    <li class="reveal-on-scroll">C. Nikapitiya et al., ‘Chitosan nanoparticles: A positive immune response modulator as display in zebrafish
+      larvae against Aeromonas hydrophila infection’, Fish Shellfish Immunol, vol. 76, pp. 240–246, May 2018, doi:
+      10.1016/J.FSI.2018.03.010. </li>
+  </ol>
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <footer class="pt-5 pb-5 footer py-5 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-4 footer-parent">
+      <div class="col-lg-6 col-xs-12">
+        <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/footer-logo.png" alt="AMPIFIN-footer-logo">
+        <p class="h5 footer-logo-text"><em>A sustainable solution for Vibriosis in fish</em></p>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="mailto:manipalbiomachines.igem@gmail.com">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/envelope.svg" alt="mail" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://www.linkedin.com/company/manipal-biomachines/">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/linkedin.svg" alt="linkedin" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://instagram.com/manipalbiomachines?igshid=YmMyMTA2M2Y=">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/instagram.svg" alt="instagram" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://twitter.com/m_biomachines?t=EmCfYt5V-Q6pa5j1KyXSYA&s=09">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/twitter.svg" alt="twitter" width="32"
+            height="32">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2022 - Content on this site is licensed under a <a class="subfoot"
+              href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0
+              International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a
+              href="https://gitlab.igem.org/2022/mit-mahe">gitlab.igem.org/2022/mit-mahe</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  <!-- <style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script> -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+
+  <script defer src="static/script.js"></script>
+  <script src="static/jquery-3.6.1.min.js"></script>
+  <script src="static/masonry.pkgd.min.js"></script>
+  <script src="static/imagesloaded.pkgd.min.js"></script>
+  <script src="static/mathjax.js"></script>
+</body>
+
+</html>

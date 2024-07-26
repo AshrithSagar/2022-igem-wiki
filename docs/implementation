@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://static.igem.wiki/teams/4200/wiki/wiki/android-chrome-512x512.png" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
+
+  <!-- Bootstrap CSS -->
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="static/style.css" rel="stylesheet">
+
+  <title>Proposed Implementation | MIT_MAHE - iGEM 2022</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <!---- TEAM NAME ---->
+    <a class="navbar-brand" href="./">MIT_MAHE</a>
+
+    <!---- SMALL SCREEN MENU ICON ---->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto left-aligned">
+
+        <!---- HOME ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Home
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="index.html">Home</a></li>
+            <li><a class="dropdown-item" href="medals">Medals</a></li>
+          </ul>
+        </li>
+
+        <!---- TEAM ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="team" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Team
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="team">Team</a></li>
+            <li><a class="dropdown-item" href="attributions">Attributions</a></li>
+            <li><a class="dropdown-item" href="collaborations">Collaborations</a></li>
+          </ul>
+        </li>
+
+        <!---- PROJECT ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Project
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="communication">Communication</a></li>
+            <li><a class="dropdown-item" href="contribution">Contribution</a></li>
+            <li><a class="dropdown-item" href="description">Description</a></li>
+            <li><a class="dropdown-item" href="design">Design</a></li>
+            <li><a class="dropdown-item" href="education">Education</a></li>
+            <li><a class="dropdown-item" href="engineering">Engineering</a></li>
+            <li><a class="dropdown-item" href="experiments">Experiments</a></li>
+            <li><a class="dropdown-item" href="implementation">Implementation</a></li>
+            <li><a class="dropdown-item" href="model">Model</a></li>
+            <li><a class="dropdown-item" href="partnership">Partnership</a></li>
+            <li><a class="dropdown-item" href="software">Software</a></li>
+          </ul>
+        </li>
+
+        <!---- HUMAN PRACTICES ---->
+        <li class="nav-item">
+          <a class="nav-link" href="human-practices">Human Practices</a>
+        </li>
+
+        <!---- AWARDS ---->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="awards">Awards</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  
+  <header class="bg-hero py-5 mb-5">
+    <div class="container.fluid h-100 reveal-on-scroll">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-2 mt-5 mb-2 page-header-text">Proposed Implementation</h1>
+          <p class="lead mb-5 page-header-text-lead"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <!-- Page Content -->
+  <div class="container">
+    
+
+<div class="row">
+  <p class="reveal-on-scroll">The Food and Agriculture Organisation of the United States has reported that about 35% of
+    the global aquaculture harvest is either lost or emaciated [1]. Significant <b>economic losses</b> are reported by
+    pathogens in the water, responsible for inducing lethal diseases.[2]</p>
+  <p class="reveal-on-scroll">From our Human Practice visits and Integrated Human Practice meetings, we found out that
+    vibriosis is a disease that surges in commercial units due to higher impact of the <b>stress factors</b>. It is also
+    quite prominent in cultivating setups and stages. Hence, ceasing this infection in its initial stages was necessary.
+    Our solution, AMPifin, was created specifically for the aforementioned reasons.
+  </p>
+  <p class="reveal-on-scroll"><b>Accessibility and affordability</b> to a wide range of technologically advanced
+    treatment methods is still an area of deficit. Antibiotics are no longer effective against numerous pathogenic
+    diseases in aquaculture systems [3].
+  </p>
+  <p class="reveal-on-scroll">In an effort to prevent them from facing any future economic loss, we propose them to be
+    one of the many end users of our product. </p>
+  <p class="reveal-on-scroll">After successfully designing our peptide in-silico, we needed a <b>delivery mechanism</b>
+    that could be implemented after successful Wet Lab testing.
+  </p>
+  <h2 class="reveal-on-scroll">Chitosan Nanoparticle Encapsulation</h2>
+  <p class="reveal-on-scroll">Chitosan nanoparticle encapsulation is our chosen delivery mechanism. Chitosan is an
+    N-acetyl derivative of chitin. It has been widely explored in the field of <b>drug delivery, food processing
+      industry</b> and has been reported to exhibit <b>immunomodulatory properties</b> [4].
+  </p>
+  <p class="reveal-on-scroll">Chitosan nanoparticles, in particular, have gained attention in drug delivery due to their
+    properties like—enhanced <b>stability, low toxicity, biocompatible and biodegradable</b> [5], simple and mild
+    preparation methods and flexible administration routes due to their sub-micron size [6].
+  </p>
+  <p class="reveal-on-scroll">The interaction studies would determine the nuances of the delivery mechanism, helping us
+    obtain the optimum concentration of our peptide and subsequently decide the dosage parameters.
+  </p>
+
+  <ol class="reveal-on-scroll"> Chitosan nanoparticles are usually incorporated with the drug in two ways: <li class="reveal-on-scroll">By
+      addition of the drug to the chitosan solution</li>
+    <li class="reveal-on-scroll">By addition/loading of the drug onto the chitosan nanoparticles formed from ionic gelation</li>
+  </ol>
+
+  <p class="reveal-on-scroll">Various procedures exist for the making of CSNPs, such as—Ionic gelation, Microemulsion,
+    Reverse micellar, Emulsification diffusion solvent, Polyelectrolyte complex method, etc [7].
+  </p>
+
+  <h2 class="reveal-on-scroll">Delivery Setup</h2>
+  <p class="reveal-on-scroll">RAS stands for <b>Recirculatory Aquaculture System</b>. The speciality of this system is
+    that the water is recycled and reused after subjecting it to certain treatment steps. These steps are used for
+    high-density culture of various species of fish which make use of minimum land area and water.
+  </p>
+  <p class="reveal-on-scroll">A standard RAS comprises several <b>filter designs</b> which remove metabolic wastes,
+    excess nutrients, solids, etc in an effort to provide good water quality for aquatic life. India has seen a boom in
+    the application of RAS in the industry in the past decade for <b>sustainable practices</b> [8]. This is where
+    AMPifin finds its most appropriate application.
+  </p>
+  <p class="reveal-on-scroll">Given the standard design and features of an RAS, it is easy to integrate our peptide as a
+    solution to vibriosis in the fish. We came up with a setup such that our peptide encapsulated chitosan nanoparticles
+    would be immobilised onto a <b>Polyvinyl chloride (PVC) mesh</b>. This mesh would be subjected to the inlet of the
+    pipe of the RAS.
+  </p>
+  <p class="reveal-on-scroll">Shown below is the design of the future implementation of our product:
+  </p>
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/implementation/cad-design-implementation.jpeg"
+      class="figure-img img-fluid rounded" alt="CAD design of delivery set-up incorporated in a RAS model">
+    <figcaption class="figure-caption text-center"> Fig 1: CAD design of delivery set-up incorporated in a RAS model.
+    </figcaption>
+  </figure>
+  <p class="reveal-on-scroll">Initially our design was going to be a single thin mesh covered with our peptide loaded
+    chitosan nanoparticles. In the many HP visits that we had, we realised that it is difficult to make use of thin
+    meshes as a filter due to the influence of the high flow rate. In such conditions, there are chances that the
+    turbulent flow will wear off the mesh.
+  </p>
+  <p class="reveal-on-scroll">Hence, a sustainable way to integrate this mesh was by introducing a thicker mesh stack at
+    the bypass. In accordance with the RAS systems widely used in the industry [9], we plan on integrating our mesh
+    accordingly. </p>
+  <figure class="figure reveal-on-scroll"> <img
+      src="https://static.igem.wiki/teams/4200/wiki/implementation/igem-mit-mahe-delivery-set-up.png"
+      class="figure-img img-fluid rounded" alt="Final flow of the delivery mechanism" width="40%">
+    <figcaption class="figure-caption text-center"> Fig 2: Final flow of the delivery mechanism. </figcaption>
+  </figure>
+  <p class="reveal-on-scroll">The mesh stack will be subjected to the bypass of the inlet pipe, connecting between the
+    reservoir and the first tank. This would subject all the water flowing into the tanks for the fish, to interact with
+    our peptide that will gradually be released into the water. </p>
+
+  <h2 class="reveal-on-scroll">References</h2>
+
+  <ol class="reveal-on-scroll">
+    <li class="reveal-on-scroll">[1] The State of World Fisheries and Aquaculture 2020. FAO, 2020. doi: 10.4060/ca9229en.</li>
+    <li class="reveal-on-scroll">[2] T. Håstein, A. D. Scarfe, and V. L. Lund, “Science-based assessment of welfare: aquatic animals.,” Rev. Sci.
+      Tech., vol. 24, no. 2, pp. 529–47, Aug. 2005.</li>
+    <li class="reveal-on-scroll">[3] A. Assefa and F. Abunna, “Maintenance of Fish Health in Aquaculture: Review of Epidemiological Approaches
+      for Prevention and Control of Infectious Disease of Fish,” Vet. Med. Int., vol. 2018, pp. 1–10, 2018, doi:
+      10.1155/2018/5432497. </li>
+    <li class="reveal-on-scroll">[4] G. Guan et al., “Biological Effects and Applications of Chitosan and Chito-Oligosaccharides,” Front.
+      Physiol., vol. 10, May 2019, doi: 10.3389/fphys.2019.00516.</li>
+    <li class="reveal-on-scroll">[5] W. Paul and C. P. Sharma, “Enteric Coating of Polyclonal Antibody for Colon Delivery View project,” 2000,
+      Accessed: Oct. 12, 2022. [Online]. Available: https://www.researchgate.net/publication/236898063</li>
+    <li class="reveal-on-scroll">[6] V. Mikušová and P. Mikuš, “Advances in Chitosan-Based Nanoparticles for Drug Delivery,” Int. J. Mol. Sci.
+      2021, Vol. 22, Page 9652, vol. 22, no. 17, p. 9652, Sep. 2021, doi: 10.3390/IJMS22179652.</li>
+    <li class="reveal-on-scroll">[7] A. Mesa, G. S. S. Mythatha, R. S. Lodi, S. Ravuri, and R. Balli, “Chitosan Nanoparticles: An Overview on
+      Preparation, Characterization and Biomedical Applications,” 2021, pp. 393–427. doi: 10.1007/978-981-15-9916-3_17.
+    </li>
+    <li class="reveal-on-scroll">[8] National Fisheries Development Board, “RECENT TRENDS IN AQUACULTURE Recirculatory Aquaculture System
+      (RAS).”, Available: https://nfdb.gov.in/PDF/RAS%20RT.pdf</li>
+    <li class="reveal-on-scroll">[9] “RAS Roundtable: Feeding Strategies to Maintain Optimal Water Quality and Fish Performance.”
+      https://www.innovasea.com/ras-roundtable-feeding-strategies-to-maintain-optimal-water-quality-and-fish-performance/
+      (accessed Oct. 11, 2022).</li>
+  </ol>
+</div>
+
+
+  </div>
+
+  <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
+  <footer class="pt-5 pb-5 footer py-5 mt-5 text-white">
+  <div class="container">
+    <div class="row mb-4 footer-parent">
+      <div class="col-lg-6 col-xs-12">
+        <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/footer-logo.png" alt="AMPIFIN-footer-logo">
+        <p class="h5 footer-logo-text"><em>A sustainable solution for Vibriosis in fish</em></p>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="mailto:manipalbiomachines.igem@gmail.com">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/envelope.svg" alt="mail" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://www.linkedin.com/company/manipal-biomachines/">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/linkedin.svg" alt="linkedin" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://instagram.com/manipalbiomachines?igshid=YmMyMTA2M2Y=">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/instagram.svg" alt="instagram" width="32"
+            height="32">
+        </a>
+      </div>
+      <div class="col-1 footer-socials">
+        <a href="https://twitter.com/m_biomachines?t=EmCfYt5V-Q6pa5j1KyXSYA&s=09">
+          <img src="https://static.igem.wiki/teams/4200/wiki/wiki/footer/twitter.svg" alt="twitter" width="32"
+            height="32">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
+    <div class="row mt-4">
+      <div class="col">
+        <p class="mb-0"><small>© 2022 - Content on this site is licensed under a <a class="subfoot"
+              href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0
+              International license</a>.</small></p>
+        <p><small>The repository used to create this website is available at <a
+              href="https://gitlab.igem.org/2022/mit-mahe">gitlab.igem.org/2022/mit-mahe</a>.</small></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Wiki Tools: Teams are allowed to remove it -->
+  <!-- <style>
+    .wiki-tools-footer {
+        --bs-gutter-x: 1.5rem;
+        background: #222124;
+        margin: 0;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        display: flex;
+        gap: 1.5em;
+    }
+
+    .wiki-tools-footer a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        transition: color 0.3s;
+    }
+
+    .wiki-tools-footer a:hover {
+        color: #08C784;
+    }
+
+    .wiki-tools-footer img {
+        object-fit: contain;
+    }
+</style>
+
+<section class="wiki-tools-footer container">
+    <a id="wiki-tools-link">Access Wiki Tools</a>
+    <a id="wiki-tools-repo">View Source Code</a>
+    <img id="wiki-tools-pipeline">
+</section>
+
+<script>
+    const wikiToolsLink = document.getElementById('wiki-tools-link')
+    const wikiToolsRepo = document.getElementById('wiki-tools-repo')
+    const wikiToolsPipeline = document.getElementById('wiki-tools-pipeline')
+
+    const path = document.location.pathname.split('/')
+
+    const competitionSlug = document.location.host.split('.')[0]
+    const teamSlug = path[1]
+    const page = path[2] === '' ? 'index' : path[2]
+
+    wikiToolsLink.href = `https://tools.igem.org/wiki-tools/${competitionSlug}/${teamSlug}/${page}`
+    wikiToolsRepo.href = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}`
+    wikiToolsPipeline.src = `https://gitlab.igem.org/${competitionSlug}/${teamSlug}/badges/main/pipeline.svg`
+</script> -->
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="static/bootstrap.bundle.min.js"></script>
+
+  <script defer src="static/script.js"></script>
+  <script src="static/jquery-3.6.1.min.js"></script>
+  <script src="static/masonry.pkgd.min.js"></script>
+  <script src="static/imagesloaded.pkgd.min.js"></script>
+  <script src="static/mathjax.js"></script>
+</body>
+
+</html>
