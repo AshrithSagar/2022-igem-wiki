@@ -9,10 +9,10 @@
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
 
   <!-- Bootstrap CSS -->
-  <link href="../static/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="../static/style.css" rel="stylesheet">
+  <link href="/static/style.css" rel="stylesheet">
 
   <title>Software | MIT_MAHE - iGEM 2022</title>
 </head>
@@ -41,21 +41,21 @@
             Home
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../index.html">Home</a></li>
-            <li><a class="dropdown-item" href="../medals/index.html">Medals</a></li>
+            <li><a class="dropdown-item" href="/">Home</a></li>
+            <li><a class="dropdown-item" href="/medals/">Medals</a></li>
           </ul>
         </li>
 
         <!---- TEAM ---->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="../team/index.html" id="navbarDropdown"
+          <a class="nav-link dropdown-toggle" href="/team/" id="navbarDropdown"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Team
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../team/index.html">Team</a></li>
-            <li><a class="dropdown-item" href="../attributions/index.html">Attributions</a></li>
-            <li><a class="dropdown-item" href="../collaborations/index.html">Collaborations</a></li>
+            <li><a class="dropdown-item" href="/team/">Team</a></li>
+            <li><a class="dropdown-item" href="/attributions/">Attributions</a></li>
+            <li><a class="dropdown-item" href="/collaborations/">Collaborations</a></li>
           </ul>
         </li>
 
@@ -66,28 +66,28 @@
             Project
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../communication/index.html">Communication</a></li>
-            <li><a class="dropdown-item" href="../contribution/index.html">Contribution</a></li>
-            <li><a class="dropdown-item" href="../description/index.html">Description</a></li>
-            <li><a class="dropdown-item" href="../design/index.html">Design</a></li>
-            <li><a class="dropdown-item" href="../education/index.html">Education</a></li>
-            <li><a class="dropdown-item" href="../engineering/index.html">Engineering</a></li>
-            <li><a class="dropdown-item" href="../experiments/index.html">Experiments</a></li>
-            <li><a class="dropdown-item" href="../implementation/index.html">Implementation</a></li>
-            <li><a class="dropdown-item" href="../model/index.html">Model</a></li>
-            <li><a class="dropdown-item" href="../partnership/index.html">Partnership</a></li>
-            <li><a class="dropdown-item" href="index.html">Software</a></li>
+            <li><a class="dropdown-item" href="/communication/">Communication</a></li>
+            <li><a class="dropdown-item" href="/contribution/">Contribution</a></li>
+            <li><a class="dropdown-item" href="/description/">Description</a></li>
+            <li><a class="dropdown-item" href="/design/">Design</a></li>
+            <li><a class="dropdown-item" href="/education/">Education</a></li>
+            <li><a class="dropdown-item" href="/engineering/">Engineering</a></li>
+            <li><a class="dropdown-item" href="/experiments/">Experiments</a></li>
+            <li><a class="dropdown-item" href="/implementation/">Implementation</a></li>
+            <li><a class="dropdown-item" href="/model/">Model</a></li>
+            <li><a class="dropdown-item" href="/partnership/">Partnership</a></li>
+            <li><a class="dropdown-item" href="/software/">Software</a></li>
           </ul>
         </li>
 
         <!---- HUMAN PRACTICES ---->
         <li class="nav-item">
-          <a class="nav-link" href="../human-practices/index.html">Human Practices</a>
+          <a class="nav-link" href="/human-practices/">Human Practices</a>
         </li>
 
         <!---- AWARDS ---->
         <li class="nav-item dropdown">
-          <a class="nav-link" href="../awards/index.html">Awards</a>
+          <a class="nav-link" href="/awards/">Awards</a>
         </li>
 
       </ul>
@@ -123,7 +123,8 @@
     sequences are chosen from the sample set created. These are then tested and subjected to further analysis. Thus, our
     software is a one-of-a-kind approach to automating and exponentially simplifying the process of <b>random</b>
     conserved mutations. This process can be employed to potentially <b>increase the affinity</b> of the peptide to its
-    interacting ligands. </p>
+    interacting ligands.
+  </p>
 
   <h1 class="reveal-on-scroll">GRASP</h1>
   <blockquote>
@@ -134,9 +135,10 @@
   <h3 class="reveal-on-scroll">About</h3>
   <blockquote>
     <p class="reveal-on-scroll"><em><span>For more information, refer to this page on our wiki: </span><strong> <a
-            href="../engineering/index.html" class='url'>Engineering success</a></strong></em><br>
+            href="/engineering/" class='url'>Engineering success</a></strong></em><br>
       <em><span>Checkout the software at: </span><strong> <a href="https://gitlab.igem.org/2022/software-tools/mit-mahe"
-            class='url'>MIT_MAHE Software tools</a></strong></em> </p>
+            class='url'>MIT_MAHE Software tools</a></strong></em>
+    </p>
   </blockquote>
 
   <figure class="figure reveal-on-scroll"> <img
@@ -230,8 +232,10 @@
   <p class="reveal-on-scroll"> We first create a Mutater object, which support the following three formats:
   </p>
   <ol>
-    <li class="reveal-on-scroll"> Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to be replaced with. </li>
-    <li class="reveal-on-scroll"> Just the Wild type amino acid and its position, without the Mutant type. This can act as the template to create
+    <li class="reveal-on-scroll"> Wild type amino acid, the position of the Amino acid, and the Mutant type it needs to
+      be replaced with. </li>
+    <li class="reveal-on-scroll"> Just the Wild type amino acid and its position, without the Mutant type. This can act
+      as the template to create
       new Mutater objects. </li>
     <li class="reveal-on-scroll"> Just the position in the sequence. </li>
   </ol>
@@ -247,9 +251,11 @@
   </p>
   <ol class="reveal-on-scroll">
     <li class="reveal-on-scroll"> Iterate over the sequence and get the wild type amino acid at each stage. </li>
-    <li class="reveal-on-scroll"> Retain the wild type if mutation isn't required at this position. This could result when the position doesn't
+    <li class="reveal-on-scroll"> Retain the wild type if mutation isn't required at this position. This could result
+      when the position doesn't
       want to be mutated, or when the position is present in the mutation lock array. </li>
-    <li class="reveal-on-scroll"> If a mutation is required in the current position, replace the position with an array of all the possible amino
+    <li class="reveal-on-scroll"> If a mutation is required in the current position, replace the position with an array
+      of all the possible amino
       acids within the same group. This step is important to achieve Conserved mutations. </li>
   </ol>
 
@@ -367,13 +373,13 @@
 </script> -->
 
   <!-- Bootstrap Bundle with Popper -->
-  <script src="../static/bootstrap.bundle.min.js"></script>
+  <script src="/static/bootstrap.bundle.min.js"></script>
 
-  <script defer src="../static/script.js"></script>
-  <script src="../static/jquery-3.6.1.min.js"></script>
-  <script src="../static/masonry.pkgd.min.js"></script>
-  <script src="../static/imagesloaded.pkgd.min.js"></script>
-  <script src="../static/mathjax.js"></script>
+  <script defer src="/static/script.js"></script>
+  <script src="/static/jquery-3.6.1.min.js"></script>
+  <script src="/static/masonry.pkgd.min.js"></script>
+  <script src="/static/imagesloaded.pkgd.min.js"></script>
+  <script src="/static/mathjax.js"></script>
 </body>
 
 </html>
