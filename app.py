@@ -13,7 +13,7 @@ template_folder = path.abspath("./wiki")
 
 app = Flask(__name__, template_folder=template_folder)
 # Enter your GitHub Pages URL here instead of frozen-flask-gh-pages
-app.config["FREEZER_BASE_URL"] = "https://docs/"
+app.config["FREEZER_BASE_URL"] = "https:///2022-igem-wiki/"
 
 # As configured in GitHub Pages Settings
 app.config["FREEZER_DESTINATION"] = "docs"
@@ -61,9 +61,4 @@ def pages(page):
 
 
 if __name__ == "__main__":
-    port = 8080
-    freezer.freeze()  # Freeze the app into FREEZER_DESTINATION
-    # freezer.serve(port=port)  # Serve the app locally from FREEZER_DESTINATION
-
-    # freezer.run(port=port)  # Choose for URL checking
-    app.run(port=port, debug=True)  # Choose to run locally from Flask
+    app.run(port=8080, debug=True)
